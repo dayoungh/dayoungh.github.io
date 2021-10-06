@@ -1,0 +1,10 @@
+h1 {font-size: 100px; color: #444;}
+div {color:#ff0;}
+.제목 {color: rgb(240, 86, 81);}
+#오늘 {color: rgb(29, 102, 236);}
+
+
+figure {background: #ff0;}
+figure img {margin-left: 100px; transition: 2s;}
+figure.on img {margin-left: 1000px;}
+
