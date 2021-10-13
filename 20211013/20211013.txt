@@ -1,0 +1,33 @@
+★display:none; 없애라
+★display:block; 나타나라,block이 돼라
+display:inline; 인라인으로 돼라  (옆에오게) 좌우마진패딩만적용
+display:inline-block; block을 가로배열, block 사이의 간격이 4px
+★display:flex; block를 가로배열
+display:grid; 
+
+
+display 어떻게 배치할 것 인가
+-none
+-block
+-flex
+-inline-block
+
+
+position 어디에 배치할 것 인가. 좌표를 가진다. (top,bottom,left,right)
+=> 메뉴가 움직이는건 포지션을 가지고 있는것.
+
+-static : position 속성을 없애라
+-relative : 기준이된다. (중요) 좌표를 가진다
+★-absolute : z축으로 떠오른다(겹친다). 쪼그라든다. 기준을 잃어버림 (지 멋대로임)-body가 기준. relative로 기준잡아줌
+-fixed : z축으로 떠오른다. 쪼그라든다. 기준을 잃어버림 (지 멋대로임)-뷰포트(화면)가 기준
+
+
+
+css 쓸때 디스플레이를 포지션보다 앞에써줌
+
+css margin, padding 순서 상 우 하 좌
+
+position 주고 우선순위 줄때 z-index
+
+구글웹폰트 임포트 하고 복붙, body {} 안에 CSS rules to specify families 넣어줌
+xeicon get started 에서 복사 (//cdn부터) 구글웹폰트처럼써줌
