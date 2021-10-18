@@ -1,0 +1,16 @@
+javascript
+
+jquery - javascript를 쉽게 쓰는 라이브러리
+
+파일가져오기
+html 구조만들기
+javascript 적용하기
+
+css 리셋이 젤위에
+내가 작성한게 젤밑에 
+다른데서 가져온건 그사이
+
+#visual .main_slider .item02 {background: url(../img/main_visual02.jpg) no-repeat center center/cover;}
+#visual .main_slider .item03 {background: url(../img/main_visual03.jpg) no-repeat center center/cover;
+
+ctrl+shift+R -> 캐쉬 리로드
