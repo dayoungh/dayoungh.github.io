@@ -1,16 +1,12 @@
 $(function(){
 
-   $('#top_pop i').on('click',function(){
-      $('#top_pop').addClass('on');
-   });
-
 
    $('.main_slider').slick({
       arrows:false,
       // dots:true, "ctrl+/" 주석처리
       autoplay:true,
       pauseOnHover:false,
-   })
+   });
    $('.main_slider figure').eq(1).addClass('on')
    $('.main_slider').on('afterChange',function(e,s,c){
    $('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on')
@@ -18,14 +14,26 @@ $(function(){
    });
 
 
-$('#con04 i.xi-pause').on('click',function(){
-   $('#mv01').trigger('pause');
-});
+   // slide 돌리는거
+   $('.pp_slider').slick({
+      arrows:false,
+      // dots:true, "ctrl+/" 주석처리
+      autoplay:true,
+      pauseOnHover:false,
+   });
 
+// 화살표 클릭했을때 이동하는거
+   $('#con03 .btn i.xi-angle-left-thin').on('click',function(){
+      $('.pp_slider').slick('slickPrev')
+   });
+   $('#con03 .btn i.xi-angle-right-thin').on('click',function(){
+      $('.pp_slider').slick('slickNext')
+   });
 
-$('#con04 i.xi-play').on('click',function(){
-   $('#mv01').trigger('play');
-});
+   $('.pp_slider figure').eq(1).addClass('on');
+   $('.pp_slider').on('afterChange',function(e,s,c){
+      $('.pp_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
+   });
 
 
 });
