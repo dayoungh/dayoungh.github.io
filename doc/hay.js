@@ -36,4 +36,13 @@ $(function(){
    });
 
 
+
+   // 탭메뉴
+   $('#con04 li').on('click',function(){
+      var idx=$(this).index();
+      // console.log(idx);
+      $(this).addClass('on').siblings().removeClass('on');
+      $('#con04 .tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
+   });
+
 });

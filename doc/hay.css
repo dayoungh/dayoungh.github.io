@@ -62,7 +62,14 @@ width: 1200px; padding: 0 15px; color: #fff;} /*transform: translate(x축,y축);
 
 
 
-#con02 {padding:150px 0;text-align: left; color: #333;background:#f7f7f7;}
+
+
+
+
+
+
+
+#con02 {padding:100px 0;text-align: left; color: #333;background:#f7f7f7;}
 #con02 .title {width: 1200px; margin: 0 auto;}
 #con02 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 63px;}
 #con02 .container {padding: 0 15px; display: flex; flex-wrap:wrap; width: 1200px; margin: 0 auto;}
@@ -75,6 +82,14 @@ width: 1200px; padding: 0 15px; color: #fff;} /*transform: translate(x축,y축);
 #con02 .container .intro p {padding: 0 15px; font-size: 18px; font-weight: 300; letter-spacing: -0.025em; line-height: 30px;
 margin-bottom: 40px;}
 #con02 .container .intro a {display: block; font-size: 14px; font-weight: 400; width: 102px; border: 1px solid #333; margin: 0 auto; line-height: 25px;}
+
+
+
+
+
+
+
+
 
 
 #con03 {padding: 150px 0; text-align: left; color: #333; position: relative;}
@@ -116,6 +131,24 @@ margin-top: 34px;}
 
 
 
+#con04 {padding:100px 0;text-align: left; color: #333;background:#f7f7f7;}
+#con04 .title {width: 1200px; margin: 0 auto;}
+#con04 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 63px;}
+#con04 .container {padding: 0 15px; width: 1200px; margin: 0 auto;}
+#con04 .tab {display: block; color: #333;  width: 50%; height: 300px; background: #fff; box-shadow: 0 0 3px rgb(92, 92, 92);}
+#con04 .tab_menu {}
+#con04 ul {display: flex; line-height: 40px;} 
+#con04 ul li {flex: 1; text-align: center; width: 180px; cursor: pointer; background: #eee;}
+#con04 ul li.on {background: #fff;}
+#con04 ul li~li {border-left: 1px solid #ddd;}
+#con04 .tab_cont {background: #fff; color: #333;}
+#con04 .tab_cont h2 {text-align: right; padding: 10px 20px 0 0;}
+#con04 .tab_cont h2 a {font-size: 13px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
+#con04 .tab_cont>div {display: none;}
+#con04 .tab_cont>div.on {display: block; background: #fff;}
+#con04 .tab_cont>div.on table {width: 100%; padding: 10px;}
+#con04 .tab_cont>div.on table td {font-size: 16px; line-height: 20px;}
+#con04 .tab_cont>div.on table .date {text-align: right;}
 
 
 
