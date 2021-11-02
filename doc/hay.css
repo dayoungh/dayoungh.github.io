@@ -15,11 +15,6 @@
 #header nav>ul>li>a {display: block; padding: 0 30px; font-size: 16px; font-weight: 300;
 color: #292929;}
 #header nav>ul>li {position: relative;} 
-/* #header nav>ul>li:last-child>a {padding: 0 0 0 30px;} */
-/* #header nav>ul>li~li::after {content: ""; display: block; width: 1px; height: 12px; background: #333; position: absolute; top: 46px; left: 0;} */
-
-/* display: flex; 는 자식 block을 가로로 배열한다.
-justify-content: center; 는 display: flex;로 가로 배열 된 박스들을 가운데로 오게 한다. */
 
 #header .search input {width: 120px; padding: 5px; outline: none; border: none; border-bottom: 1px solid #292929;}
 #header .search i {font-size: 20px; padding: 5px; color: #292929;}
@@ -134,21 +129,34 @@ margin-top: 34px;}
 #con04 {padding:100px 0;text-align: left; color: #333;background:#f7f7f7;}
 #con04 .title {width: 1200px; margin: 0 auto;}
 #con04 .title h2 {padding: 0 15px; font-family: 'Andada Pro', serif; font-size: 30px; font-weight: 400; margin-bottom: 63px;}
-#con04 .container {padding: 0 15px; width: 1200px; margin: 0 auto;}
-#con04 .tab {display: block; color: #333;  width: 50%; height: 300px; background: #fff; box-shadow: 0 0 3px rgb(92, 92, 92);}
+#con04 .container {display: flex; padding: 0 15px; width: 1200px; margin: 0 auto;}
+#con04 .tab {flex: 1; display: block; color: #333; width: 100%; height: 100%; background: #fff; box-shadow: 0 0 3px rgb(92, 92, 92);}
 #con04 .tab_menu {}
 #con04 ul {display: flex; line-height: 40px;} 
 #con04 ul li {flex: 1; text-align: center; width: 180px; cursor: pointer; background: #eee;}
 #con04 ul li.on {background: #fff;}
 #con04 ul li~li {border-left: 1px solid #ddd;}
-#con04 .tab_cont {background: #fff; color: #333;}
-#con04 .tab_cont h2 {text-align: right; padding: 10px 20px 0 0;}
+#con04 .tab_cont {background: #fff; color: #333; width: 570px; height: 280px;}
+#con04 .tab_cont h2 {text-align: right; padding: 15px 15px 0 0;}
 #con04 .tab_cont h2 a {font-size: 13px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
 #con04 .tab_cont>div {display: none;}
-#con04 .tab_cont>div.on {display: block; background: #fff;}
-#con04 .tab_cont>div.on table {width: 100%; padding: 10px;}
-#con04 .tab_cont>div.on table td {font-size: 16px; line-height: 20px;}
+#con04 .tab_cont>div.on {display: block;}
+#con04 .tab_cont>div.on table {width: 100%; padding: 15px;}
+#con04 .tab_cont>div.on table td {line-height: 30px; font-size: 12px;}
+#con04 .tab_cont>div.on table td:hover {color: #777;}
 #con04 .tab_cont>div.on table .date {text-align: right;}
+
+#con04 .tab_cont .sub{text-align: center; width: 570px; height: 280px; margin: 0 auto;}
+#con04 .tab_cont .sub_case {padding-top: 25px;}
+#con04 .tab_cont .sub_case h2 {color: #333;  padding: 30px; font-weight: 500; letter-spacing: 0.5em; text-align: center;}
+#con04 .tab_cont .sub_case input {width: 300px; padding: 5px; outline: none; border: none; border-bottom: 1px solid #333; text-align: center;
+font-size: 14px;}
+#con04 .tab_cont .sub_case>a {display: block; font-size: 14px; width: 100px; border: 1px solid #333; margin: 0 auto; padding: 5px 10px; color: #333; text-align: center; font-size: 13px; font-weight: 100; line-height: 15px;
+margin-top: 30px; margin-bottom: 30px;}
+
+
+#con04 .container figure {flex: 1; padding: 0 15px;}
+#con04 .container figure #mv01 {width: 100%;}
 
 
 
