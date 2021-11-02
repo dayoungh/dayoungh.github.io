@@ -22,7 +22,7 @@ $(function(){
     
     
         $('#mv01').YTPlayer({
-            videoURL:'https://youtu.be/gFi9DYbclFA',
+            videoURL:'https://youtu.be/6hzrDeceEKc',
             containment:'self',
             autoPlay:true, 
             mute:true, 
