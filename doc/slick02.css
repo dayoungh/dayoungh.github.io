@@ -26,13 +26,10 @@ width: 1200px; padding: 0 15px; color: #fff; text-align: center;} /*transform: t
 
 #main_visual h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom: 15px;}
 #main_visual p {font-size: 12px; margin-bottom: 40px; line-height: 1.6;}
-
 #main_visual span {display: block; width: 100px; height: 200px; border-top: 1px solid rgba(255,255,255,0.2);
     border-left: 10px solid rgba(255,255,255,0.2); position: absolute; top: 50%; left: 50%;}
 #main_visual span.left {transform: translate(-50%,-50%) rotate(-45deg); margin-left: -700px;}
 #main_visual span.right {transform: translate(-50%,-50%) rotate(135deg); margin-left: 700px;}
-
-
 #main_visual .list {display: flex; width: 1200px; line-height: 40px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
 color: #fff; background: orange; }
 #main_visual .list li {flex: 1; text-align: center; position: relative;}

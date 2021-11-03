@@ -141,10 +141,8 @@ margin-top: 34px;}
 #con04 .tab_cont h2 a {font-size: 13px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300;}
 #con04 .tab_cont>div {display: none;}
 #con04 .tab_cont>div.on {display: block;}
-#con04 .tab_cont>div.on table {width: 100%; padding: 15px;}
-#con04 .tab_cont>div.on table td {line-height: 30px; font-size: 12px;}
-#con04 .tab_cont>div.on table td:hover {color: #777;}
-#con04 .tab_cont>div.on table .date {text-align: right;}
+#con04 .tab_cont>div.on span {line-height: 30px; font-size: 13px;}
+#con04 .tab_cont>div.on p {font-size: 13px; float: right;}
 
 #con04 .tab_cont .sub{text-align: center; width: 570px; height: 280px; margin: 0 auto;}
 #con04 .tab_cont .sub_case {padding-top: 25px;}
