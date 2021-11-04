@@ -33,10 +33,10 @@ $('#top_banner4 i').on('click',function(){
         $(this).toggleClass('on');
     });
 
+    // -- toTop
 $('#toTop').on('click',function(){
     $('html,body').animate({scrollTop:0},600);
 });
-
 
 $(window).on('scroll',function(){
     var sct=$(window).scrollTop();
@@ -45,6 +45,7 @@ $(window).on('scroll',function(){
     $('#toTop').fadeOut()
 }
 
+// #scroll_banner
 $('#scroll_banner').css({top:300+sct})
 
 });

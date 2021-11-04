@@ -1,6 +1,6 @@
 $(function(){
 
-
+ //-- main_slider
    $('.main_slider').slick({
       arrows:false,
       // dots:true, "ctrl+/" 주석처리
@@ -14,7 +14,7 @@ $(function(){
    });
 
 
-   // slide 돌리는거
+   //-- con03 제품 slider
    $('.pp_slider').slick({
       arrows:false,
       // dots:true, "ctrl+/" 주석처리
@@ -22,7 +22,7 @@ $(function(){
       pauseOnHover:false,
    });
 
-// 화살표 클릭했을때 이동하는거
+//-- con03 accessories 화살표 클릭시 이동
    $('#con03 .btn i.xi-angle-left-thin').on('click',function(){
       $('.pp_slider').slick('slickPrev')
    });
@@ -37,12 +37,26 @@ $(function(){
 
 
 
-   // 탭메뉴
+   //-- tab menu
    $('#con04 li').on('click',function(){
       var idx=$(this).index();
       // console.log(idx);
       $(this).addClass('on').siblings().removeClass('on');
       $('#con04 .tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
    });
+
+
+   // -- to_top
+   $('#to_top').on('click',function(){
+     $('html,body').animate({scrollTop:0},600);
+   });
+
+ $(window).on('scroll',function(){
+    var sct=$(window).scrollTop();
+    if(sct>1000) {$('#to_top').fadeIn()
+   }else{
+      $('#to_top').fadeOut()
+   }
+ });
 
 });
