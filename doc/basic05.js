@@ -65,5 +65,23 @@ $('#link select').on('change',function(){
     if(link) window.open(link)
 });
 
+
+$('.tab_menu li').on('click',function(){
+    var idx=$(this).index();
+    // $('.tab_cont>div').eq(idx).show().siblings().hide();
+    $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
+});
+
+
+
+$('.tab_slider').slick({
+    arrows:false,
+    autoplay:true,
+    slidesToShow:4,
+    centerMode:true,
+
+});
+
+
 //---------------------------------------
 });
