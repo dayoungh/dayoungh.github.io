@@ -16,7 +16,7 @@
     #header {line-height: 100px;}
     #header h1 {padding: 0 15px}                                                                                              
     #header h1 img {width: 200px;}
-    #header .container {display: flex; width: 1200px; margin: 0 auto;}
+    #header .container {display: flex; width: auto; margin: 0 auto;}
     #header .container nav {display: none; position: fixed; top: 0; left: 0; background: #fff; width: calc(100% - 80px); height: 100vh; padding: 100px 15px 0 15px; 
     border-right: 1px solid #ddd; z-index: 999;}
     #header .container nav>ul {display: flex; flex-direction: column; font-size: 16px;}
