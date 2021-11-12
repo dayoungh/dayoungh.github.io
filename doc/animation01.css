@@ -1,0 +1,35 @@
+body {background: #333; color: #fff; font-weight: 300; text-align: center;}
+
+#bal {margin: 300px 0; padding: 100px 0; position: relative;}
+
+#bal h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom: 20px;}
+#bal p {font-size: 14px; font-weight: 100; margin-bottom: 20px;}
+
+#bal .container {width: 800px; height: 450px; margin: 0 auto; overflow: hidden; position: relative;}
+#bal .case {position: absolute; top: 0; left: 0;}
+
+#bal .btn {display: flex; justify-content: center;}
+#bal .btn li {width: 30px; height: 30px; background: #fff; border-radius: 50%; margin: 10px 5px; cursor: pointer; text-indent: -9999px;}
+
+.sun {position: absolute; top: 150px; left: 150px; animation: sunmove 2s infinite linear;}
+.bts {position: absolute; top: 450px; left: 50px; animation: bts 5s both;}
+.bts figure {animation: btsw 1s infinite;}
+
+
+
+@keyframes sunmove {
+    to {transform: rotate(360deg)}
+}
+
+@keyframes btsw {
+    0% {transform: scaleX(0);}
+    50% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+  /* to {transform:scaleX(0);}*/
+
+
+  @keyframes bts {
+    100% {transform: translate(500px,0) rotate(45deg);}
+
+}

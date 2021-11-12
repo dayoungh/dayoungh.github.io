@@ -20,7 +20,10 @@ $(function(){
             $('#bgndVideo').YTPFullscreen();
         });
     
-    
+    // -------------------visual------------------------
+
+
+    // ---------section id="movie02"-------------
         $('#mv01').YTPlayer({
             videoURL:'https://youtu.be/6hzrDeceEKc',
             containment:'self',
@@ -42,5 +45,10 @@ $(function(){
         $('#movie02 i.xi-tv').on('click', function(){
             $('#mv01').YTPFullscreen();
         });
+
+
+
+
+        
     //----------------------------------
     });
