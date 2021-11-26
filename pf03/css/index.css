@@ -361,15 +361,16 @@ letter-spacing: -0.025em;}
     #cont03 figure {padding-top: 40px;}
     #cont03 .case {position: relative; overflow: hidden;}  
     #cont03 .case a {}
-    
-    #cont03 .case a::before {content: ""; display: block; width: 140px; height: 140px; border-radius: 50% 0 50% 0; background: #1e4918c5;
+    #cont03 .case a::before {content: ""; display: block; width: 130px; height: 130px; border-radius: 50% 0 50% 0; background: #1e4918c5;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 0 2px #333;}
-    #cont03 .case:hover a::before {}
+    #cont03 .case:hover a::before {content: ""; display: block; width: 130px; height: 130px; border-radius: 50% 0 50% 0; background: #2d6b25c5;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: none;}
     
-    #cont03 .case img {width: auto; height: 500px; transition: 0s; transition-property: none;} 
-    #cont03 .case:hover img {transition-property: none;} 
+    #cont03 .case img {width: auto; height: 500px; transition: 0s;} 
+    #cont03 .case:hover img {transform: scale(1);} 
    
-    #cont03 .case h3 {opacity: 1; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
+    #cont03 .case h3 {opacity: 1; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 20px; letter-spacing: -0.025em;  transition: 0.5s;
+    font-size: 14px;}
     #cont03 .case:hover h3 {opacity: 1; display: block;}
     }
     
