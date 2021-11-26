@@ -155,7 +155,9 @@ margin-bottom: 30px;}
 /* #cont01 */
 #cont01 {padding: 150px 0; text-align: center; position: relative; background: url(../img/leaf02.png)no-repeat;}
 #cont01 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 15px;}
-#cont01 p {font-weight: 300; margin-bottom: 30px; font-size: 20px; color: #25561f;}
+#cont01 p {font-weight: 300; margin-bottom: 30px; font-size: 20px; color: #25561f; position: relative;}
+#cont01 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont01 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 #cont01 .container {width: 1200px; margin: 0 auto; padding: 0 15px;}
 
 #cont01 .case {margin: 0 10px;}
@@ -182,6 +184,8 @@ margin-bottom: 30px;}
     #cont01 {padding: 150px 0 0 0; text-align: center; background: url(../img/leaf02.png)no-repeat top left/150px;}
     #cont01 h2 {font-size: 20px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 15px;}
     #cont01 p {font-weight: 300; margin-bottom: 30px; font-size: 16px; color: #25561f;}
+    #cont01 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom; color: #25561f;}
+    #cont01 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom; color: #25561f;}
     #cont01 .container {width: auto; margin: 0 auto; padding: 0 15px;}
     
     #cont01 .case {margin: 0 10px;}
@@ -213,6 +217,8 @@ margin-bottom: 30px;}
 #cont02 .con {position: absolute; top: 240px; left: 50%; transform: translate(-50%,-50%); color: #fff; line-height: 20px; width: 1200px; padding: 0 15px;}
 #cont02 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
 #cont02 p {font-weight: 300; margin-bottom: 30px; font-size: 20px;}
+#cont02 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont02 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 
 #cont02 .txt {padding-top: 200px; color: #fff; text-shadow: 0 0 2px #333;}
 
@@ -264,6 +270,8 @@ transition: 0.5s ease;}
 #cont02 .con {overflow: hidden; position: absolute; top: 200px; left: 0; transform: translate(0,0); color: #fff; line-height: 20px; width: 100%; padding: 0 15px;}
 #cont02 h2 {font-size: 20px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
 #cont02 p {font-weight: 300; margin-bottom: 30px;}
+#cont02 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont02 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 
 #cont02 .txt {padding-top: 210px; color: #fff; text-shadow: 0 0 2px #333;}
 
@@ -302,7 +310,8 @@ transition: 0.5s ease;}
 #cont03 {padding: 150px 0; text-align: center; margin: 0 auto;}
 #cont03 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
 #cont03 p {font-weight: 300; margin-bottom: 60px; font-size: 20px; color: #25561f;}
-
+#cont03 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont03 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 
 #cont03 .container {width: 1200px; padding: 0 15px; margin: 0 auto;}
 
@@ -337,7 +346,8 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
     #cont03 {padding: 150px 0; text-align: center; margin: 0 auto;}
     #cont03 h2 {font-size: 20px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
     #cont03 p {font-weight: 300; margin-bottom: 30px; color: #25561f;}
-    
+    #cont02 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+    #cont02 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
     
     #cont03 .container {width: auto; padding: 0 15px; margin: 0 auto;}
     
@@ -353,16 +363,15 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
     #cont03 figure {padding-top: 40px;}
     #cont03 .case {position: relative; overflow: hidden;}  
     #cont03 .case a {}
-    #cont03 .case:hover a::before {content: ""; display: block; width: 140px; height: 140px; border-radius: 50% 0 50% 0; background: #1e4918c5;
+    #cont03 .case:hover a::before {display: none;}
+    #cont03 .case a::before {content: ""; display: block; width: 140px; height: 140px; border-radius: 50% 0 50% 0; background: #1e4918c5;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 0 2px #333;}
     
-    #cont03 .case img {width: 100%; transition: 0.5s;} 
+    #cont03 .case img {height: 500px; width: 100%; transition: 0.5s;} 
     #cont03 .case:hover img {transform: scale(1.1);} 
-    /* 
-    #cont03 .case span {opacity: 0; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-    #cont03 .case:hover span {opacity: 1;} */
-    #cont03 .case h3 {opacity: 0; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
-    #cont03 .case:hover h3 {opacity: 1;}
+   
+    #cont03 .case h3 {opacity: 1; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
+    #cont03 .case:hover h3 {opacity: 0;}
     }
     
 
@@ -373,6 +382,8 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
 #cont04 {padding: 150px 0; text-align: center; margin: 0 auto; background: #f7f7f7;}
 #cont04 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
 #cont04 p {font-weight: 300; margin-bottom: 60px; font-size: 20px; color: #25561f;}
+#cont04 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont04 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 
 #cont04 .container {width: 1200px; margin: 0 auto; padding: 0 15px;}
 #cont04 h3 {font-size: 35px; letter-spacing: -0.025em; font-weight: 500; text-align: center; color: #666; line-height: 45px; margin: 20px 0;}
@@ -382,7 +393,7 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
 #cont04 .box_01 img {max-width: 100%; margin-bottom: 20px;}
 /* #cont04 .des {width: 300px;} */
 
-#cont04 .box_01 .des01 {text-align: right; float: right; padding: 14px 65px 0 0;}
+#cont04 .box_01 .des01 {text-align: right; float: right; padding: 14px 65px 0 0; color: #666;}
 #cont04 .box_01 .des01 p {line-height: 27px; letter-spacing: -0.025em; font-size: 18px;}
 #cont04 .box_01 .des01 strong {font-size: 20px; font-weight: 500;}
 
@@ -404,7 +415,7 @@ margin: 20px 0; font-family: 'Montserrat', sans-serif; font-weight: 300;}
 #cont04 .con>h3::after {display: none;}
 
 #cont04 .con {display: flex;}
-#cont04 .sub01 {flex: 1; border: 3px dashed #ddd; color: #999; background: #f5f5f5; letter-spacing: -0.025em;
+#cont04 .sub01 {flex: 1; border: 2px dashed #ddd; color: #999; background: #f5f5f5; letter-spacing: -0.025em;
 margin-right: 15px; padding: 15px 0;}
 #cont04 .sub01:hover {flex: 1; border: 3px solid #25561f;; color: #555; background: #fff; letter-spacing: -0.025em;
 margin-right: 15px; padding: 15px 0;}
@@ -434,6 +445,8 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 {padding: 150px 0; text-align: center; margin: 0 auto; background: #f7f7f7;}
     #cont04 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
     #cont04 p {font-weight: 300; margin-bottom: 100px; font-size: 20px; color: #25561f;}
+    #cont04 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+    #cont04 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
     
     #cont04 .container {width: auto; margin: 0 auto; padding: 0 15px;}
     #cont04 h3 {font-size: 35px; letter-spacing: -0.025em; font-weight: 500; text-align: center; color: #666; line-height: 45px; margin-bottom: 20px;}
@@ -443,9 +456,9 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 .box_01 img {max-width: 100%; margin-bottom: 15px;}
     /* #cont04 .des {width: 300px;} */
     
-    #cont04 .box_01 .des01 {text-align: center; padding: 18px 0 0 40px;}
-    #cont04 .box_01 .des01 p {line-height: 25px; letter-spacing: -0.025em; font-size: 3.3vw;}
-    #cont04 .box_01 .des01 strong {font-size: 4vw;}
+    #cont04 .box_01 .des01 {text-align: right; padding: 10px 0 0 10px;}
+    #cont04 .box_01 .des01 b {line-height: 20px; letter-spacing: -0.025em; font-size: 16px; padding: 0;}
+    #cont04 .box_01 .des01 strong {font-size: 18px;}
     
     
     #cont04 .box_02 {flex: 1;}
@@ -458,7 +471,7 @@ letter-spacing: -0.025em; padding: 15px 0;}
     margin: 20px 0; font-family: 'Montserrat', sans-serif; font-weight: 300;}
     #cont04 .box_03 img {max-width: 100%;}
     #cont04 .des02 {}
-    #cont04 .des02 p {text-align: right; margin: 0 auto;}
+    #cont04 .des02>p {text-align: right; margin: 0 auto;}
     
     
     #cont04 .con>h3::before {content: ""; display: block; width: 1px; height: 100px; background: #999; margin: 20px auto;}
@@ -466,7 +479,7 @@ letter-spacing: -0.025em; padding: 15px 0;}
 
     
     #cont04 .con {display: flex; flex-direction: column;}
-    #cont04 .sub01 { flex: 1; border: 3px dashed #ddd; color: #999; background: #f5f5f5; letter-spacing: -0.025em;
+    #cont04 .sub01 { flex: 1; border: 2px dashed #ddd; color: #999; background: #f5f5f5; letter-spacing: -0.025em;
     margin-right: 0; margin-bottom: 15px; padding: 15px 0;}
     #cont04 .sub01:hover {flex: 1; border: 3px solid #25561f;; color: #555; background: #fff; letter-spacing: -0.025em;
     margin-right: 0; padding: 15px 0;}
@@ -494,6 +507,8 @@ letter-spacing: -0.025em; padding: 15px 0;}
 #cont05 {padding: 150px 0; text-align: center; margin: 0 auto;}
 #cont05 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
 #cont05 p {font-weight: 300; margin-bottom: 60px; font-size: 20px; color: #25561f;}
+#cont05 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+#cont05 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
 #cont05 .container {width: 1200px; margin: 0 auto; padding: 0 15px;}
 #cont05 figure ul {display: flex; margin-bottom: 30px;}
 #cont05 figure ul li {flex: 1; padding: 0 15px;}
@@ -506,6 +521,8 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont05 {padding: 150px 0; text-align: center; margin: 0 auto;}
     #cont05 h2 {font-size: 24px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
     #cont05 p {font-weight: 300; margin-bottom: 60px; font-size: 20px; color: #25561f;}
+    #cont05 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
+    #cont05 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
     #cont05 .container {width: auto; margin: 0 auto; padding: 0 10px;}
     #cont05 figure ul {display: flex; margin-bottom: 20px;}
     #cont05 figure ul li {flex: 1; padding: 0 15px;}
@@ -528,7 +545,7 @@ line-height: 1.4; color: #f4f4f4;}
 
 /* footer */
 #footer {background: #ddd; overflow:auto;}
-#footer dl {display: flex; line-height:1.7;}
+#footer dl {display: flex; line-height:1.7; padding: 15px 0 0 0;}
 #footer dl>dd {font-size: 15px; color: #777; font-weight: 100;}
 #footer dl>dd~dd::before {content: ""; display: inline-block;  margin: 0 20px; width: 1px; height: 13px; background: #777;}
 #footer dl>dt {color: #555; font-weight: 300;}
