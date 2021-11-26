@@ -332,11 +332,9 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
 
 #cont03 .case img {width: 100%; transition: 0.5s;} 
 #cont03 .case:hover img {transform: scale(1.1);} 
-/* 
-#cont03 .case span {opacity: 0; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-#cont03 .case:hover span {opacity: 1;} */
-#cont03 .case h3 {opacity: 0; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #f2f2f2; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
-#cont03 .case:hover h3 {opacity: 1;}
+#cont03 .case h3 {opacity: 0; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #f2f2f2; text-align: center; line-height: 25px;
+letter-spacing: -0.025em;}
+#cont03 .case:hover h3 {opacity: 1; transition: 0.3s;}
 
 
 
@@ -363,15 +361,16 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
     #cont03 figure {padding-top: 40px;}
     #cont03 .case {position: relative; overflow: hidden;}  
     #cont03 .case a {}
-    #cont03 .case:hover a::before {display: none;}
+    
     #cont03 .case a::before {content: ""; display: block; width: 140px; height: 140px; border-radius: 50% 0 50% 0; background: #1e4918c5;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 0 2px #333;}
+    #cont03 .case:hover a::before {}
     
-    #cont03 .case img {width: auto; height: 500px;  transition: 0.5s;} 
-    #cont03 .case:hover img {transform: scale(1.1);} 
+    #cont03 .case img {width: auto; height: 500px; transition: 0s; transition-property: none;} 
+    #cont03 .case:hover img {transition-property: none;} 
    
     #cont03 .case h3 {opacity: 1; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
-    #cont03 .case:hover h3 {opacity: 0;}
+    #cont03 .case:hover h3 {opacity: 1; display: block;}
     }
     
 
@@ -523,9 +522,9 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont05 p {font-weight: 300; margin-bottom: 60px; font-size: 20px; color: #25561f;}
     #cont05 p::before {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
     #cont05 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
-    #cont05 .container {width: auto; margin: 0 auto; padding: 0 10px;}
-    #cont05 figure ul {display: flex; margin-bottom: 20px;}
-    #cont05 figure ul li {flex: 1; padding: 0 15px;}
+    #cont05 .container {width: auto; margin: 0 auto; padding: 0 5px;}
+    #cont05 figure ul {display: flex; margin-bottom: 10px;}
+    #cont05 figure ul li {flex: 1; padding: 0 5px;}
     #cont05 figure ul li img {max-width: 100%;}
     }
 
