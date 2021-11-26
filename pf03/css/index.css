@@ -287,7 +287,7 @@ transition: 0.5s ease;}
 
 
 #cont02 .slick-dots {width: 200px; display: block; position: absolute; top: 77%; left: 50%; transform: translateX(-50%); text-shadow: 0 0 2px #333;}
-#cont02 .slick-dots::after {content: ""; display: block; width: 170px; height: 1px; background: #fff; position: absolute; top: 8px; left: 20px; z-index: -1;}
+#cont02 .slick-dots::after {content: ""; display: block; width: 169px; height: 1px; background: #fff; position: absolute; top: 8px; left: 20px; z-index: -1;}
 
 #cont02 .slick-dots li {display: inline-block; background: #fff; width: 13px; height: 13px; margin: 0 10px; border-radius: 50%;}
 #cont02 .slick-dots li.slick-active {background: #44b635;}
