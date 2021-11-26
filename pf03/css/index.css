@@ -449,15 +449,15 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 p::after {content: "|"; display: inline-block; padding: 5px; font-size: 16px; vertical-align: bottom;}
     
     #cont04 .container {width: auto; margin: 0 auto; padding: 0 15px;}
-    #cont04 h3 {font-size: 35px; letter-spacing: -0.025em; font-weight: 500; text-align: center; color: #666; line-height: 45px; margin-bottom: 20px;}
+    #cont04 h3 {font-size: 30px; letter-spacing: -0.025em; font-weight: 500; text-align: center; color: #666; line-height: 40px; margin-bottom: 20px;}
     #cont04 h3::after {content: ""; display: block; width: 1px; height: 100px; background: #999; margin: 20px auto;}
     #cont04 .case {display: flex;}
     #cont04 .box_01 {text-align: left; flex: 2; margin-right: 15px;}
     #cont04 .box_01 img {max-width: 100%; margin-bottom: 15px;}
     /* #cont04 .des {width: 300px;} */
     
-    #cont04 .box_01 .des01 {text-align: center; padding: 0; margin: 50% auto;}
-    #cont04 .box_01 .des01 b {line-height: 22px; letter-spacing: -0.025em; font-size: 15px; padding: 0;}
+    #cont04 .box_01 .des01 {text-align: right; padding: 0; margin: 0 auto;}
+    #cont04 .box_01 .des01 b {line-height: 22px; letter-spacing: -0.025em; font-size: 15px; padding: 33px 0 0 0; color: #999;}
     #cont04 .box_01 .des01 strong {font-size: 17px;}
     
     
@@ -466,7 +466,7 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 em {display: block; font-family: 'Montserrat', sans-serif; font-weight: 500; font-style: italic; font-size: 14px; color: #999; padding-bottom: 0; line-height: 1.4; letter-spacing: 0.2em;}
     
     #cont04 .box_03 {flex: 1;}
-    #cont04 .box_03 figure {margin: 25px 0;}
+    #cont04 .box_03 figure {margin: 20px 0;}
     #cont04 .box_03 figure span {width: 300px; padding: 5px 15px 7px 15px; font-size: 14px; color: #999; border: 1px solid #999; border-radius: 50%;
     margin: 20px 0; font-family: 'Montserrat', sans-serif; font-weight: 300;}
     #cont04 .box_03 img {max-width: 100%;}
@@ -551,10 +551,10 @@ line-height: 1.4; color: #f4f4f4;}
 #footer dl>dt {color: #555; font-weight: 300;}
 #footer dl>dt::before {content: ""; display: inline-block;  margin: 0 20px; width: 1px; height: 13px; background: #777;}
 
-#footer .ft02 {} 
+#footer .ft02 {border: 1px solid #ccc; margin: 10px 0 10px 0;} 
 #footer address {float: left; line-height: 1.5; text-align: left; padding: 30px 0; margin: 0 auto; font-size: 15px; color: #777; font-weight: 100;}
 
-#footer .ft03 {float: right;} 
+#footer .ft03 {float: right; padding: 15px 0 0 0;} 
 
 
 
@@ -579,7 +579,7 @@ line-height: 1.4; color: #f4f4f4;}
     #footer dl>dt {color: #555; font-weight: 300; padding: 0 5px;}
     #footer dl>dt::before {display: none;}
     
-    #footer .ft02 {} 
+    #footer .ft02 {border: 1px solid #ccc; margin: 10px;} 
     #footer address {float: left; line-height: 1.5; text-align: left; padding: 30px 0; margin: 0 auto; font-size: 15px; color: #777; font-weight: 100;}
     
     #footer .ft03 {float: none; margin: 0 auto; padding-bottom: 20px;} 
