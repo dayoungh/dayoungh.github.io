@@ -367,7 +367,7 @@ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-sh
     #cont03 .case a::before {content: ""; display: block; width: 140px; height: 140px; border-radius: 50% 0 50% 0; background: #1e4918c5;
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 0 2px #333;}
     
-    #cont03 .case img {height: 500px; width: 100%; transition: 0.5s;} 
+    #cont03 .case img {width: auto; height: 500px;  transition: 0.5s;} 
     #cont03 .case:hover img {transform: scale(1.1);} 
    
     #cont03 .case h3 {opacity: 1; position:absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center; line-height: 25px; letter-spacing: -0.025em;  transition: 0.5s;}
@@ -456,9 +456,9 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 .box_01 img {max-width: 100%; margin-bottom: 15px;}
     /* #cont04 .des {width: 300px;} */
     
-    #cont04 .box_01 .des01 {text-align: right; padding: 10px 0 0 10px;}
-    #cont04 .box_01 .des01 b {line-height: 20px; letter-spacing: -0.025em; font-size: 16px; padding: 0;}
-    #cont04 .box_01 .des01 strong {font-size: 18px;}
+    #cont04 .box_01 .des01 {text-align: center; padding: 0; margin: 50% auto;}
+    #cont04 .box_01 .des01 b {line-height: 22px; letter-spacing: -0.025em; font-size: 15px; padding: 0;}
+    #cont04 .box_01 .des01 strong {font-size: 17px;}
     
     
     #cont04 .box_02 {flex: 1;}
