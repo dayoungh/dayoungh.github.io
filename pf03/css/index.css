@@ -142,7 +142,7 @@ margin-bottom: 30px;}
     #main_visual figure.on .slg h3 {opacity: 1; transform: translateY(0px); transition: 0.5s;}
     
     
-    #main_visual figure .slg p {font-size: 16px; font-weight: 300; line-height: 25px; letter-spacing: -0.025em; text-shadow: 0 0 2px #333; opacity: 0; transform: translateY(100px);}
+    #main_visual figure .slg p {font-size: 16px; padding: 0 10px; font-weight: 300; line-height: 25px; letter-spacing: -0.025em; text-shadow: 0 0 2px #333; opacity: 0; transform: translateY(100px);}
     #main_visual figure.on .slg p {opacity: 1; transform: translateY(0px); transition: 0.5s;}
     
     
@@ -259,7 +259,7 @@ transition: 0.5s ease;}
 @media (max-width:768px) {
    
 #cont02 {padding: 150px 0; text-align: center; position: relative; margin: 0 auto; text-shadow: 0 0 2px #333;}
-#cont02 .img {background: url(../img/bg01.jpg) no-repeat center center/cover; background-attachment: fixed;}
+#cont02 .img {background: url(../img/bg01.jpg) no-repeat center center/cover;}
 
 #cont02 .con {overflow: hidden; position: absolute; top: 200px; left: 0; transform: translate(0,0); color: #fff; line-height: 20px; width: 100%; padding: 0 15px;}
 #cont02 h2 {font-size: 20px; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 20px;}
@@ -443,8 +443,8 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 .box_01 img {max-width: 100%; margin-bottom: 15px;}
     /* #cont04 .des {width: 300px;} */
     
-    #cont04 .box_01 .des01 {text-align: right; float: right; padding: 18px 0 0 50px;}
-    #cont04 .box_01 .des01 p {line-height: 25px; letter-spacing: -0.025em; font-size: 3.5vw;}
+    #cont04 .box_01 .des01 {text-align: center; padding: 18px 0 0 40px;}
+    #cont04 .box_01 .des01 p {line-height: 25px; letter-spacing: -0.025em; font-size: 3.3vw;}
     #cont04 .box_01 .des01 strong {font-size: 4vw;}
     
     
