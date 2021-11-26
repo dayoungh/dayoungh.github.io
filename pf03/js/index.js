@@ -55,7 +55,7 @@ $('.pr_slider01').slick({
     arrows:false,
     slidesToShow:4,
     autoplay:true,
-    autoplaySpeed:3000,
+    autoplaySpeed:2000,
     pauseOnFocus:false,
     pauseOnHover:false,
     responsive: [
@@ -90,7 +90,7 @@ $('#cont01 i.xi-angle-right-thin').on('click',function(){
 
    $('.story_slider').slick({
     autoplay:true,
-    autoplaySpeed:4000,
+    autoplaySpeed:3000,
     pauseOnHover:false,
     arrows:false,
     dots:true,
