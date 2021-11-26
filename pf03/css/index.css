@@ -456,8 +456,8 @@ letter-spacing: -0.025em; padding: 15px 0;}
     #cont04 .box_01 img {max-width: 100%; margin-bottom: 15px;}
     /* #cont04 .des {width: 300px;} */
     
-    #cont04 .box_01 .des01 {text-align: right; padding: 0; margin: 0 auto;}
-    #cont04 .box_01 .des01 b {line-height: 22px; letter-spacing: -0.025em; font-size: 15px; padding: 33px 0 0 0; color: #999;}
+    #cont04 .box_01 .des01 {text-align: right; padding: 10px; margin: 0 auto;}
+    #cont04 .box_01 .des01 b {line-height: 22px; letter-spacing: -0.025em; font-size: 15px; padding: 0; color: #999;}
     #cont04 .box_01 .des01 strong {font-size: 17px;}
     
     
