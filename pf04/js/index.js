@@ -137,6 +137,7 @@ $(function(){
         $('#footer .fam').slideToggle();
     });
 
+    
     // footer award_box //
     $('#footer .award').on('click',function(){
         $('#footer .award_box').fadeToggle(100);
