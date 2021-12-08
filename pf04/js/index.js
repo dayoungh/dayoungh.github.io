@@ -118,7 +118,7 @@ $(function(){
 
     $('#mv01').YTPlayer({
         videoURL:'https://youtu.be/RKlbViql5i0',
-        containment:'self',
+        containment:'#mv01',
         autoPlay:true, 
         mute:true, 
         startAt:0, 
