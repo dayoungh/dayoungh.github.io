@@ -123,7 +123,7 @@ $('.pr_slider01').slick({
       arrows:false,
       responsive: [
         {
-          autoplay: true,
+          
           autoplaySpeed: 2000,
           breakpoint: 769,
           settings: {
@@ -136,7 +136,7 @@ $('.pr_slider01').slick({
   
 
 
-   //content-slider
+   //content-slider txt slide
    var contentSlider01=$(".content_slider").slick({
     arrows:false,
     autoplay:true,
