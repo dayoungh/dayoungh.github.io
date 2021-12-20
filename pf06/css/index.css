@@ -1,16 +1,11 @@
 html {font-size: 10px;}
 body {font-size: 1.6rem;}
 
-/* top_banner */
-.top_banner {display: block; background: #253981; line-height: 5rem; color: #fff; letter-spacing: -0.025em; text-align: center;}
-.top_banner .container {display: flex; justify-content: center; position: relative; margin: 0 auto; width: 120rem; padding: 0 1.5rem;}
-.top_banner h2 {font-weight: 500; font-size: 1.7rem; padding: 0 3.5rem;}
-.top_banner p {font-size: 1.4rem; font-weight: 300;}
-.top_banner i {position: absolute; top: 1.5rem; right: 1rem; font-size: 2rem;}
+
 
 
 /* header */
-.header {position: fixed; top: 1rem; left: 0; width: 100%; line-height: 10rem; color: #fff; transition: 0.5s; z-index: 1;}
+.header {position: fixed; top: 0; left: 0; width: 100%; line-height: 10rem; color: #fff; transition: 0.5s; z-index: 1;}
 .header.on {background: #fff; line-height: 10rem; color: #333; border-bottom: 1px solid #ddd;}
 .header .container {margin: 0 auto; display: flex; justify-content: space-between; margin: 0 auto; width: 100%; max-width: 160rem;}
 
