@@ -1,40 +1,205 @@
+
+:root {
+    --mc:#253981;
+    --dd: #ddd;
+}
+
+/* *{outline: 1px solid #f00;} */
+
+
 html {font-size: 10px;}
 body {font-size: 1.6rem;}
 
-
+@media (max-width:768px) {
+    :root {
+        --mc:#253981;
+    }
+    
+    
+    html {font-size: 10px;}
+    body {font-size: 1.6rem;}
+}
 
 
 /* header */
 .header {position: fixed; top: 0; left: 0; width: 100%; line-height: 10rem; color: #fff; transition: 0.5s; z-index: 1;}
 .header.on {background: #fff; line-height: 10rem; color: #333; border-bottom: 1px solid #ddd;}
+
+
 .header .container {margin: 0 auto; display: flex; justify-content: space-between; margin: 0 auto; width: 100%; max-width: 160rem;}
+
+.header .pg_nav {position: fixed; top: 50%; right: 3rem; transform: translateY(-50%); z-index: 1;}
+.header .pg_nav li {width: 6rem; position: relative;}
+.header .pg_nav li a {display: block; height: 2rem; position: relative; text-indent: -99999px;}
+.header .pg_nav li a::after {content: ""; display: block; width: 3rem; height: 1px; background: #fff; position: absolute; top: 1rem; right: 0;
+ transition: 0.4s;}
+.header .pg_nav li.on a::after {background: var(--mc); width: 6rem;}
+
+.header .pg_nav li::before {content: attr(data-num); position: absolute; top: 0; left: -3.5rem; font-size: 1.3rem; font-weight: 300; opacity: 0;}
+.header .pg_nav li.on::before {opacity: 1;}
+
 
 .header h1 img {width: 100%;}
 .header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo_w.png) no-repeat; z-index: 999;}
 .header.on h1 a {height:  10rem; background: url(../img/logo.png) no-repeat;}
+
 .header .right i {font-size: 2rem; padding: 0 0.5rem;}
 
-
-.header .gnb .depth01 {display: flex; justify-content: center;}
+.header .gnb .depth01 {display: flex;}
 .header .gnb .depth01>li>a {display: block; padding: 0 3rem;}
 .header .gnb .depth01 {position: relative;}
 
-.header .gnb .depth02 {display: flex; justify-content: center; height: 0; overflow: hidden; position: absolute; top: 10rem; left: 0; width: 100%; z-index: 999;}
+.header .gnb .depth02 {display: flex; height: 0; overflow: hidden; position: absolute; top: 10rem; left: 0; width: 100%; z-index: 999;}
 .header .gnb>ul>li:hover .depth02 {height: 3rem;} 
 .header .gnb::before {content: ""; display: block; width: 100%; height: 0; background: #000; opacity: 0.2; position: absolute; top: 10rem; left: 0; transition: 0.5s; border-top: 1px solid #ddd; z-index: 999;}
 .header .gnb:hover:before {height: 3rem;}
 .header .gnb .depth02>li>a {display: block; line-height: 3rem; text-align: center; padding: 0 2rem; transition: 0.5s;}
 .header .gnb .depth02>li>a:hover {color: #369;}
 
-
 .header.on .gnb::before {content: ""; display: block; width: 100%; height: 0; background: #fff; opacity: 0.5; position: absolute; top: 10rem; left: 0; transition: 0.5s; border-top: 1px solid #ddd; z-index: 999;}
 .header .gnb:hover:before {height: 3rem;}
 
 
+.mopen {display: none;}
+
+
+/* 반응형 header */
+@media (max-width:768px) {
+    .header {position: relative; top: 0; left: 0; width: 100%; line-height: 10rem; color: #fff; transition: 0.5s; z-index: 1;}
+    .header.on {background: #fff; line-height: 10rem; color: #333; border-bottom: 1px solid #ddd;}
+    .header .container {margin: 0 auto; display: flex; justify-content: space-between; margin: 0 auto; width: auto; max-width: auto;}
+    
+    .header .pg_nav {display: none; position: fixed; top: 50%; right: 3rem; transform: translateY(-50%); z-index: 1;}
+    .header .pg_nav li {width: 6rem; position: relative;}
+    .header .pg_nav li a {display: block; height: 2rem; position: relative; text-indent: -99999px;}
+    .header .pg_nav li a::after {content: ""; display: block; width: 3rem; height: 1px; background: #fff; position: absolute; top: 1rem; right: 0;
+    transition: 0.4s;}
+    .header .pg_nav li.on a::after {background: var(--mc); width: 6rem;}
+    
+    .header .pg_nav li::before {content: attr(data-num); position: absolute; top: 0; left: -3.5rem; font-size: 1.3rem; font-weight: 300; opacity: 0;}
+    .header .pg_nav li.on::before {opacity: 1;}
+    
+    .header h1 {z-index: 1000;}
+    .header h1 img {width: 100%;}
+    .header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo.png) no-repeat; margin: 0 1rem;}
+    .header.on h1 a {display: none;}
+    .header .right {display: none;}
+    .header .right i {font-size: 2rem; padding: 0 0.5rem;}
+    
+
+    .header .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 90px); height: 100vh; background: #fff; color: #333; padding: 10rem 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
+    .header .gnb.on {left: 0;}
+    .header .gnb .depth01 {display: flex; flex-direction: column; line-height: 3.5;}
+    .header .gnb .depth01>li>a {display: block;}
+    
+    
+    .header .gnb .depth02 {display: none; height: 0; overflow: hidden; position: static; top: 10rem; left: 0; width: 100%; color: #f00; z-index: 999;}
+    .header .gnb>ul>li:hover .depth02 {display: none; height: 100%;} 
+    .header .gnb::before {content: ""; display: none; width: 100%; height: 0; background: #ddd; opacity: 0; position: absolute; top: 10rem; left: 0; transition: none; border-top: 1px solid #ddd; z-index: 999;}
+    .header .gnb:hover:before {display: none; height: 100%;}
+    .header .gnb .depth02>li>a {display: block; line-height: 3rem; text-align: center; padding: 0 2rem; transition: none;}
+    .header .gnb .depth02>li>a:hover {display: none;}
+    
+    
+    .header.on .gnb::before {content: ""; display: none; width: 100%; height: 0; background: #fff; opacity: 0.5; position: absolute; top: 10rem; left: 0; transition: none; border-top: 1px solid #ddd; z-index: 999;}
+    .header .gnb:hover:before {display: none; height: 3rem;}
+
+
+    .mopen {display: block; position: fixed; top: 3rem; right: 2rem; font-size: 3rem; line-height: 1; background: #ddd;
+    padding: 0.3rem; border-radius: 1rem; z-index: 999;}
+   
+}
+
+
+
+/* con01 */
+.con01 {}
+.con01 figure {height: 100vh; position: relative;} 
+.con01 figure::after {content: ""; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.3); position: absolute;
+top: 0; left: 0;}
+.con01 .itm01 {background: url(../img/main_visual01.jpg) no-repeat center center/cover;}
+.con01 .itm02 {background: url(../img/main_visual02.jpg) no-repeat center center/cover;}
+.con01 .itm03 {background: url(../img/main_visual03.jpg) no-repeat center center/cover;}
+.con01 .itm04 {background: url(../img/main_visual04.jpg) no-repeat center center/cover;}
+.con01 .itm05 {background: url(../img/main_visual05.jpg) no-repeat center center/cover;}
+
+.con01 .slg {position: absolute; top: 40%; left: 50%; transform: translate(-50%,50%); width: 120rem; text-align: left; padding: 0 1.5rem;
+letter-spacing: -0.025em; color: #fff; text-shadow: 0 0 0.3rem rgba(0,0,0,0.4); z-index: 1;}
+
+.con01 figure .slg h2 {font-size: 3rem; font-weight: 500; margin-bottom: 0.7rem; transform: translateY(300px); opacity: 0; transition: 0.5s;}
+.con01 figure.on .slg h2 {transform: translateY(0); opacity: 1;}
+.con01 figure .slg h2::before {content: "\eb55"; font-family: xeicon!important; display: inline-block; margin-right: 0.5rem;}
+
+.con01 figure .slg strong {font-size: 6rem; font-weight: 700; margin-bottom: 1.7rem; line-height: 1.5; transform: translateY(300px); opacity: 0;
+transition: 0.5s 0.7s;}
+.con01 figure.on .slg strong {transform: translateY(0); opacity: 1;}
+
+.con01 figure .slg p {font-size: 2.5rem; font-weight: 300; line-height: 1.4; transform: translateY(300px); opacity: 0; transition: 0.5s 1s;}
+.con01 figure.on .slg p {transform: translateY(0); opacity: 1;}
+
+.con01 .slick-dots {display: flex; font-size: 0; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%,-50%);}
+.con01 .slick-dots li {width: 1rem; height: 1rem; background: #fff; margin: 0 0.7rem; border-radius: 50%;}
+.con01 .slick-dots li.slick-active {background: var(--mc);}
+
+
+
+
+/* 반응형 con01 */
+@media (max-width:768px) {
+    .con01 {}
+    .con01 figure {height: 100vh; position: relative;} 
+    .con01 figure::after {content: ""; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.3); position: absolute;
+     top: 0; left: 0;}
+    .con01 .itm01 {background: url(../img/main_visual01.jpg) no-repeat center center/cover;}
+    .con01 .itm02 {background: url(../img/main_visual02.jpg) no-repeat center center/cover;}
+    .con01 .itm03 {background: url(../img/main_visual03.jpg) no-repeat center center/cover;}
+    .con01 .itm04 {background: url(../img/main_visual04.jpg) no-repeat center center/cover;}
+    .con01 .itm05 {background: url(../img/main_visual05.jpg) no-repeat center center/cover;}
+    
+    .con01 .slg {position: absolute; top: 35%; left: 50%; transform: translate(-50%,50%); width: 100%; text-align: center; padding: 0 2rem;
+    letter-spacing: -0.025em; color: #fff; text-shadow: 0 0 0.3rem rgba(0,0,0,0.4); z-index: 1;}
+    
+    .con01 figure .slg h2 {font-size: 5vw; font-weight: 500; margin-bottom: 0.7rem; transform: translateY(300px); opacity: 0; transition: 0.5s;}
+    .con01 figure.on .slg h2 {transform: translateY(0); opacity: 1;}
+    .con01 figure .slg h2::before {content: "\eb55"; font-family: xeicon!important; display: inline-block; margin-right: 0.5rem;}
+    
+    .con01 figure .slg strong {display: block; font-size: 8.7vw; font-weight: 700; margin-bottom: 1rem; line-height: 1.4; transform: translateY(300px); opacity: 0;
+    transition: 0.5s 0.7s;}
+    .con01 figure.on .slg strong {transform: translateY(0); opacity: 1;}
+    
+    .con01 figure .slg p {font-size: 4vw; font-weight: 300; line-height: 1.3; transform: translateY(300px); opacity: 0; transition: 0.5s 1s;}
+    .con01 figure.on .slg p {transform: translateY(0); opacity: 1;}
+
+    
+    .con01 .slick-dots {display: flex; font-size: 0; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%,-50%);}
+    .con01 .slick-dots li {width: 1rem; height: 1rem; background: #fff; margin: 0 0.7rem; border-radius: 50%;}
+    .con01 .slick-dots li.slick-active {background: var(--mc);}
+}
+
+
+
+.con02 {text-align: center;}
+.con02 h2 {font-size: 6rem; margin-bottom: 1.5rem;}
+.con02 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3;}
+.con02 .container {width: 100%; max-width: 160rem; margin: 0 auto;}
+.con02 .con {margin: 10rem auto 0 auto;}
+.con02 .des {width: 40rem; height: 40rem; background: #f00; padding: 8rem 0;}
+
+.con02 .des h3 {font-size: 2rem; letter-spacing: -0.025em; margin-bottom: 1rem;}
+.con02 .des span {display: block; font-size: 5rem; font-weight: 700; margin-bottom: 3rem;}
+.con02 .des p {font-size: 1.7rem; letter-spacing: -0.025em;}
+.con02 .des p::before {content: "•"; display: inline-block; margin-right: 0.5rem;}
+.con02 .des em {display: block; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.025em; margin: 2rem 0 0.5rem 0;}
 
 
 
 
 
-.con01 {background: url(../img/main_visual01.jfif) no-repeat center center/cover;}
-.con02 {background: url(../img/main_visual02.jfif) no-repeat center center/cover;}
+
+
+
+
+
+
+
+
