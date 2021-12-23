@@ -1,24 +1,17 @@
 
 :root {
-    --mc:#253981;
+    --mc:#101B41;
+    --sc:#253981;
+    --rc:#BE202B;
+    --dc:#1C1C1B;
     --dd: #ddd;
 }
-
-/* *{outline: 1px solid #f00;} */
-
 
 html {font-size: 10px;}
 body {font-size: 1.6rem;}
 
-@media (max-width:768px) {
-    :root {
-        --mc:#253981;
-    }
-    
-    
-    html {font-size: 10px;}
-    body {font-size: 1.6rem;}
-}
+
+/* *{outline: 1px solid #f00;} */
 
 
 /* header */
@@ -34,6 +27,10 @@ body {font-size: 1.6rem;}
 .header .pg_nav li a::after {content: ""; display: block; width: 3rem; height: 1px; background: #fff; position: absolute; top: 1rem; right: 0;
  transition: 0.4s;}
 .header .pg_nav li.on a::after {background: var(--mc); width: 6rem;}
+
+.header.on .pg_nav li a::after {content: ""; display: block; width: 3rem; height: 1px; background: #ccc; position: absolute; top: 1rem; right: 0;
+ transition: 0.4s;}
+.header.on .pg_nav li.on a::after {background: var(--mc); width: 6rem;}
 
 .header .pg_nav li::before {content: attr(data-num); position: absolute; top: 0; left: -3.5rem; font-size: 1.3rem; font-weight: 300; opacity: 0;}
 .header .pg_nav li.on::before {opacity: 1;}
@@ -167,7 +164,7 @@ transition: 0.5s 0.7s;}
     transition: 0.5s 0.7s;}
     .con01 figure.on .slg strong {transform: translateY(0); opacity: 1;}
     
-    .con01 figure .slg p {font-size: 4vw; font-weight: 300; line-height: 1.3; transform: translateY(300px); opacity: 0; transition: 0.5s 1s;}
+    .con01 figure .slg p {font-size: 4.3vw; font-weight: 300; line-height: 1.3; transform: translateY(300px); opacity: 0; transition: 0.5s 1s;}
     .con01 figure.on .slg p {transform: translateY(0); opacity: 1;}
 
     
@@ -177,19 +174,93 @@ transition: 0.5s 0.7s;}
 }
 
 
-
-.con02 {text-align: center;}
-.con02 h2 {font-size: 6rem; margin-bottom: 1.5rem;}
-.con02 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3;}
+/* con02 */
+.con02 {text-align: center; background: url(../img/bg01.jpg) no-repeat center center/cover; padding: 3rem 0 0 0;}
+.con02 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #fff;}
+.con02 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3; color: #fff;}
 .con02 .container {width: 100%; max-width: 160rem; margin: 0 auto;}
-.con02 .con {margin: 10rem auto 0 auto;}
-.con02 .des {width: 40rem; height: 40rem; background: #f00; padding: 8rem 0;}
+.con02 .con {margin: 8rem auto 0 auto; overflow: hidden;}
+
+.con02 .des {float: left; width: 40rem; height: 40rem; background: #fff; padding: 8rem 0;
+transform: translate(-30rem,0); transition: 0.7s; opacity: 0; animation: pulse 1s infinite;}
+.con02.on .des {transform: translate(0,0); transition: 0.7s; opacity: 1;}
 
 .con02 .des h3 {font-size: 2rem; letter-spacing: -0.025em; margin-bottom: 1rem;}
-.con02 .des span {display: block; font-size: 5rem; font-weight: 700; margin-bottom: 3rem;}
-.con02 .des p {font-size: 1.7rem; letter-spacing: -0.025em;}
+.con02 .des span {display: block; font-size: 5.5rem; font-weight: 700; margin-bottom: 3rem; color: var(--sc);}
+.con02 .des p {font-size: 1.7rem; letter-spacing: -0.025em; color: #333;}
 .con02 .des p::before {content: "•"; display: inline-block; margin-right: 0.5rem;}
-.con02 .des em {display: block; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.025em; margin: 2rem 0 0.5rem 0;}
+.con02 .des em {display: block; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.025em; margin: 2rem 0 0.5rem 0;
+color: var(--rc);}
+
+.con02 .txt_slide {float:right; color: #fff; width: 75%; margin: 0 auto; transform: translate(30rem,0); transition: 0.7s; opacity: 0;}
+.con02.on .txt_slide {transform: translate(0,0); transition: 0.7s; opacity: 1;}
+
+.con02 .s_item {width: 40rem; height: 40rem; padding: 5.5rem 1rem;}
+.con02 .s_item>h3 {font-size: 2.5rem; margin-bottom: 1.3rem;}
+.con02 .s_item>p {font-size: 1.8rem; font-weight: 300; margin-bottom: 5rem;}
+.con02 .s_item>strong {font-size: 1.6rem; font-weight: 100; color: var(--dd); padding: 0.3rem 2rem; border: 1px dashed var(--dd);
+}
+.con02 .s_item>strong:hover {color: #fff; border: 1px solid #fff;}
+.con02 .s_item img {max-width: 100%; margin: 0 auto;}
+.con02 .s01 {background: #00BAF2;}
+.con02 .s02 {background: #31499D;}
+.con02 .s03 {background: #253981;}
+.con02 .s04 {background: #1E306F;}
+.con02 .s05 {background: #162353;}
+
+
+
+
+/* 반응형 con02 */
+
+@media (max-width:768px) {
+    .con02 {text-align: center; background: none; padding: 10rem 0;}
+    .con02 h2 {font-size: 10vw; margin-bottom: 1.5rem; color: #333;}
+    .con02 p {font-size: 4.5vw; letter-spacing: -0.025em; line-height: 1.3; font-weight: 300; color: #333;}
+    .con02 .container {width: 100%; max-width: auto; margin: 0 auto;}
+    .con02 .con {margin: 5rem auto 0 auto; overflow: hidden;}
+
+    .con02 .des {float: none; width: 90%; height: 90%; background: #fff; margin: 0 auto; padding: 5rem 0;
+    transform: translate(-30rem,0); transition: 0.5s; opacity: 0; animation: none; border: 1px solid #ddd;}
+    .con02.on .des {transform: translate(0,0); transition: 0.5s; opacity: 1;}
+
+    .con02 .des h3 {font-size: 2rem; letter-spacing: -0.025em; margin-bottom: 1rem;}
+    .con02 .des span {display: block; font-size: 5.5rem; font-weight: 700; margin-bottom: 3rem; color: var(--sc);}
+    .con02 .des p {font-size: 1.7rem; letter-spacing: -0.025em; color: #333;}
+    .con02 .des p::before {content: "•"; display: inline-block; margin-right: 0.5rem;}
+    .con02 .des em {display: block; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.025em; margin: 2rem 0 0.5rem 0;
+    color: var(--rc);}
+
+    .con02 .txt_slide {float: none; color: #fff; width: 90%; margin: 0 auto; transform: translate(30rem,0); transition: 0.5s; opacity: 0;}
+    .con02.on .txt_slide {transform: translate(0,0); transition: 0.5s; opacity: 1;}
+
+    .con02 .s_item {width: auto; height: auto; padding: 5rem 1rem;}
+    .con02 .s_item>h3 {font-size: 6.3vw; margin-bottom: 1.3rem;}
+    .con02 .s_item>p {font-size: 4.3vw; font-weight: 300; margin-bottom: 5rem; color: #fff;}
+    .con02 .s_item>strong {font-size: 3.7vw; font-weight: 100; color: #fff; border: 1px solid #fff; padding: 0.3rem 2rem;}
+    .con02 .s_item>strong:hover {display: none;}
+    .con02 .s_item img {max-width: 100%; margin: 0 auto;}
+    .con02 .s01 {background: #00BAF2;}
+    .con02 .s02 {background: #31499D;}
+    .con02 .s03 {background: #253981;}
+    .con02 .s04 {background: #1E306F;}
+    .con02 .s05 {background: #162353;}
+}
+
+
+
+/* con03 */
+.con03 {text-align: center;}
+.con03 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #333;}
+.con03 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3;}
+.con03 .container {width: 120rem; margin: 0 auto; padding: 0 1.5rem;}
+
+.con03 .tab_menu {display: flex; border-bottom: 1px solid #ddd; margin-bottom: 10px;}
+.con03 .tab_menu li a {display: block; line-height: 40px; padding: 0 30px; background: #333;
+color: #fff; text-align: center;}
+.con03 .tab_menu li~li {border-left: 1px solid #f7f7f7;}
+
+.con03 .tab_cont {}
 
 
 
@@ -197,9 +268,29 @@ transition: 0.5s 0.7s;}
 
 
 
+/* con04 */
+.con04 {background: #f7f7f7; text-align: center;}
+.con04 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #333;}
+.con04 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3; color: #333;}
+.con04 .container {width: 100%; max-width: 160rem; margin: 6rem auto;}
+.con04 .h_left {width:66.6666%; float: left; padding: 0 1.5rem; position: relative;}
+.con04 .h_right {width:33.3333%; float: left; padding: 0 1.5rem;}
+
+.con04 .video_itm {background: #fff; height: 57rem;}
+.con04 .video_itm>div {font-size: 0;}
+.con04 .video_itm h3 {font-size: 2rem; color:#333; text-align: center; padding: 3.5rem 0;}
+
+.con04 .slick-dots {display: flex; font-size: 0; position: absolute; bottom: 1.5rem; left: 50%; transform: translate(-50%,-50%);}
+.con04 .slick-dots li {width: 1.2rem; height: 1.2rem; background: #aaa; margin: 0 0.5rem; border-radius: 50%;}
+.con04 .slick-dots li.slick-active {background: var(--mc);}
 
 
-
+.con04 .video_slider {}
+.con04 .arrows {}
+.con04 .arrows .xi-angle-left {position: absolute; bottom: 1rem; left: calc(50% - 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
+cursor: pointer;}
+.con04 .arrows .xi-angle-right {position: absolute; bottom: 1rem; left: calc(50% + 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
+cursor: pointer;}
 
 
 
