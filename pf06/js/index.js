@@ -53,7 +53,7 @@ $(function(){
     $('.depth01>li>a').on('click',function(){
       if($(window).width() < 769) {
           $(this).next().stop().slideToggle();
-          $(this).parent().siblings().find('.depth02').slideUp();
+          $(this).parent().siblings().find('.depth02').stop().slideUp();
       }
    });
   
@@ -65,7 +65,7 @@ $(function(){
       dots:false,
       slidesToShow:3,
       autoplay:true,
-      autoplaySpeed:2500,
+      autoplaySpeed:3000,
       pauseOnHover:false,
       pauseOnFocus:false,
       responsive: [
