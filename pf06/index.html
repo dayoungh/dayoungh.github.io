@@ -8,6 +8,7 @@
     <title>KMI 한국의학연구소</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
     <link rel="stylesheet" href="./css/fullpage.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../lib/css/slick.css">
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/datepicker.ko.js"></script>
     <script src="./js/fullpage.min.js"></script>
     <script src="../lib/js/slick.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
@@ -261,16 +264,17 @@
                                 <figure>
                                     <img src="./img/center_bg01.jpg" alt="">
                                 </figure>
-                                
+
                                 <div class="txt">
                                     <h3>본원(광화문) 검진센터</h3>
                                     <p>서울특별시 종로구 세종대로23길 54<br>
                                         (당주동, 세종빌딩 1 ~ 5층)<br>
-                                        <i class="xi-phone"></i> 전화 : 02-3702-9000</p>
+                                        <i class="xi-phone"></i> 전화 : 02-3702-9000
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
-                                
-                              
+
+
                             </div>
                             <div class="t_cont tab_item02">
                                 <figure>
@@ -280,7 +284,8 @@
                                     <h3>강남 검진센터</h3>
                                     <p>서울특별시 강남구 테헤란로 411<br>
                                         (삼성동, 성담빌딩 2 ~ 8층, 10층)<br>
-                                        <i class="xi-phone"></i> 전화 : 02-3496-3300</p>
+                                        <i class="xi-phone"></i> 전화 : 02-3496-3300
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -292,7 +297,8 @@
                                     <h3>대구 검진센터</h3>
                                     <p>대구광역시 중구 국채보상로 611<br>
                                         (문화동, 대구시티센터 5층)<br>
-                                        <i class="xi-phone"></i> 전화 : 053-430-5000</p>
+                                        <i class="xi-phone"></i> 전화 : 053-430-5000
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -304,7 +310,8 @@
                                     <h3>광주 검진센터</h3>
                                     <p>광주광역시 서구 상무중앙로 58<br>
                                         (치평동, 타임스타워 빌딩 8~10층)<br>
-                                        <i class="xi-phone"></i> 전화 : 062-602-2100</p>
+                                        <i class="xi-phone"></i> 전화 : 062-602-2100
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -316,7 +323,8 @@
                                     <h3>여의도 검진센터</h3>
                                     <p>서울특별시 영등포구 국제금융로2길 24<br>
                                         (여의도동, 삼성생명빌딩 13, 14, 15,17,18층)<br>
-                                        <i class="xi-phone"></i> 전화 : 02-3688-114</p>
+                                        <i class="xi-phone"></i> 전화 : 02-3688-114
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -328,7 +336,8 @@
                                     <h3>수원 검진센터</h3>
                                     <p>경기도 수원시 권선구 동수원로 232<br>
                                         (권선동, 1층 수원검진센터)<br>
-                                        <i class="xi-phone"></i> 전화 : 031-231-0114</p>
+                                        <i class="xi-phone"></i> 전화 : 031-231-0114
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -340,7 +349,8 @@
                                     <h3>부산 검진센터</h3>
                                     <p>부산광역시 동구 조방로 14<br>
                                         (범일동, 동일타워 5층)<br>
-                                        <i class="xi-phone"></i> 전화 : 051-810-1500</p>
+                                        <i class="xi-phone"></i> 전화 : 051-810-1500
+                                    </p>
                                     <a href="#!"><strong>자세히 보기</strong></a>
                                 </div>
                             </div>
@@ -402,18 +412,96 @@
 
                     <div class="h_right">
                         <div class="health_sch">
-                            <h3><a href="#">검진 예약 일정</a></h3>
-                            <div>
-                                <div id="datepicker"></div>
+                            <h3><a href="#!">검진 예약 일정 <i class="xi-angle-right-min"></i></a></h3>
+                            <div class="datepicker-here" data-language='ko'></div>
+                        </div>
+
+                        <p><a href="#!">공지사항 <i class="xi-angle-right-min"></i></a></p>
+                        <div class="notice">
+                            <div class="notice_slider">
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>12월 전국센터 휴무일 안내</h4>
+                                        <span>2021-12-01</span>
+                                    </a>
+                                </div>
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>KT위즈의 창단 첫 통합 우승을 축하합니다!</h4>
+                                        <span>2021-11-29</span>
+                                    </a>
+                                </div>
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>동계 건강검진 캠페인 안내드립니다</h4>
+                                        <span>2021-11-23</span>
+                                    </a>
+                                </div>
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>12월 수요일 오후 근무시간 단축 안내</h4>
+                                        <span>2021-11-22</span>
+                                    </a>
+                                </div>
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>KMI한국의학연구소 신규검사 안내</h4>
+                                        <span>2021-11-20</span>
+                                    </a>
+                                </div>
+                                <div class="notice_itm">
+                                    <a href="#!">
+                                        <img src="./img/icon06.png" alt="">
+                                        <h4>유아 혈관종·혈관기형 치료 지원</h4>
+                                        <span>2021-11-10</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
+            
             </section>
-            <section class="section con05">5</section>
-            <footer class="section footer fp-auto-height">ff</footer>
+            
+            <footer class="section footer fp-auto-height">
+                <div class="container">
+                    <ul class="left">
+                        <li>상호 : 재단법인 한국의학연구소 대표자 성명 : 김순이 본원 : (우)03173 서울시 종로구 세종대로 23길 54(당주동, 세종빌딩)</li>
+                        <li>전화 : 1599-7070 전자우편주소 : webmaster@kmi.or.kr 사업자등록번호 : 130-82-06960 호스팅서비스업체 : (주)가비아</li>
+                        <li>개인정보 보호책임자 : 임상현</li>
+                        <li>
+                            <address>Copyright© KMI.All Rights Reserved.</address>
+                        </li>
+                    </ul>
+    
+                    <ul class="right">
+                        <li class="sns">
+                            <a href="#!">
+                                <i class="xi-instagram"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="xi-naver"></i>
+                            </a>
+                            <a href="#!">
+                                <i class="xi-kakaotalk"></i>
+                            </a>
+                        </li>  
+                        
+                        <li class="customer">
+                            <a href="#!">연구활동</a>
+                            <a href="#!">인재채용</a>
+                            <a href="#!">사회공헌</a>
+                            <a href="#!">협력병원</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </footer>
         </main>
 
     </div>
