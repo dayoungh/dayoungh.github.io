@@ -103,20 +103,11 @@ $(function(){
        // tab //
       $('.tab_menu li').on('click',function(){
         var idx=$(this).index();
-        $(this).addClass('on').siblings().removeClass('on');
         // $('.tab_cont>div').eq(idx).show().siblings().hide();
         $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
        });
     
 
-       
-       // tab map//
-      $('.map_itm').on('click mouseenter',function(){
-        var idx=$(this).index();
-        $(this).addClass('on').siblings().removeClass('on');
-        $('.con03 .tab_item01 figure .dot').eq(idx).addClass('on').siblings().removeClass('on');
-        console.log(idx)
-       });
 
     // $('.tab_slider').on('afterChange', function(e,s,c){
     //   $('.tab_menu li').eq(c).addClass('on').siblings().removeClass('on');
@@ -149,7 +140,7 @@ $(function(){
 
       // datepicker //
 
-    //$('#my-element').datepicker([options])
+    $('#my-element').datepicker([options])
     // Access instance of plugin
     $('#my-element').data('datepicker')
 
@@ -171,14 +162,12 @@ $(function(){
       vertical:true,
   });
 
-
-
-    // sc_banner//
-    $(window).on('scroll', function(){
-      var sct=$(window).scrollTop();
-      sct>400 ? $('#toTop').fadeIn() :  $('#toTop').fadeOut();
-      $('#sc_banner').css({top:300+sct})
-  });
+  //   sc_banner//
+  //   $(window).on('scroll', function(){
+  //     var sct=$(window).scrollTop();
+  //     sct>400 ? $('#toTop').fadeIn() :  $('#toTop').fadeOut();
+  //     $('#sc_banner').css({top:300+sct})
+  // });
   
 
   
