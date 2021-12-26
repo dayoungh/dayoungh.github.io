@@ -178,7 +178,7 @@ transition: 0.5s 0.7s;}
 
 /* con02 */
 .con02 {text-align: center; background: url(../img/bg01.jpg) no-repeat center center/cover; padding: 3rem 0 0 0;}
-.con02 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #fff;}
+.con02 h2 {font-size: 4rem; margin-bottom: 1.5rem; color: #fff;}
 .con02 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3; color: #fff;}
 .con02 .container {width: 100%; max-width: 160rem; margin: 0 auto;}
 .con02 .con {margin: 8rem auto 0 auto; overflow: hidden;}
@@ -251,10 +251,12 @@ color: var(--rc);}
 
 
 
+
 /* con03 */
-.con03 {text-align: center;}
-.con03 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #333;}
-.con03 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3;}
+
+.con03 {text-align: center; padding: 6.5rem 0 0 0;}
+.con03 h2 {font-size: 4rem; margin: 0 0 1.5rem 0; color: #333;}
+.con03 em {display: none; font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3;}
 .con03 .container {width: 130rem; margin: 0 auto; padding: 0 1.5rem;}
 
 /* 탭 메뉴*/
@@ -264,41 +266,24 @@ color: var(--rc);}
 color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
 .con03 .tab_menu li.on a {background: #333; color: #fff;}
 
-.con03 .tab_menu li.on .tab_cont>div figure {transform: translateX(0); opacity: 1;}
-
-
 
 .con03 .tab_cont>div {display: none;}
 .con03 .tab_cont>div.on {display: block;}
 
-/* .con03 .tab_cont figure {float: left; margin: 5rem 0;}
-.con03 .tab_cont figure img {width: 120%;} */
-/* .con03 .tab_cont .txt {float: left; margin: 10rem 0 10rem 20rem; letter-spacing: -0.025em;}
-.con03 .tab_cont .txt h3 {font-size: 2.7rem; margin-bottom: 2rem;}
-.con03 .tab_cont .txt p {font-size: 2rem; line-height: 1.5;}
-.con03 .tab_cont .txt strong {display: inline-block; font-size: 1.5rem; font-weight: 300; color: #333; line-height: 2; margin: 3rem 0 0 0; padding: 0.3rem 2rem; border: 1px solid #333;} */
 
-
-/* 탭 컨텐츠*/
-.con03 .tab {margin: 5rem 0 0 0; transform: translateY(40rem); opacity: 0; transition: 0.5s;}
-.con03.on .tab {transform: translateX(0); opacity: 1;}
-
-.con03 .tab_cont>div figure {transform: translateX(-40rem); opacity: 0; transition: 0.5s;}
-.con03.on .tab_cont>div figure {transform: translateX(0); opacity: 1;}
-
-.con03 .tab_cont>div .txt {transform: translateX(40rem); opacity: 0; transition: 0.5s;}
-.con03.on .tab_cont>div .txt {transform: translateX(0); opacity: 1;}
-
+/* 탭 마진*/
+.con03 .tab {margin: 3rem 0 0 0;}
 
 
 /* 지도 */
 .con03 .tab_item01 {position: relative;}
-.con03 .tab_item01 figure {position: absolute; top: 8%; left: 30%;}
+.con03 .tab_item01 figure {position: absolute; top: 8%; left: 30%; transform: translateY(30rem); opacity: 0; transition: 0.5s;}
+.con03.on .tab_item01 figure {transform: translateY(0); opacity: 1;}
 .con03 .tab_item01 figure img {width: 57rem;}
 
 /* 위치 도형 */
 .con03 .tab_item01 figure ul.dots {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.con03 .tab_item01 figure .dot {display: block; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 5px solid #ddd; background: #fff;}
+.con03 .tab_item01 figure .dot {display: block; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 5px solid #777; background: #fff;}
 .con03 .tab_item01 figure .dot.on {background: #fff; border: 5px solid var(--sc); animation: heartBeat 2s infinite;}
 .con03 .tab_item01 figure .location01 {position: absolute; top: 19%; left: 38%;}
 .con03 .tab_item01 figure .location02 {position: absolute; top: 28%; left: 35%;}
@@ -308,35 +293,57 @@ color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
 /* .con03 .tab_item01 figure .location01 {top: 0; left: 0;} */
 
 
+/* h3,p,strong =>박스 안 글씨 */
 .con03 .tab_item01 .des {height: 60rem; position: relative;}
 
-.con03 .tab_item01 .des h3 {font-size: 1.8rem; font-weight: 500; color: var(--sc); margin-bottom: 1rem;}
-.con03 .tab_item01 .des p {font-size: 1.4rem; font-weight: 300; color: #333; line-height: 1.3; margin-bottom: 0.5rem;}
-.con03 .tab_item01 .des strong {font-size: 1.4rem; font-weight: 500;}
+.con03 .tab_item01 .des .map_itm {background: #fff; transition: 0.3s;}
+.con03 .tab_item01 .des .map_itm h3 {font-size: 1.8rem; font-weight: 500; color: var(--sc); margin-bottom: 1rem;}
+.con03 .tab_item01 .des .map_itm p {font-size: 1.4rem; font-weight: 300; color: #333; line-height: 1.3; margin-bottom: 0.5rem;}
+.con03 .tab_item01 .des .map_itm strong {font-size: 1.4rem; font-weight: 500;}
+
+
 
 /* 박스 스타일 */
-.con03 .tab_item01 .des .map_itm {}
-.con03 .tab_item01 .des .map_itm>li {padding: 1rem; letter-spacing: -0.025em; width: 30rem; border: 1px solid #ddd;}
-.con03 .tab_item01 .des .map_itm>li~li {padding: 1.5rem 0;}
+.con03 .tab_item01 .des .map_itm {outline: 1px solid #ddd;}
+.con03 .tab_item01 .des .map_itm>li {padding: 1.5rem 0; letter-spacing: -0.025em; width: 30rem;}
+.con03 .tab_item01 .des .map_itm>li~li {border-top: 1px solid #ddd;}
 
 
 
+/* 텍스트박스 위치 & on효과 */
+.con03 .tab_item01 .des .map01 {position: absolute; top: 8%; left: 0; transform: translateX(-30rem); opacity: 0; transition: 0.5s 0.3s;}
+.con03.on .tab_item01 .des .map01 {transform: translateX(0); opacity: 1;}
+
+.con03 .tab_item01 .des .map02 {position: absolute; top: 75%; left: 0; transform: translateX(-30rem); opacity: 0; transition: 0.5s 0.3s;}
+.con03.on .tab_item01 .des .map02 {transform: translateX(0); opacity: 1;}
+
+.con03 .tab_item01 .des .map03 {position: absolute; top: 8%; right: 0; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+.con03.on .tab_item01 .des .map03 {transform: translateX(0); opacity: 1;}
+
+.con03 .tab_item01 .des .map04 {position: absolute; top: 38%; right: 0; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+.con03.on .tab_item01 .des .map04 {transform: translateX(0); opacity: 1;}
+
+.con03 .tab_item01 .des .map05 {position: absolute; top: 68%; right: 0; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+.con03.on .tab_item01 .des .map05 {transform: translateX(0); opacity: 1;}
 
 
-/* 텍스트박스 위치 */
-.con03 .tab_item01 .des .map01 {position: absolute; top: 10%; left: 0;}
-.con03 .tab_item01 .des .map02 {position: absolute; top: 75%; left: 0;}
-.con03 .tab_item01 .des .map03 {position: absolute; top: 10%; right: 0;}
-.con03 .tab_item01 .des .map04 {position: absolute; top: 40%; right: 0;}
-.con03 .tab_item01 .des .map05 {position: absolute; top: 70%; right: 0;}
 
+/* 탭 02 ~ 08 */
+.con03 .t_cont .con_wrap {margin: 5rem 0 0 0; padding: 3rem 1rem 1rem 1rem; border: 1px solid #ddd;}
+.con03 .t_cont .con {display: flex; margin: 4rem 0 0 0;}
+.con03 .t_cont .center {flex: 1;}
+.con03 .t_cont iframe {flex: 1; margin-right: 2rem;}
 
+.con03 .t_cont .txt_wrap {display: flex; position: relative;}
+.con03 .t_cont .txt {letter-spacing: -0.025em; text-align: left; margin: 2rem 4rem;}
+.con03 .t_cont .txt h3 {font-size: 2.7rem; font-weight: 700; margin: 3rem 0 1rem 0;}
+.con03 .t_cont .txt span {display: block; font-size: 2rem; font-weight: 500; margin-bottom: 1rem; letter-spacing: 0.1em;}
+.con03 .t_cont .txt p {font-size: 1.8rem; font-weight: 300; line-height: 1.5; margin-bottom: 2rem;}
 
+.con03 .t_cont .txt_wrap .add {position: absolute; top: 60%; right: 0;}
+.con03 .t_cont .txt_wrap .add a {background: var(--sc); color: #fff; padding: 1rem 2.5rem; margin-right: 2rem;}
 
-
-
-
-
+.con03 .t_cont .txt_wrap .add i {font-size: 2rem;}
 
 
 
@@ -346,36 +353,91 @@ color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
 /* 반응형 con03 */
 
 @media (max-width:768px) {
-    .con03 {text-align: center;}
-    .con03 h2 {font-size: 10vw; margin-bottom: 1.5rem; color: #333;}
-    .con03 p {font-size: 4.5vw; letter-spacing: -0.025em; line-height: 1.3;}
+    .con03 {text-align: center; padding: 0 0 5rem 0;}
+    .con03 h2 {font-size: 10vw; margin: 2rem 0 1.5rem 0; color: #333;}
+    .con03 em {font-size: 4.5vw; letter-spacing: -0.025em; line-height: 1.3; font-weight: 300; color: #333;}
     .con03 .container {width: auto; margin: 0 auto; padding: 0 1.5rem;}
     
+    /* 탭 메뉴*/
+    .con03 .tab_menu {display: flex; flex-direction: column; border-bottom: 1px solid #ccc; margin-bottom: 1rem;}
+    .con03 .tab_menu li {flex: 1;}
     
-    .con03 .tab {margin: 9rem 0 0 0; transform: translateY(40rem); opacity: 0; transition: 0.5s;}
-    .con03.on .tab {transform: translateX(0); opacity: 1;}
-    
-    .con03 .tab_menu {display: flex; flex-wrap: wrap; border-bottom: none; margin-bottom: 1rem; padding: 0 1rem; margin: 0 auto;}
-    .con03 .tab_menu li a {display: block; line-height: 4rem; padding: 0 2rem; background: #333;
-    color: #fff; text-align: center; border: 1px solid #ddd; border-bottom: none;}
-    /* .con03 .tab_menu li~li {border-left: 1px solid #f7f7f7;} */
+    .con03 .tab_menu li a {display: block; line-height: 4rem; padding: 0 2rem; background: #fff;
+    color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
+    .con03 .tab_menu li.on a {background: #333; color: #fff;}
+    .con03 .tab_menu li a.on_txt::after {content: "\e904"; font-family: xeicon!important; display: inline-block; margin-left: 1rem;}
     
     .con03 .tab_cont>div {display: none;}
     .con03 .tab_cont>div.on {display: block;}
     
-    .con03 .tab_cont figure {float: none; margin: 5rem auto 0 auto;}
-    .con03 .tab_cont figure img {width: 100%;}
-    .con03 .tab_cont .txt {float: none; margin: 2rem; letter-spacing: -0.025em;}
-    .con03 .tab_cont .txt h3 {font-size: 5.5vw; margin-bottom: 2rem;}
-    .con03 .tab_cont .txt p {font-size: 4.2vw; line-height: 1.5;}
-    .con03 .tab_cont .txt strong {display: inline-block; font-size: 3.8vw; font-weight: 300; color: #333; line-height: 2; margin: 3rem 0 0 0; padding: 0.3rem 2rem; border: 1px solid #333;}
+    
+    /* 탭 마진*/
+    .con03 .tab {margin: 3rem 0 0 0;}
     
     
-    .con03 .tab_cont>div figure {transform: translateX(-40rem); opacity: 0; transition: 0.5s;}
-    .con03.on .tab_cont>div figure {transform: translateX(0); opacity: 1;}
+    /* 지도 */
+    .con03 .tab_item01 {position: relative;}
+    .con03 .tab_item01 figure {position: absolute; top: 20%; left: 0; transform: translateY(30rem); opacity: 0; transition: 0.5s;}
+    .con03.on .tab_item01 figure {transform: translateY(0); opacity: 1;}
+    .con03 .tab_item01 figure img {width: 100%;}
     
-    .con03 .tab_cont>div .txt {transform: translateX(40rem); opacity: 0; transition: 0.5s;}
-    .con03.on .tab_cont>div .txt {transform: translateX(0); opacity: 1;}
+    /* 위치 도형 */
+    .con03 .tab_item01 figure ul.dots {position: static; top: 0; left: 0; width: 100%; height: 100%;}
+    .con03 .tab_item01 figure .dot {display: block; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 5px solid #777; background: #fff;}
+    .con03 .tab_item01 figure .dot.on {background: #fff; border: 5px solid var(--sc); animation: heartBeat 2s infinite;}
+    .con03 .tab_item01 figure .location01 {position: absolute; top: 19%; left: 38%;}
+    .con03 .tab_item01 figure .location02 {position: absolute; top: 28%; left: 35%;}
+    .con03 .tab_item01 figure .location03 {position: absolute; top: 66%; left: 35%;}
+    .con03 .tab_item01 figure .location04 {position: absolute; top: 68%; left: 71%;}
+    .con03 .tab_item01 figure .location05 {position: absolute; top: 55%; left: 66%;}
+    /* .con03 .tab_item01 figure .location01 {top: 0; left: 0;} */
+    
+   
+    
+    /* 박스 스타일 */
+    .con03 .tab_item01 .des {height: 50rem; position: relative;}
+    .con03 .tab_item01 .des .map_itm {display: flex; flex-wrap: wrap; outline: 1px solid #ddd; background: #fff; padding: 0.5rem; transition: 0.3s;}
+    .con03 .tab_item01 .des .map_itm>li {padding: 1rem 0; letter-spacing: -0.025em; width: 10.5rem;}
+    .con03 .tab_item01 .des .map_itm>li~li {border-top: none; border-left: 1px solid #ddd; margin: 0 0.5rem;}
+    .con03 .tab_item01 .des .map_itm h3 {text-align: center; font-size: 3.5vw; font-weight: 500; color: var(--sc); margin-bottom: 0.5rem;}
+    .con03 .tab_item01 .des .map_itm p {display: none; font-size: 3.5vw; font-weight: 300; color: #333; line-height: 1.3; margin-bottom: 0.5rem;}
+    .con03 .tab_item01 .des .map_itm strong {text-align: center; font-size: 3.2vw; font-weight: 500;}
+    
+    
+    
+    /* 텍스트박스 위치 & on효과 */
+    .con03 .tab_item01 .des .map01 {position: absolute; top: 5%; left: 0; transform: translateX(-30rem); opacity: 0; transition: 0.5s 0.3s;}
+    .con03.on .tab_item01 .des .map01 {transform: translateX(0); opacity: 1;}
+    
+    .con03 .tab_item01 .des .map02 {position: absolute; top: 24%; left: 0; transform: translateX(-30rem); opacity: 0; transition: 0.5s 0.3s;}
+    .con03.on .tab_item01 .des .map02 {transform: translateX(0); opacity: 1;}
+    
+    .con03 .tab_item01 .des .map03 {position: absolute; top: 50%; right: 68%; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+    .con03.on .tab_item01 .des .map03 {transform: translateX(0); opacity: 1;}
+    
+    .con03 .tab_item01 .des .map04 {position: absolute; top: 40%; right: 0; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+    .con03.on .tab_item01 .des .map04 {transform: translateX(0); opacity: 1;}
+    
+    .con03 .tab_item01 .des .map05 {position: absolute; top: 24%; right: 0; transform: translateX(30rem); opacity: 0; transition: 0.5s 0.3s;}
+    .con03.on .tab_item01 .des .map05 {transform: translateX(0); opacity: 1;}
+    
+    
+    
+    /* 탭 02 ~ 08 */
+    .con03 .t_cont .con_wrap {margin: 4rem 0 0 0; border: 1px solid #ddd; padding-bottom: 2rem;}
+    .con03 .t_cont .con {display: flex; flex-direction: column; margin: 4rem 0 0 0;}
+    .con03 .t_cont .center {flex: 1;}
+    .con03 .t_cont .center img {width: 100%;}
+    .con03 .t_cont iframe {flex: 1; margin-right: 0; margin-top: 1rem; padding: 0 0.5rem; width: 100%;}
+    
+    .con03 .t_cont .txt_wrap {display: flex; position: relative;}
+    .con03 .t_cont .txt {letter-spacing: -0.025em; text-align: center; margin: 0 2rem;}
+    .con03 .t_cont .txt h3 {font-size: 5vw; font-weight: 700; margin: 2rem 0 0.5rem 0;}
+    .con03 .t_cont .txt span {display: block; color: var(--sc); font-size: 4.5vw; font-weight: 500; margin-bottom: 1rem; letter-spacing: 0.1em;}
+    .con03 .t_cont .txt p {font-size: 3.7vw; font-weight: 300; line-height: 1.2; margin-bottom: 1rem;}
+    
+    .con03 .t_cont .txt_wrap .add {display: none; position: absolute; top: 95%; right: 25%;}
+    
     
 }
 
@@ -384,20 +446,21 @@ color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
 
 
 /* con04 */
-.con04 {background: #f7f7f7; text-align: center;}
-.con04 h2 {font-size: 5rem; margin-bottom: 1.5rem; color: #333;}
+.con04 {background: #f5f5f5; text-align: center; padding: 6.5rem 0 0 0;}
+.con04 h2 {font-size: 4rem; margin-bottom: 1.5rem; color: #333;}
 .con04 p {font-size: 2rem; letter-spacing: -0.025em; line-height: 1.3; color: #333;}
-.con04 .container {width: 100%; max-width: 160rem; margin: 8rem auto; display: flex;}
-.con04 .h_left {width: 60%; padding: 0 1.5rem; position: relative;}
-.con04 .h_right {width: 40%; padding: 0 1.5rem;}
+.con04 .container {width: 100%; max-width: 160rem; margin: 7rem auto; display: flex;}
+.con04 .h_left {position: relative; width: 70%; margin: 0 2rem;}
+.con04 .h_right {width: 30%; padding: 0 1.5rem;}
 .con04 .h_right h3 {font-size: 2rem; margin-bottom: 1rem; text-align: left;}
-.con04 .h_right p {font-size: 2rem; margin: 3rem 0 1rem 0; text-align: left;}
+.con04 .h_right p {font-size: 2rem; margin: 1rem 0; text-align: left;}
 
 .con04 .h_right .xi-angle-right-min {background-color: var(--sc); color: #fff; border-radius: 50%; padding: 0.2rem; margin: 0.2rem; transition: 0.3s;}
 
 .con04 .h_right a:hover i {margin-left: 1rem;}
 
 /* 비디오슬라이드 */
+.con04 iframe {width: 100%; height: 45.6rem;}
 .con04 .video_itm {background: #fff; height: 57rem;}
 .con04 .video_itm>div {font-size: 0;}
 .con04 .video_itm h3 {font-size: 2rem; color:#333; text-align: center; padding: 3.5rem 0;}
@@ -406,39 +469,41 @@ color: #333; text-align: center; border: 1px solid #ddd; border-bottom: none;}
 .con04 .slick-dots li {width: 1.2rem; height: 1.2rem; background: #aaa; margin: 0 0.5rem; border-radius: 50%;}
 .con04 .slick-dots li.slick-active {background: var(--mc);}
 
-.con04 .arrows .xi-angle-left {position: absolute; bottom: 1rem; left: calc(50% - 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
+.con04 .arrows .xi-angle-left {position: absolute; bottom: 1.4rem; left: calc(50% - 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
 cursor: pointer;}
-.con04 .arrows .xi-angle-right {position: absolute; bottom: 1rem; left: calc(50% + 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
+.con04 .arrows .xi-angle-right {position: absolute; bottom: 1.4rem; left: calc(50% + 60px); transform: translate(-50%,-50%); z-index: 2; color: #aaa;
 cursor: pointer;}
 
 /* 달력 */
-.con04 .datepicker {width: 60%;}
+.con04 .datepicker {width: 100%;}
 
 /* 공지사항 */
-.con04 .notice {width: 300px; background: #fff;}
+.con04 .notice {width: 100%; background: #fff;}
 .con04 .notice>div {position: relative;}
-.con04 .notice_itm {width: 100%; background: #fff; padding: 4rem 0; letter-spacing: -0.025em;}
+.con04 .notice_itm img {margin: 0 auto;}
+.con04 .notice_itm {width: 100%; text-align: center; background: #fff; padding: 4rem 0; letter-spacing: -0.025em;}
 .con04 .notice_itm h4 {font-size: 1.9rem; line-height: 3rem; font-weight: 500; color: #333; padding-bottom: 1rem;}
-.con04 .notice_itm span {font-size: 1.5rem; font-weight: 300; line-height: 2rem; padding-bottom: 1rem; color: #666; display: block;}
+.con04 .notice_itm span {font-size: 1.6rem; font-weight: 300; line-height: 2rem; padding-bottom: 1rem; color: #666; display: block;}
 
 
 
 /* 반응형 con04 */
 
 @media (max-width:768px) {
-    .con04 {background: #f7f7f7; text-align: center;}
+    .con04 {background: #f5f5f5; text-align: center; padding: 6.5rem 0 0 0;}
     .con04 h2 {font-size: 10vw; margin-bottom: 1.5rem; color: #333;}
     .con04 p {font-size: 4.5vw; letter-spacing: -0.025em; line-height: 1.3; color: #333;}
     .con04 .container {width: auto; max-width: auto; margin: 8rem auto; display: flex; flex-direction: column;}
-    .con04 .h_left {width: 100%; padding: 0 1.5rem; position: relative;}
-    .con04 .h_right {width: 100%; padding: 0 1.5rem;}
+    .con04 .h_left {position: relative; width: auto; margin: 0 0rem; padding: 0 1.5rem;}
+    .con04 .h_right {width: auto; padding: 0 1.5rem;}
     .con04 .h_right h3 {font-size: 5vw; margin-bottom: 1rem; text-align: left;}
     .con04 .h_right p {font-size: 5vw; margin: 3rem 0 1rem 0; text-align: left;}
 
     /* 비디오슬라이드 */
+    .con04 iframe {width: 100%; height: 45.6rem;}
     .con04 .video_itm {background: #fff; height: 57rem;}
     .con04 .video_itm>div {font-size: 0;}
-    .con04 .video_itm h3 {font-size: 4.2vw; color:#333; text-align: center; padding: 3.5rem 0;}
+    .con04 .video_itm h3 {font-size: 4vw; color:#333; text-align: center; padding: 2.5rem 1.2rem;}
 
     .con04 .slick-dots {display: flex; font-size: 0; position: absolute; bottom: 1.5rem; left: 50%; transform: translate(-50%,-50%);}
     .con04 .slick-dots li {width: 1rem; height: 1rem; background: #aaa; margin: 0 0.3rem; border-radius: 50%;}
@@ -457,9 +522,9 @@ cursor: pointer;}
     /* 공지사항 */
     .con04 .notice {width: 100%; background: #fff;}
     .con04 .notice>div {position: relative;}
-    .con04 .notice_itm {width: 100%; height: 100%; background: #fff; padding: 4rem;}
-    .con04 .notice_itm h4 {font-size: 2rem; line-height: 3rem; font-weight: 500; color: #333; padding-bottom: 1rem;}
-    .con04 .notice_itm span {font-size: 1.2rem; font-weight: 300; line-height: 2rem; padding-bottom: 1rem; color: #666; display: block;}
+    .con04 .notice_itm {width: 100%; height: 23rem; background: #fff; padding: 4rem;}
+    .con04 .notice_itm h4 {font-size: 4.2vw; line-height: 3rem; font-weight: 500; color: #333; padding-bottom: 1rem;}
+    .con04 .notice_itm span {font-size: 3.7vw; font-weight: 300; line-height: 2rem; padding-bottom: 1rem; color: #666; display: block;}
 
 }
 
