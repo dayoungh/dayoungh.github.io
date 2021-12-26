@@ -105,12 +105,21 @@ $(function(){
         var idx=$(this).index();
         $(this).addClass('on').siblings().removeClass('on');
         $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
-
         if($(window).width() < 769) {
-          $('.tab_menu li').next().stop().slideToggle(3000); 
+          $('.tab_menu li').next().stop().slideToggle();
       }
        });
+
+
+
     
+
+
+
+    //    $('#top_banner3 i').on('click',function(){
+    //     $('#top_banner3 .case').slideToggle();
+    //     $(this).toggleClass('on');
+    // });
 
        
        // tab map//
@@ -184,19 +193,6 @@ $(function(){
 
 
 
-  //   // sc_banner//
-  //   $(window).on('scroll', function(){
-  //     var sct=$(window).scrollTop();
-  //     sct>400 ? $('#toTop').fadeIn() :  $('#toTop').fadeOut();
-  //     $('#sc_banner').css({top:300+sct})
-  // });
-  
-
-  
-
- 
-  
-  
   
   // -----------------------------------------------
   });
