@@ -105,21 +105,11 @@ $(function(){
         var idx=$(this).index();
         $(this).addClass('on').siblings().removeClass('on');
         $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
-        if($(window).width() < 769) {
-          $('.tab_menu li').next().stop().slideToggle();
-      }
+
        });
 
 
 
-    
-
-
-
-    //    $('#top_banner3 i').on('click',function(){
-    //     $('#top_banner3 .case').slideToggle();
-    //     $(this).toggleClass('on');
-    // });
 
        
        // tab map//
