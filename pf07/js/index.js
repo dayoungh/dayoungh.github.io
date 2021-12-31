@@ -17,8 +17,9 @@ $(function(){
     
     $('.depth01>li>a').on('click',function(){
         if($(window).width() < 769) {
+            $('.inner').hide();
             $(this).next().toggle();
-            $(this).parent().siblings().find('.depth03').hide();
+            
         }
     });
    
