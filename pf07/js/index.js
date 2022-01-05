@@ -96,18 +96,20 @@ $(function(){
 
 
 
-    // to top
+    // to top & scroll_banner
     $('#scroll_banner li:nth-child(9)').on('click',function(){
         $('html,body').animate({scrollTop:0},600);
     });
 
-
-    // #scroll_banner
     $(window).on('scroll',function(){
         var sct=$(window).scrollTop();
-      
-        $('#scroll_banner').css({top:300+sct})
-    
+        if(sct>1500) {$('#scroll_banner li:nth-child(9)').fadeIn()
+    }else{
+        $('#scroll_banner li:nth-child(9)').fadeOut()
+    }
+
+    $('#scroll_banner').css({top:300+sct})
+
     });
 
 
