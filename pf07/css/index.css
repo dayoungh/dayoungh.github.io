@@ -119,7 +119,7 @@ letter-spacing: -0.025em;}
 
 
 
-
+/* ----------------------------------------- { 반응형 header --------------------------------------------------------------------- */
 
 /* 반응형 header */
 @media (max-width:768px) {
@@ -200,18 +200,20 @@ letter-spacing: -0.025em;}
     #header .mopen.on span:nth-child(4) {opacity: 0; transform: translateY(30px);}
 }
 
+/* ----------------------------------------- } 반응형 header --------------------------------------------------------------------- */
 
 
 /* visual */
 #visual {height: 100vh; position: relative}
 
 
-
+/* ----------------------------------------- { 반응형 visual --------------------------------------------------------------------- */
 /* 반응형 visual */
 @media (max-width:768px) {
     #visual {height: 100vh; width: auto !important;}
 }
 
+/* ----------------------------------------- } 반응형 visual --------------------------------------------------------------------- */
 
 
 
@@ -259,6 +261,7 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 #con01 .box_right ul li {padding: 0.5rem 0; font-size: 1.7rem; line-height: 2;}
 
 
+/* ----------------------------------------- { 반응형 con01 --------------------------------------------------------------------- */
 
 /* 반응형 con01 */
 @media (max-width:768px) {
@@ -304,6 +307,7 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 
 }
 
+/* ----------------------------------------- } 반응형 con01 --------------------------------------------------------------------- */
 
 
 /* con02 */
@@ -314,17 +318,18 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 #con02 .container {display: flex; width: 100%; max-width: 135rem; margin: 0 auto; padding: 0 1.5rem;}
 
 /* left */
-#con02 .r_left {flex: 3; width: 45rem; border: 1px solid var(--dd); letter-spacing: -0.025em; margin-right: 3rem;}
+#con02 .r_left {flex: 3; height: 74rem; border: 1px solid var(--dd); letter-spacing: -0.025em; margin-right: 3rem;}
 #con02 .case {overflow: hidden;}
 #con02 figure img {max-width: 100%; transition: 0.5s;}
 #con02 figure:hover img {transform: scale(1.1);}
 
-#con02 .r_left h3 {font-size: 1.7rem; font-weight: 500; text-align: center; margin: 1.3rem 0 1.5rem 0;}
-#con02 .r_left p {text-align: left; margin: 0 auto; font-size: 1.5rem; line-height: 1.4; color: #666;
-width: 30rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+#con02 .r_left h3 {font-size: 1.7rem; font-weight: 500; text-align: center; margin: 1.3rem 0 1rem 0;}
+#con02 .r_left p {margin: 0 auto; font-size: 1.5rem; line-height: 1.4; color: #666;
+width: 28rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+#con02 .r_left .read {display: inline-block; font-size: 1.3rem; color: var(--mc); padding: 1rem 0;}
 
 
-#con02 .result_top,#con02 .result_bottom {padding: 2.5rem 2.5rem 3rem 2.5rem; height: 37rem;}
+#con02 .result_top,#con02 .result_bottom {padding: 2.5rem; height: 37rem;}
 #con02 .result_top {border-bottom: 1px solid var(--dd);}
 
 
@@ -355,10 +360,6 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 #con02 .slick-dots li.slick-active {background: var(--mc); transform: rotate(130deg);}
 
 
-
-
-
-
 /* right_bt (오른쪽 아래) */
 #con02 .right_bt_wrap {display: flex; height: 37rem;}
 
@@ -368,11 +369,13 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 #con02 .right_bt01 img {width: 100%;}
 
 
-#con02 .right_bt01 h3 {font-size: 1.8rem; line-height: 1.5; font-weight: 500; color: var(--mc); margin-bottom: 0.7rem;}
+#con02 .right_bt01 h3 {font-size: 1.8rem; line-height: 1.5; font-weight: 500; color: var(--dc); margin-bottom: 0.7rem;}
 /* #con02 .right_bt01 h3::before {content: ""; display: block; width: 100%rem; height: 0.1rem; background: var(--dd); margin: 2rem auto;} */
 
 #con02 .right_bt01 p {font-size: 1.6rem; font-weight: 300; margin-bottom: 3rem; line-height: 1.4; width: 40rem; overflow: hidden; text-overflow: ellipsis;
-display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 auto 1rem auto; color: #666;}
+display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 auto; color: #666;}
+
+#con02 .right_bt01 .read {display: inline-block; font-size: 1.3rem; color: var(--mc); text-align: left; padding: 1rem 0;}
 
 
 
@@ -386,8 +389,15 @@ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margi
 
 
 
-#con02 .right_bt02 ul li {padding: 1.9rem 0; text-align: left;}
+#con02 .right_bt02 ul li {position: relative; padding: 1.9rem 0; text-align: left; transition: 0.4s;}
 #con02 .right_bt02 ul li~li {border-top: 1px solid var(--dd);}
+#con02 .right_bt02 ul li:hover {background: #F5EDEF; padding: 1.9rem;}
+
+#con02 .right_bt02 ul li::before {content: ""; position: absolute; top: 0; left: 0; display: inline-block; width: 0.4rem; height: 0;
+background: var(--mc); height: 100%; transform: scale(0); transition: 0.4s;}
+#con02 .right_bt02 ul li:hover:before {transform: scale(1);}
+
+
 #con02 .right_bt02 ul li a {font-size: 1.6rem; font-weight: 500; color: #444;}
 #con02 .right_bt02 ul li .s_title {display: block; width: 30rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 padding-left: 2rem; margin-bottom: 0.5rem;}
@@ -398,26 +408,29 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
 
 
 
+/* ----------------------------------------- { 반응형 con02 --------------------------------------------------------------------- */
+
 /* 반응형 con02 */
 
 @media (max-width:768px) {
     #con02 {padding: 15rem 0; text-align: center;}
     #con02 h2 {font-size: 4rem; font-weight: 500; margin-bottom: 8rem;}
     #con02 b {font-size: 4rem; font-weight: 500; color: var(--mc);}
-    #con02 .container {display: flex; flex-flow: column wrap; width: auto; max-width: auto; margin: 0 auto; padding: 0 1.5rem;}
+    #con02 .container {display: flex; width: 100%; max-width: 135rem; margin: 0 auto; padding: 0 1.5rem;}
 
     /* left */
-    #con02 .r_left {flex: 3; width: 45rem; border: 1px solid var(--dd); letter-spacing: -0.025em; margin-right: 3rem;}
+    #con02 .r_left {flex: 3; height: 74rem; border: 1px solid var(--dd); letter-spacing: -0.025em; margin-right: 3rem;}
     #con02 .case {overflow: hidden;}
     #con02 figure img {max-width: 100%; transition: 0.5s;}
     #con02 figure:hover img {transform: scale(1.1);}
 
-    #con02 .r_left h3 {font-size: 1.7rem; font-weight: 500; text-align: center; margin: 1.3rem 0 1.5rem 0;}
-    #con02 .r_left p {text-align: left; margin: 0 auto; font-size: 1.5rem; line-height: 1.4; color: #666;
-    width: 30rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+    #con02 .r_left h3 {font-size: 1.7rem; font-weight: 500; text-align: center; margin: 1.3rem 0 1rem 0;}
+    #con02 .r_left p {margin: 0 auto; font-size: 1.5rem; line-height: 1.4; color: #666;
+    width: 28rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+    #con02 .r_left .read {display: inline-block; font-size: 1.3rem; color: var(--mc); padding: 1rem 0;}
 
 
-    #con02 .result_top,#con02 .result_bottom {padding: 2.5rem 2.5rem 3rem 2.5rem; height: 37rem;}
+    #con02 .result_top,#con02 .result_bottom {padding: 2.5rem; height: 37rem;}
     #con02 .result_top {border-bottom: 1px solid var(--dd);}
 
 
@@ -448,10 +461,6 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
     #con02 .slick-dots li.slick-active {background: var(--mc); transform: rotate(130deg);}
 
 
-
-
-
-
     /* right_bt (오른쪽 아래) */
     #con02 .right_bt_wrap {display: flex; height: 37rem;}
 
@@ -461,11 +470,13 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
     #con02 .right_bt01 img {width: 100%;}
 
 
-    #con02 .right_bt01 h3 {font-size: 1.8rem; line-height: 1.5; font-weight: 500; color: var(--mc); margin-bottom: 0.7rem;}
+    #con02 .right_bt01 h3 {font-size: 1.8rem; line-height: 1.5; font-weight: 500; color: var(--dc); margin-bottom: 0.7rem;}
     /* #con02 .right_bt01 h3::before {content: ""; display: block; width: 100%rem; height: 0.1rem; background: var(--dd); margin: 2rem auto;} */
 
     #con02 .right_bt01 p {font-size: 1.6rem; font-weight: 300; margin-bottom: 3rem; line-height: 1.4; width: 40rem; overflow: hidden; text-overflow: ellipsis;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 auto 1rem auto; color: #666;}
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 0 auto; color: #666;}
+
+    #con02 .right_bt01 .read {display: inline-block; font-size: 1.3rem; color: var(--mc); text-align: left; padding: 1rem 0;}
 
 
 
@@ -479,8 +490,15 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
 
 
 
-    #con02 .right_bt02 ul li {padding: 1.9rem 0; text-align: left;}
+    #con02 .right_bt02 ul li {position: relative; padding: 1.9rem 0; text-align: left; transition: 0.4s;}
     #con02 .right_bt02 ul li~li {border-top: 1px solid var(--dd);}
+    #con02 .right_bt02 ul li:hover {background: #F5EDEF; padding: 1.9rem;}
+
+    #con02 .right_bt02 ul li::before {content: ""; position: absolute; top: 0; left: 0; display: inline-block; width: 0.4rem; height: 0;
+    background: var(--mc); height: 100%; transform: scale(0); transition: 0.4s;}
+    #con02 .right_bt02 ul li:hover:before {transform: scale(1);}
+
+
     #con02 .right_bt02 ul li a {font-size: 1.6rem; font-weight: 500; color: #444;}
     #con02 .right_bt02 ul li .s_title {display: block; width: 30rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     padding-left: 2rem; margin-bottom: 0.5rem;}
@@ -488,8 +506,7 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
     #con02 .right_bt02 ul li .read {display: inline-block; font-size: 1.2rem; color: var(--mc); text-align: left;}
 }
 
-
-
+/* ----------------------------------------- } 반응형 con02 --------------------------------------------------------------------- */
 
 
 
