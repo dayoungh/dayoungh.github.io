@@ -108,7 +108,7 @@ body {font-size: 1.6rem;}
 /* con01 */
 .con01 {}
 .con01 figure {height: 100vh; position: relative;} 
-.con01 figure::after {content: ""; display: block; width: 100%; height: 100vh; background: rgba(0,0,0,0.3); position: absolute;
+.con01 figure::after {content: ""; display: block; width: 100%; height: 100vh; background: url(../img/bg_pattern02.png); opacity: 0.4; position: absolute;
 top: 0; left: 0;}
 .con01 .itm01 {background: url(../img/main_visual01.jpg) no-repeat center center/cover;}
 .con01 .itm02 {background: url(../img/main_visual02.jpg) no-repeat center center/cover;}
