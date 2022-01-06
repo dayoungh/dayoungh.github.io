@@ -10,7 +10,7 @@
     --dd: #dddddd;
 }
 
-/* *{outline: 1px solid #369;} */
+*{outline: 1px solid #369;}
 
 html {font-size: 10px;}
 body {font-size: 1.6rem;}
@@ -48,6 +48,19 @@ margin: 0 0 0 1rem;}
 /* 반응형 top_banner */
 @media (max-width:768px) {
     .top_banner {display: none; background: var(--dc); color: #f7f7f7; line-height: 4; font-size: 1.4rem; font-weight: 300;}
+    .top_banner .container {display: flex; justify-content: space-between; width: 120rem; margin: 0 auto; text-align: center; padding: 0 1.5rem;}
+    .top_banner ul {display: flex;}
+    .top_banner li {position: relative; padding: 0 0.8rem;}
+    .top_banner li~li::after {content: ""; display: block; position: absolute; top: 2.5rem; left: -1rem; width: 0.1rem; height: 1rem; background: #f7f7f7;
+    margin: 0 1rem;}
+    .top_banner .right {margin-left: auto;}
+
+
+    .top_banner form input[type="search"] {border: none; color: var(--wc); border-bottom: 1px solid #aaa; outline: none; background: transparent;
+    margin: 0 0 0 1rem;}
+    .top_banner form input[type="search"]::placeholder {color: #aaa; text-align: center;}
+    .top_banner button i {font-size: 2rem; background: #666; border-radius: 50%; padding: 0.5rem; transition: 0.5s;}
+    .top_banner button:hover i {transform: rotate(360deg);}
     
 }
 
@@ -138,8 +151,7 @@ letter-spacing: -0.025em;}
     
 
     /* inner */
-    #header .gnb .inner {display: none; position: absolute; top: 10rem; left: auto; right:0; transform: translateX(0);
-    width: calc(100% - 15rem); height: auto; background:#fff; border-top: none;}
+    #header .gnb .inner {display: none; position: absolute; top: 10rem; left: auto; right:0; transform: translateX(0); width: calc(100% - 15rem); height: auto; background:#fff; border-top: none;}
     #header .gnb .depth01>li:hover .inner {display: none;}
 
     
@@ -204,7 +216,7 @@ letter-spacing: -0.025em;}
 
 
 /* visual */
-#visual {height: 100vh; position: relative}
+#visual {height: 100vh; position: relative;}
 
 
 /* ----------------------------------------- { 반응형 visual --------------------------------------------------------------------- */
@@ -269,10 +281,6 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
     #con01 h2 {font-size: 6.5vw; font-weight: 500; margin-bottom: 1rem;}
     #con01 b {font-size: 6.5vw; font-weight: 500; color: var(--mc);}
 
-    /* #con01 p {font-size: 4vw; margin-bottom: 5rem;} */
-    
-
-
     #con01 .container {width: auto; margin: 0 auto; padding: 0 1.5rem;}
     #con01 .main_box {box-shadow: 0 0 0.2rem rgba(0,0,0,0.3); background: var(--wc);}
 
@@ -302,8 +310,7 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
     /* box_right */
     #con01 .box_right {border-left: none; margin: 0 auto; overflow: hidden; width: 38.4rem; height: 35rem; margin-bottom: 1rem;}
     #con01 .box_right ul {height: 35rem; padding: 1rem 2rem 1rem 2rem; text-align: left; letter-spacing: -0.025em;}
-    #con01 .box_right ul li {padding: 0.8rem 0; font-size: 3.7vw; line-height: 1.7;
-    width: 32rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    #con01 .box_right ul li {padding: 0.8rem 0; font-size: 3.7vw; line-height: 1.7; width: 32rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 }
 
@@ -416,7 +423,7 @@ padding-left: 2rem; margin-bottom: 0.5rem;}
     #con02 {padding: 15rem 0; text-align: center;}
     #con02 h2 {font-size: 4rem; font-weight: 500; margin-bottom: 8rem;}
     #con02 b {font-size: 4rem; font-weight: 500; color: var(--mc);}
-    #con02 .container {display: flex; width: 100%; max-width: 135rem; margin: 0 auto; padding: 0 1.5rem;}
+    #con02 .container {display: flex; flex-flow: column wrap; width: auto; max-width: auto; margin: 0 auto; padding: 0 1.5rem;}
 
     /* left */
     #con02 .r_left {flex: 3; height: 74rem; border: 1px solid var(--dd); letter-spacing: -0.025em; margin-right: 3rem;}
