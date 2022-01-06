@@ -16,6 +16,10 @@ $(function(){
         }
     });
     
+     //  nav ///
+     if($(window).width() < 769) {
+        $('.inner').eq(0).show();
+     }
     $('.depth01>li>a').on('click',function(){
         if($(window).width() < 769) {
             $('.inner').hide();
