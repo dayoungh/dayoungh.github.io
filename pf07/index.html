@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고려대학교</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
@@ -40,22 +40,30 @@
                     <li><a href="#!">中文</a></li>
 
                 </ul>
-                <a href="#!">
-                    <form id="search" action="">
-                        <input type="search" placeholder="검색어를 입력하세요.">
-                        <button><i class="xi-search"></i></button>
-                    </form>
-                </a>
 
+                <div class="search">
+                    <button><i class="xi-search"></i></button>
+                    <button><i class="xi-close"></i></button>
+
+                </div>
+
+            </div>
+            <div class="searchForm">
+                <form action="">
+                    <input type="search" placeholder="검색어를 입력하세요.">
+                </form>
+                <button><i class="xi-search"></i></button>
             </div>
         </div>
         <!--  } top_banner -->
         <header id="header">
 
+
             <div class="container">
                 <h1>
                     <a href="index.html"></a>
                 </h1>
+
                 <nav class="gnb">
                     <!-- depth01 -->
                     <ul class="depth01">
@@ -69,7 +77,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">대학현황</a>
+                                        <a href="#">대학현황 <i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">현황</a></li>
                                             <li><a href="#">조직도</a></li>
@@ -80,7 +88,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">총장실</a>
+                                        <a href="#">총장실<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">총장 인사말</a></li>
                                             <li><a href="#">Speeches</a></li>
@@ -90,7 +98,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">고대비전 </a>
+                                        <a href="#">고대비전<i class="xi-angle-right-min"></i> </a>
 
                                         <ul class="depth03">
                                             <li><a href="#">교육목표</a></li>
@@ -99,7 +107,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">상징</a>
+                                        <a href="#">상징<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">UI</a></li>
@@ -110,7 +118,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">홍보물 </a>
+                                        <a href="#">홍보물<i class="xi-angle-right-min"></i> </a>
 
                                         <ul class="depth03">
                                             <li><a href="#">노래</a></li>
@@ -122,7 +130,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">고대역사</a>
+                                        <a href="#">고대역사<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">개교의 의의와 고대정신</a></li>
                                             <li><a href="#">약사</a></li>
@@ -130,7 +138,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">캠퍼스안내</a>
+                                        <a href="#">캠퍼스안내<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">찾아오시는길</a></li>
@@ -159,7 +167,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">대학입학</a>
+                                        <a href="#">대학입학<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">대학입학안내</a></li>
                                             <li><a href="#">내국인(재외국민 포함)</a></li>
@@ -169,7 +177,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">대학원입학</a>
+                                        <a href="#">대학원입학<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">총장 인사말</a></li>
                                             <li><a href="#">Speeches</a></li>
@@ -179,7 +187,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">최고위과정</a>
+                                        <a href="#">최고위과정<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">교육목표</a></li>
@@ -188,7 +196,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">평생교육</a>
+                                        <a href="#">평생교육<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">UI</a></li>
@@ -212,7 +220,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">대학</a>
+                                        <a href="#">대학<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <ul class="list_wrap">
                                                 <li><a href="#">대학소개</a></li>
@@ -250,7 +258,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">대학원</a>
+                                        <a href="#">대학원<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <ul class="list_wrap02">
                                                 <li><a href="#">대학원소개</a></li>
@@ -300,7 +308,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">학사일정</a>
+                                        <a href="#">학사일정<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
 
                                             <li><a href="#">학부 학사일정</a></li>
@@ -309,11 +317,11 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">증명서발급</a>
+                                        <a href="#">증명서발급<i class="xi-angle-right-min"></i></a>
 
                                     </li>
                                     <li>
-                                        <a href="#">전공/교과</a>
+                                        <a href="#">전공/교과<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">제2전공</a></li>
@@ -323,7 +331,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">등록/장학/학적</a>
+                                        <a href="#">등록/장학/학적<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">등록금일정</a></li>
@@ -335,7 +343,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">학생교류</a>
+                                        <a href="#">학생교류<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">국내교환학생</a></li>
                                             <li><a href="#">국제교류</a></li>
@@ -343,7 +351,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">교육프로그램</a>
+                                        <a href="#">교육프로그램<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
                                             <li><a href="#">외국어교육</a></li>
@@ -355,7 +363,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">문의/서식</a>
+                                        <a href="#">문의/서식<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">서식자료</a></li>
                                             <li><a href="#">학과별연락처</a></li>
@@ -363,7 +371,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">교육정보바로가기</a>
+                                        <a href="#">교육정보바로가기<i class="xi-angle-right-min"></i></a>
 
                                     </li>
 
@@ -381,7 +389,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">학생활동</a>
+                                        <a href="#">학생활동<i class="xi-angle-right-min"></i></a>
 
                                         <ul class="depth03">
 
@@ -397,7 +405,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">시설이용</a>
+                                        <a href="#">시설이용<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">도서관</a></li>
                                             <li><a href="#">박물관</a></li>
@@ -407,11 +415,11 @@
                                             <li><a href="#">사물함</a></li>
                                             <li><a href="#">편의시설</a></li>
                                             <li><a href="#">체육시설</a></li>
-                                            <li><a href="#">문화시설</a></li>
+
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">학생지원</a>
+                                        <a href="#">학생지원<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">One-Stop서비스센터</a></li>
                                             <li><a href="#">글로벌서비스센터</a></li>
@@ -425,14 +433,14 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">장애학생지원</a>
+                                        <a href="#">장애학생지원<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">장애학생지원센터</a></li>
 
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">KU문의함</a>
+                                        <a href="#">KU문의함<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">Q&A 게시판</a></li>
                                             <li><a href="#">분실물 게시판</a></li>
@@ -440,7 +448,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">KU옴부즈</a>
+                                        <a href="#">KU옴부즈<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">사이버감사실</a></li>
                                             <li><a href="#">청탁금지법 위반 신고</a></li>
@@ -451,7 +459,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">지역연계</a>
+                                        <a href="#">지역연계<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">고대사랑기업</a></li>
                                             <li><a href="#">지역서비스</a></li>
@@ -473,23 +481,23 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">연구성과</a>
+                                        <a href="#">연구성과<i class="xi-angle-right-min"></i></a>
 
                                     </li>
                                     <li>
-                                        <a href="#">연구포탈 </a>
+                                        <a href="#">연구포탈<i class="xi-angle-right-min"></i> </a>
 
                                     </li>
                                     <li>
-                                        <a href="#">연구뉴스레터 </a>
+                                        <a href="#">연구뉴스레터<i class="xi-angle-right-min"></i> </a>
 
                                     </li>
                                     <li>
-                                        <a href="#">연구자 프로파일</a>
+                                        <a href="#">연구자 프로파일<i class="xi-angle-right-min"></i></a>
 
                                     </li>
                                     <li>
-                                        <a href="#">KU 명예의 전당 </a>
+                                        <a href="#">KU 명예의 전당<i class="xi-angle-right-min"></i> </a>
 
                                     </li>
                                 </ul>
@@ -506,7 +514,7 @@
                                 </div>
                                 <ul class="depth02">
                                     <li>
-                                        <a href="#">언론자료</a>
+                                        <a href="#">언론자료<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
 
                                             <li><a href="#">보도자료</a></li>
@@ -515,11 +523,11 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">언론에서 본 고대 </a>
+                                        <a href="#">언론에서 본 고대<i class="xi-angle-right-min"></i> </a>
 
                                     </li>
                                     <li>
-                                        <a href="#">고대뉴스 </a>
+                                        <a href="#">고대뉴스<i class="xi-angle-right-min"></i> </a>
                                         <ul class="depth03">
                                             <li><a href="#">전체뉴스</a></li>
                                             <li><a href="#">교육</a></li>
@@ -531,7 +539,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">고대미디</a>
+                                        <a href="#">고대미디<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">KU 인사이트</a></li>
                                             <li><a href="#">Youtube</a></li>
@@ -544,7 +552,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">공지사항</a>
+                                        <a href="#">공지사항<i class="xi-angle-right-min"></i></a>
                                         <ul class="depth03">
                                             <li><a href="#">일반공지</a></li>
                                             <li><a href="#">학사공지</a></li>
@@ -573,7 +581,6 @@
                     <span></span>
                 </div>
 
-
             </div>
             <!-- } header_container -->
         </header>
@@ -583,6 +590,34 @@
                 <div id="bgndVideo"></div>
             </section>
             <!-- } visual -->
+            <section id="m_banner">
+                <div class="m_menubar">
+                    <ul>
+                        <li>
+                            <a href="#!" class="mb_icon"><img src="./img/icon_talk.png" alt=""></a>
+                            <a href="#!" class="mb_txt">KU문의함</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="mb_icon"><img src="./img/icon_calendar.png" alt=""></a>
+                            <a href="#!" class="mb_txt">학사일정</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="mb_icon"><img src="./img/icon_pc.png" alt=""></a>
+                            <a href="#!" class="mb_txt">주요사이트</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="mb_icon"><img src="./img/icon_way.png" alt=""></a>
+                            <a href="#!" class="mb_txt">오시는길</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="mb_icon"><img src="./img/icon_book.png" alt=""></a>
+                            <a href="#!" class="mb_txt">교육정보</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
 
             <section id="con01">
                 <div class="container">
@@ -590,7 +625,7 @@
                         <div class="box_wrap">
 
                             <div class="box_left">
-                                <h3><a href="#!">일반뉴스</a></h3>
+                                <h3><a href="#!">고대뉴스</a></h3>
 
                                 <div class="news">
                                     <div class="news_slider">
@@ -694,7 +729,7 @@
             <!-- } con01 -->
 
             <section id="con02">
-                <h2><b>KU ACHIEVEMENT</b> · 연구성과</h2>
+                <h2><b>KU</b> 연구성과</h2>
 
                 <div class="container">
                     <div class="r_left">
@@ -706,7 +741,7 @@
                                     </div>
                                     <h3>‘마그네슘 금속 음극 기반 차세대 이차전지’ 개발</h3>
                                     <p>유승호 고려대 교수팀, 서울대-한국과학기술연구원과 공동연구
-                                        연구결과, 국제 학술지 ACS Energy Letters에 소개돼</p>       
+                                        연구결과, 국제 학술지 ACS Energy Letters에 소개돼</p>
                                 </a>
                                 <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
                             </figure>
@@ -800,55 +835,636 @@
                                             <img src="./img/bt_02.jpg" alt="">
                                         </div>
                                         <div class="txt">
-                                        <h3>로보틱스, 증강현실 기술에 사용가능한 3차원 가상 데이터 만든다</h3>
-                                        <p>3차원 컴퓨터 비전 내 데이터 희소 문제 해결 위한 데이터 증강 기법 개발
-                                           인공지능분야 최우수 학술대회 Internation Conference on Computer Vision 2021에서 발표
-                                        </p>
-                                        <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
-                                    </div>
+                                            <h3>로보틱스, 증강현실 기술에 사용가능한 3차원 가상 데이터 만든다</h3>
+                                            <p>3차원 컴퓨터 비전 내 데이터 희소 문제 해결 위한 데이터 증강 기법 개발
+                                                인공지능분야 최우수 학술대회 Internation Conference on Computer Vision 2021에서 발표
+                                            </p>
+                                            <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
+                                        </div>
                                     </a>
-                                 
+
                                 </figure>
                             </div>
                             <div class="right_bt02">
-                              <div class="title">
-                                <a href="#!">연구성과 더 보기 <i class="xi-angle-right"></i></a>
-                              </div>
-                              <ul>
-                                  <li><a href="#!" class="s_title">양자점 디스플레이(QLED) 효율 높일 방법 찾았다</a>
-                                    <p>2022-01-05</p>
-                                    <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
-                                </li>
-                                  <li><a href="#!" class="s_title">윤영수 교수팀, 차세대 리튬금속전지용 음극과 전해질 </a>
-                                    <p>2022-01-02</p>
-                                    <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
-                                </li>
-                                  <li><a href="#!" class="s_title">고려대팀, 산자부 알키미스트 과제 중 투명태양전지</a>
-                                    <p>2021-12-27</p>
-                                    <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
-                                </li>
-                                  <li><a href="#!" class="s_title">김윤지 연구교수, ‘2021년 학술·연구지원사업 우수 성과</a>
-                                    <p>2021-12-16</p>
-                                    <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
-                                </li>
-                                 
-                              </ul>
-                                
-                                
+                                <div class="title">
+                                    <a href="#!">연구성과 더 보기 <i class="xi-angle-right"></i></a>
+                                </div>
+                                <ul>
+                                    <li><a href="#!" class="s_title">양자점 디스플레이(QLED) 효율 높일 방법 찾았다</a>
+                                        <p>2022-01-05</p>
+                                        <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
+                                    </li>
+                                    <li><a href="#!" class="s_title">윤영수 교수팀, 차세대 리튬금속전지용 음극과 전해질 </a>
+                                        <p>2022-01-02</p>
+                                        <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
+                                    </li>
+                                    <li><a href="#!" class="s_title">고려대팀, 산자부 알키미스트 과제 중 투명태양전지</a>
+                                        <p>2021-12-27</p>
+                                        <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
+                                    </li>
+                                    <li><a href="#!" class="s_title">김윤지 연구교수, ‘2021년 학술·연구지원사업 우수 성과</a>
+                                        <p>2021-12-16</p>
+                                        <a href="#!" class="read">Read More <i class="xi-angle-right"></i></a>
+                                    </li>
+
+                                </ul>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
 
             </section>
+            <!-- } con02 -->
+
+            <!-- { con03 -->
+            <section id="con03">
+                <h2><b>KU</b> 미디어</h2>
+                <div class="container">
+
+                    <!---- { left ----->
+                    <div class="media_left">
+                        <!-- tab_menu -->
+                        <ul class="tab_menu">
+                            <li class="on"><a href="#!">Youtube</a></li>
+                            <li><a href="#!">Instagram</a></li>
+                            <li><a href="#!">Blog</a></li>
+                        </ul>
+                        <!-- tab_cont -->
+                        <div class="tab_cont">
+                            <div class="tab_item01 tab_slider on">
+                                <div class="ytb_itm">
+                                    <figure>
+                                        <iframe src="https://www.youtube.com/embed/OOE-iBFJMYg"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3>[고려대학교 Korea University] 2022 고려대학교 연하장</h3>
+                                        <span><a href="#!">View More</a></span>
+
+                                    </figure>
+                                </div>
+                                <div class="ytb_itm">
+                                    <figure>
+                                        <iframe src="https://www.youtube.com/embed/4Vu7vTQ8cHE"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3>'Feel the Rhythm of Korea' 고려대학교 응원단 x Terra</h3>
+                                        <span><a href="#!">View More</a></span>
+
+                                    </figure>
+                                </div>
+                                <div class="ytb_itm">
+                                    <figure>
+                                        <iframe src="https://www.youtube.com/embed/W1Z3o6wp_CI"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3>[고려대학교 Korea University] LG에너지솔루션 배터리</h3>
+                                        <span><a href="#!">View More</a></span>
 
 
+                                    </figure>
+                                </div>
+                                <div class="ytb_itm">
+                                    <figure>
+                                        <iframe src="https://www.youtube.com/embed/9whcG2T4RHM"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
 
+                                        <h3>[고려대학교 Korea University] 보건과학대학 역사전시관 개관식</h3>
+                                        <span><a href="#!">View More</a></span>
+
+
+                                    </figure>
+                                </div>
+                                <div class="ytb_itm">
+                                    <figure>
+                                        <iframe src="https://www.youtube.com/embed/l2_TBg1nYtw"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <h3>[고려대학교 Korea University] 고려대와 영화, 내인생의 두 키워드</h3>
+                                        <span><a href="#!">View More</a></span>
+
+                                    </figure>
+                                </div>
+
+                            </div>
+
+                            <div class="tab_item02 tab_slider">
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins01.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">흑백으로 보는 교정 사진은 또 다른 느낌을 주기도 합니다.행복한 주말 보내세요 :D</span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins02.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">KU 마음노크 : 찾아가는 익명 고민 상담 서비스
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              
+
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins03.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">팬데믹도 녹이는 지구촌 대학생들의 학구열, 비대면 국제동계대학</span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins04.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">#고대학사력 새로운 한해의 시작이네요! 행복한 1월 되세요 :D</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins05.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">문과대 문광 - 문과대 온라인 플랫폼 문과대학교 대학혁신지원사업</span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/ins06.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">밤에 바라본 교정입니다! 함께 구경하러 가보실까요?</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- 인스타 -->
+
+                            <!-- 블로그 -->
+                            <div class="tab_item03 tab_slider">
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog01.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">'고려대학교 별별교양' 1탄! 고려대학교에는 어떤 교양들이 있는지
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog02.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">첫번째로 소개할 교양수업은 '범죄와 사회' 입니다~
+                                               </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog03.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">두번째는 바로 '성의 과학적 이해', 줄여서 '성과이'라고 부르는 과목이죠!</span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog04.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">셋째, '부모되기 교육'! 대학에서 부모됨을 가르치는 강의가 있다니!</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ins_itm">
+                                    <div class="ins01">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog05.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">넷째, '동서양의 사랑시' 이 교양은 2019년 신설된 교양인데요</span>
+                                        </div>
+                                    </div>
+                                    <div class="ins02">
+                                        <div class="txt">
+                                            <figure>
+                                                <img src="./img/insta_icon.gif">
+                                            </figure>
+                                            <div>
+                                            <h3>koreauniv.official</h3>
+                                            <p>고려대학교 - Korea University, Seoul</p>
+                                             </div>
+                                          </div>
+    
+                                        <figure>
+                                            <a href="#!"><img src="./img/blog06.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ins_icon">
+                                            <a href="#!"><i class="xi-heart"></i></a>
+                                            <a href="#!"><i class="xi-speech-o"></i></a>
+                                            <a href="#!"><i class="xi-share-alt-o"></i></a>
+                                            <a href="#!"><i class="xi-bookmark-o"></i></a>
+                                        </div>
+                                        <div class="ins_txt">
+                                            <span>koreauniv.official</span>
+                                            <span class="des">오늘 고려대학교의 4개의 교양강의에 대해 알아보았는데요</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---- } left ----->
+
+
+                    <!-- {  right -->
+                    <div class="media_right">
+                        <div class="center_wrap">
+                            <div class="center">
+                                <h3><a href="#!">한국어센터 과정안내</a></h3>
+                                <figure>
+                                    <img src="./img/center01.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="icons">
+                             <ul class="center_icon">
+                                 <li>
+                                     <figure><img src="./img/center_icon01.png" alt=""></figure>
+                                     <span>정규과정</span>
+                                 </li>
+                                 <li>
+                                     <figure><img src="./img/center_icon02.png" alt=""></figure>
+                                     <span>단기집중과정</span>
+                                 </li>
+                             </ul>
+                             <ul class="center_icon02">
+                                 <li>
+                                     <figure><img src="./img/center_icon03.png" alt=""></figure>
+                                     <strong>청소년<br>여름학교</strong>
+                                 </li>
+                                 <li>
+                                     <figure><img src="./img/center_icon04.png" alt=""></figure>
+                                     <strong>한국어교사<br>양성과정</strong>
+                                 </li>
+                          </ul>
+                            </div>
+                        </div>
+                       
+
+                       <div class="notice">
+                        <h3><a href="#!">한국어센터 공지사항 <i class="xi-angle-right"></i></a></h3>
+
+                        <ul class="scroll">
+                            <li><a href="#!">2021학년도 정규과정 가을학기 장학생 명단 공지</a></li>
+                            <li><a href="#!">한국어센터 행정실 운영시간 조정 안내(2021년 12월 22일~2022년 2월 8일 적용)</a></li>
+                            <li><a href="#!">2022학년도 정규과정 봄학기 연장 신청(재학생) / 2022 Spring term extension / </a></li>
+                            <li><a href="#!">2021학년도 정규과정 겨울학기 신입생 안내 책자 / A guidebook for freshmen for</a></li>
+                            <li><a href="#!">[한국이민재단/KISF] 외국인등록증 신청 안내/Alien Registration Card Registra</a></li>
+                            <li><a href="#!">한국어센터 홍보도우미 15기 모집</a></li>
+                            <li><a href="#!">[교육부] 단계적 일상회복 1차 방역수칙 Step-by-step Recovery 1st Quarantine Rules</a></li>
+                            <li><a href="#!">자가격리 시설 예약 안내 / Quarantine Facility Reservation</a></li>
+                            <li><a href="#!">온라인 한국어 단기과정 교재 구입 안내 / Short-term Onlin</a></li>
+                          
+                        </ul>
+
+                    </div>
+                    </div>
+                     <!---- } right ----->
+                </div>
+            </section>
+            <!-- } con03 -->
 
         </main>
         <!-- } main -->
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <div class="line">
+                <div class="container">
+                    <div class="f_con">
+                        <figure>
+                            <img src="./img/f_logo.png" alt="footer logo">
+                        </figure>
+                        <address>02841 서울특별시 성북구 안암로 145<br>
+                            TEL.02.3290.1114.<br>
+                            webmaster@korea.ac.kr</address>
+                            <a href="#!">
+                                <i class="xi-instagram"></i>
+                                <i class="xi-naver"></i>
+                                <i class="xi-youtube-play"></i>
+                                <i class="xi-facebook"></i>
+                            </a>
+                    </div>
 
+                   
+                        <ul class="f_line01">
+                            <li>
+                                <dl>
+                                    <dt>입학안내</dt>
+                                    <dd><a href="#!">학부</a></dd>
+                                    <dd><a href="#!">대학원</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>교환학생</dt>
+                                    <dd><a href="#!">국내대학 학점교류(OUT)</a></dd>
+                                    <dd><a href="#!">국내대학 학점교류(IN)</a></dd>
+                                    <dd><a href="#!">국제교환학생</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>교육지원</dt>
+                                    <dd><a href="#!">어학교육</a></dd>
+                                    <dd><a href="#!">One-Stop 서비스센터</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>견학</dt>
+                                    <dd><a href="#!">캠퍼스투어</a></dd>
+                                    <dd><a href="#!">찾아오시는 길</a></dd>
+                                  
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>시설안내</dt>
+                                    <dd><a href="#!">도서관</a></dd>
+                                    <dd><a href="#!">박물관</a></dd>
+                                    <dd><a href="#!">학생식당</a></dd>
+                                    <dd><a href="#!">편의시설</a></dd>
+                                    <dd><a href="#!">체육시설</a></dd>
+                                    <dd><a href="#!">문화시설</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>대학∙대학원</dt>
+                                    <dd><a href="#!">서울캠퍼스</a></dd>
+                                    <dd><a href="#!">세종캠퍼스</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>대학홍보</dt>
+                                    <dd><a href="#!">로고 및 UI</a></dd>
+                                    <dd><a href="#!">홍보영화</a></dd>
+                              
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>학생활동</dt>
+                                    <dd><a href="#!">사회봉사단</a></dd>
+                                    <dd><a href="#!">학생회</a></dd>
+                                    <dd><a href="#!">동아리</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>  
+                                    <dt>학교소개</dt>
+                                    <dd><a href="#!">현황</a></dd>
+                                    <dd><a href="#!">학교규칙</a></dd>
+                                    <dd><a href="#!">국내·외 평가</a></dd>
+                                    <dd><a href="#!">교육목표</a></dd>
+                                    <dd><a href="#!">개교의 의의와 고대정신</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>발전기금</dt>
+                                    <dd><a href="#!">기부하기</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                  
+                </div>
+            </div>
+            <div class="con">
+                Copyright (C)2017 Korea University. All Rights Reserved
+            </div>
+        </footer>
+
+
+        <!-- { scroll banner -->
         <div id="scroll_banner">
             <ul>
                 <li>
@@ -880,9 +1496,8 @@
                 </li>
 
             </ul>
-
-
         </div>
+        <!-- } scroll banner -->
 
     </div>
     <!-- } wrap -->

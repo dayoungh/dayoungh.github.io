@@ -6,7 +6,14 @@ $(function(){
         $('.gnb').toggleClass('on');
         $('#header').toggleClass('on');
     });
-  
+
+
+    // search form//
+    $('.search').on('click', function(){
+        $(this).toggleClass('on');
+        $('.searchForm').stop().slideToggle();
+    });
+
    
     //  nav ///
     $('.depth02>li>a').on('click',function(){
@@ -27,7 +34,8 @@ $(function(){
             
         }
     });
-   
+
+
    
       // visual video ///
       $('#bgndVideo').YTPlayer({
@@ -45,7 +53,7 @@ $(function(){
     function tick2(){
 		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
 	}
-	setInterval(function(){ tick2 () }, 2000);
+	setInterval(function(){ tick2 () }, 3000);
 
    
     // news slider //
@@ -90,6 +98,50 @@ $(function(){
         ]
     });
 
+    $('.tab_menu>li').on('click',function(){
+        var $this=$(this); //자기자신
+        var idx=$(this).index(); //자기자신의 번호 0 1 2
+     //    console.log($this,idx);
+         //    $('.tab_content>div').eq(idx).show().siblings().hide();
+         $('.tab_content>div').eq(idx).addClass('on').siblings().removeClass('on');
+         $this.addClass('on').siblings().removeClass('on');
+       });
+
+
+
+    // tabmenu//
+    
+       $('.tab_menu li').on('click',function(){
+        var idx=$(this).index();
+        // $('.tab_cont>div').eq(idx).show().siblings().hide();
+        $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
+
+
+
+     // tab_slider //
+     $(".tab_slider").slick({
+        autoplay:false,
+        arrows:false,
+        autoplaySpeed:3000,
+        pauseOnHover:false,
+        pauseOnFocus:false,
+        dots:false,
+        
+        // vertical:true,
+        responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+            slidesToShow: 1,
+            // vertical:false,
+            }
+        },
+    
+        ]
+    });
+
 
 
 
@@ -107,11 +159,6 @@ $(function(){
 
     $(window).on('scroll',function(){
         var sct=$(window).scrollTop();
-        if(sct>1500) {$('#scroll_banner li:nth-child(9)').fadeIn()
-    }else{
-        $('#scroll_banner li:nth-child(9)').fadeOut()
-    }
-
     $('#scroll_banner').css({top:300+sct})
 
     });
@@ -126,3 +173,6 @@ $(function(){
    
        // ---------------------------------------------
    });
+
+
+
