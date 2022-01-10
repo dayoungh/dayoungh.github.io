@@ -35,11 +35,6 @@ $(function(){
         }
     });
 
-     //  nav style 빼줌 ///
-    $(window).on('resize',function(){
-        $('#header .gnb .inner').removeAttr('style');
-        });
-
 
    
       // visual video ///
@@ -127,31 +122,8 @@ $(function(){
 
      // tab_slider //
      $(".tab_slider").slick({
-        autoplay:true,
-        arrows:false,
-        autoplaySpeed:3000,
-        pauseOnHover:false,
-        pauseOnFocus:false,
-        dots:false,
-        
-        // vertical:true,
-        responsive: [
-        {
-            breakpoint: 769,
-            settings: {
-            slidesToShow: 1,
-            // vertical:false,
-            }
-        },
-    
-        ]
-    });
-
-    // tab_slider02
-     $(".tab_slider02").slick({
         autoplay:false,
         arrows:false,
-        slidesToShow: 2,
         autoplaySpeed:3000,
         pauseOnHover:false,
         pauseOnFocus:false,
