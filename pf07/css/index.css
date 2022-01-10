@@ -677,7 +677,7 @@ font-size: 1.6rem;}
 
 @media (max-width:768px) {
     
-    #con03 {position: relative; height: 100vh; margin: 0 auto; text-align: center; background: #f7f7f7; padding: 5rem 0;}
+    #con03 {position: relative; height: 100vh; margin: 0 auto; text-align: center; background: var(--wc); padding: 5rem 0 0 0;}
     #con03 h2 {font-size: 4.5vw; font-weight: 500; margin-bottom: 3rem;}
     #con03 b {font-size: 4.5vw; font-weight: 500; color: var(--mc);}
     #con03 .container {display: flex; flex-flow: column wrap; width: auto; max-width: 100%; margin: 0 auto; border-top: 5px solid var(--mc); background: var(--wc);}
@@ -704,7 +704,7 @@ font-size: 1.6rem;}
     /* .tab_item01 유튜브 */
     #con03 .tab_item01 {width: 100%; height: 50rem;}
     #con03 .tab_item01 iframe {width: 100%; height: 40rem;}
-    #con03 .tab_item01 .ytb_itm {background: var(--wc); padding: 0 0 3rem 0; margin: 0 0 0 0;}
+    #con03 .tab_item01 .ytb_itm {background: var(--wc); padding: 0 0 0 0; margin: 0 0 0 0;}
     #con03 .tab_item01 .ytb_itm {display: block;}
     #con03 .tab_item01 .ytb_itm h3 {color: var(--dc); font-size: 3.5vw; line-height: 1.2; margin: 2rem;}
 
@@ -722,7 +722,7 @@ font-size: 1.6rem;}
     /* .tab_item02 인스타 */ 
     
     #con03 .tab_item02 {width: 100%; height: 50rem; margin: 0 auto;}
-    #con03 .ins_itm {display: flex; flex-direction: column; background: var(--dd); padding: 0 0 2.1rem 0;}
+    #con03 .ins_itm {display: flex; flex-direction: column; background: var(--wc); padding: 0 0 0 0;}
     #con03 .ins_itm>div {flex: 1;}
     #con03 .ins_itm .ins01 {margin: 0 0;}
     #con03 .ins_itm figure {}
@@ -736,15 +736,15 @@ font-size: 1.6rem;}
    
 
     /* 아이콘 */
-    #con03 .ins_itm .ins_icon {width: 100%;}
-    #con03 .ins_itm .ins_icon i {font-size: 2.5rem; margin: 1rem 0.2rem;}
+    #con03 .ins_itm .ins_icon {width: 100%; margin-top: 1rem;}
+    #con03 .ins_itm .ins_icon i {font-size: 2.4rem; margin: 0 0.2rem;}
     #con03 .ins_itm .ins_icon i:hover {color: var(--mc);}
-    #con03 .ins_itm .ins_icon .xi-bookmark-o {margin-left: 27rem;}
+    #con03 .ins_itm .ins_icon .xi-bookmark-o {margin-left: 63vw;}
     #con03 .ins_itm .ins_icon .xi-heart {color: var(--mc);}
     #con03 .ins_itm .ins_icon .xi-heart:hover {animation: heartBeat 1s infinite;}
 
     /* 텍스트 */
-    #con03 .ins_itm .ins_txt {display: flex; margin: 0.4rem 0 0 1.5rem;}
+    #con03 .ins_itm .ins_txt {display: flex; margin: 0.4rem 0 0 1.25rem;}
     #con03 .ins_itm .ins_txt span {font-size: 4vw; margin: 0 1rem 0 0; font-weight: 500;}
     #con03 .ins_itm .ins_txt .des {font-size: 3.6vw; font-weight: 300; color: var(--dc); width: 21rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
@@ -754,7 +754,7 @@ font-size: 1.6rem;}
   
 
     /* media_right 한국어센터 */
-    #con03 .media_right {display: none; position: relative; flex: 1;}
+    #con03 .media_right {display: none; flex: 1;}
     #con03 .media_right .center {margin: 0 0 1rem 0;}
     #con03 .media_right .center h3 {text-align: center; line-height: 6rem; background: #fff; color: var(--dc); font-size: 1.8rem; font-weight: 500;
     border-top: 2px solid var(--mc);}
@@ -824,10 +824,10 @@ margin: 0 0 7rem 0;}
 
 @media (max-width:768px) {
    
-    #footer {background: var(--dc); margin: 0 auto; color: var(--dd); padding: 0 0 3rem 0;}
+    #footer {background: var(--dc); margin: 0 auto; color: var(--dd); padding: 0 0 3rem 0; margin: 1.5rem 0 0 0;}
     #footer .f_menu {display: flex; flex-flow: row wrap; justify-content: none; text-align: center; background: var(--mc); line-height: 1.5;
     margin: 0 0 5rem 0; padding: 1rem 0;}
-    #footer .f_menu span a {padding: 0 1rem; font-size: 3.7vw; color: rgba(255,255,255,0.8); font-weight: 300;}
+    #footer .f_menu span a {padding: 0 1rem; font-size: 3.5vw; color: rgba(255,255,255,0.8); font-weight: 300;}
     #footer .f_menu span .pr {color: var(--wc); font-weight: 500;}
     #footer .line {border-bottom: 1px solid #666; margin: 0 auto; text-align: center;}
     #footer .container {display: inline-block; width: auto; margin: 0 auto;}
@@ -848,8 +848,6 @@ margin: 0 0 7rem 0;}
 
     #footer .con {text-align: center; margin: 2rem 0 0 0; font-size: 3vw; font-weight: 300;}
 }
-
-
 
 
 
