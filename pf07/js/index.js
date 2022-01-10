@@ -149,7 +149,7 @@ $(function(){
 
     // tab_slider02
      $(".tab_slider02").slick({
-        autoplay:true,
+        autoplay:false,
         arrows:false,
         slidesToShow: 2,
         autoplaySpeed:3000,
@@ -201,6 +201,3 @@ $(function(){
    
        // ---------------------------------------------
    });
-
-
-
