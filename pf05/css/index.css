@@ -357,7 +357,7 @@ margin: 0.5rem auto 0 auto;}
 /* 반응형 #cont02 */
 @media (max-width:768px) {
     #cont02 {padding: 100px 0; text-align: center; background: url(../img/ban01.jpg) center center/cover;}
-    #cont02 h2 {font-family: 'Montserrat', sans-serif; font-size: 8vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
+    #cont02 h2 {font-family: 'Montserrat', sans-serif; font-size: 7vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
     #cont02 p {font-family: 'Noto Sans KR'; font-size: 4.2vw; font-weight: 300; letter-spacing: -0.025em; line-height: 1.4; margin-bottom: 50px;}
     #cont02 .container {width: auto; margin: 0 auto; padding: 0 15px;}
     #cont02 .brand_name {display: flex; justify-content: center; margin: 0 0 30px 0;}
@@ -428,7 +428,7 @@ line-height: 2; padding-top: 5px;}
 
 @media (max-width:768px) {
     #cont03 {padding: 100px 0; text-align: center;}
-    #cont03 h2 {font-family: 'Montserrat', sans-serif; font-size: 8vw; margin-bottom: 50px; font-weight: 400;}
+    #cont03 h2 {font-family: 'Montserrat', sans-serif; font-size: 7vw; margin-bottom: 50px; font-weight: 400;}
     #cont03 .container {width: auto; min-width: auto; margin: 0 auto; padding: 0 15px;}
     
     #cont03 .case {margin: 0 10px;}
@@ -449,28 +449,26 @@ line-height: 2; padding-top: 5px;}
 #cont04 {padding: 150px 0; text-align: center; background: #f7f7f7;}
 #cont04 h2 {font-family: 'Montserrat', sans-serif; font-size: 37px; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
 #cont04 p {font-family: 'Noto Sans KR'; font-size: 18px; font-weight: 300; letter-spacing: -0.025em; line-height: 1.4; margin-bottom: 50px;}
-#cont04 .container {width: 100%; max-width: 1900px; margin: 0 auto;}
-#cont04 .case {margin: 70px 0 0 0;}
+#cont04 .container {width: 100%; max-width: 1700px; margin: 0 auto;}
+#cont04 .case {position: relative; margin: 70px 0 0 0;}
 
-#cont04 figure strong {font-family: 'Montserrat', sans-serif; display: block; font-size: 20px; font-weight: 500; letter-spacing: 0.35em; line-height: 3;
-text-align: left; margin-left: 75px;}
-#cont04 figure strong::after {content: ""; display: inline-block; width: 30px; height: 30px; vertical-align: middle; background: url(../img/icon.png);
+#cont04 strong {display: block; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 0.35em; text-align: left; line-height: 2; margin-left: 75px;}
+#cont04  strong::after {content: ""; display: inline-block; width: 30px; height: 30px; vertical-align: middle; background: url(../img/icon.png);
 margin: 0 0 3px 5px; animation: bounce 2s infinite;}
     
 
-#cont04 .intro {width: 700px; height: 700px; float: left;}
-#cont04 .intro figure {}
-#cont04 .intro figure img {}
+#cont04 .intro_slider {width: 550px; height: 550px; padding: 0 1rem; float: left;}
+#cont04 .intro_item {width: 550px; height: 550px;}
+#cont04 .intro_slider img {width: 100%;}
 
-#cont04 .txt {}
-#cont04 .txt h3 {font-family: 'Montserrat', sans-serif; display: block; font-size: 18px; font-weight: 300; letter-spacing: 0.35em; font-style: italic;
-line-height: 3; position: relative;}
-#cont04 .txt h3::before {content: ""; display: inline-block; width: 60px; height: 1px; background: #666; position: absolute; top: 25px; left: 76px;}
-#cont04 .txt h3::after {content: ""; display: inline-block; width: 60px; height: 1px; background: #666; position: absolute; top: 25px; right: 76px;}
+#cont04 .txt {position: absolute; bottom: -2.5%; left: 1%; text-align: center; margin: 0 auto;}
+#cont04 .txt h3 {display: block; font-family: 'Montserrat', sans-serif; display: inline-block; font-size: 18px; font-weight: 300; letter-spacing: 0.5em; font-style: italic;
+line-height: 3;}
+#cont04 .txt h3::after {content: ""; display: inline-block; width: 52px; height: 1px; background: #888; vertical-align: middle;} 
 
 
 #cont04 .co04_slider {width: 550px; height: 550px; float: right;}
-#cont04 .c04_item {width: 330px; height: 330px; margin: 180px 10px; text-align: center; overflow: hidden;}
+#cont04 .c04_item {width: 330px; height: 330px; margin: 125px 10px; text-align: center; overflow: hidden;}
 #cont04 .c04_item img {}
 
 
@@ -480,31 +478,30 @@ line-height: 3; position: relative;}
 
 @media (max-width:768px) {
     #cont04 {padding: 100px 0; text-align: center; background: #f7f7f7; margin: 0 auto;}
-    #cont04 h2 {font-family: 'Montserrat', sans-serif; font-size: 8vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
-    #cont04 p {font-family: 'Noto Sans KR'; font-size: 4.2vw; font-weight: 300; letter-spacing: -0.025em; line-height: 1.4; margin-bottom: 50px;}
+    #cont04 h2 {font-family: 'Montserrat', sans-serif; font-size: 7vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
+    #cont04 p {font-family: 'Noto Sans KR'; font-size: 4.2vw; font-weight: 300; letter-spacing: -0.025em; line-height: 1.4; margin-bottom: 25px;}
     #cont04 .container {width: auto; max-width: auto; margin: 0 auto;}
-    #cont04 .case {margin: 0 0 0 0;}
+    #cont04 .case {position: relative; margin: 0 0 0 0;}
 
 
-    #cont04 figure strong {font-family: 'Montserrat', sans-serif; display: block; font-size: 4.6vw; font-weight: 500; letter-spacing: 0.25em; line-height: 1.2;
+    #cont04 strong {display: block; font-family: 'Montserrat', sans-serif; font-size: 4.2vw; font-weight: 500; letter-spacing: 0.25em; line-height: 2.5;
     text-align: center; margin: 0 auto;}
-    #cont04 figure strong::after {display: none;}
-    #cont04 figure strong::before {content: ""; display: block; width: 30px; height: 30px; background: url(../img/icon.png);
+    #cont04 strong::after {display: none;}
+    #cont04 strong::before {content: ""; display: block; width: 30px; height: 30px; background: url(../img/icon.png);
     margin: 5px auto; animation: bounce 2s infinite;}
         
+    #cont04 .intro_slider {display: none; width: 100%; height: 100%; margin: 0 auto; float: none; padding: 0 0;}
+    #cont04 .intro_slider img {display: none; width: 100%;}
+
+  
+    #cont04 .txt {display: none; position: absolute; bottom: -20%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
+    #cont04 .txt h3 {position: relative; display: block; font-family: 'Montserrat', sans-serif; font-size: 3.7vw; font-weight: 300; letter-spacing: 0.4em; font-style: italic;
+    line-height: 1.5;}
+    #cont04 .txt h3::before {content: ""; display: block; position: absolute; top: 50%; left: -50%; width: 52px; height: 1px; background: #555;}
+    #cont04 .txt h3::after {content: ""; display: block; position: absolute; top: 50%; right: 0; width: 52px; height: 1px; background: #555;} 
     
-    #cont04 .intro {width: auto; height: auto; float: none;}
-    #cont04 .intro figure {}
-    #cont04 .intro figure img {width: 100%;}
-    #cont04 .txt {}
-    #cont04 .txt h3 {font-family: 'Montserrat', sans-serif; display: block; font-size: 3.5vw; font-weight: 300; letter-spacing: 0.3em; font-style: italic;
-    line-height: 3; position: relative;}
-    #cont04 .txt h3::before {content: ""; display: inline-block; width: 10vw; height: 1px; background: #999; position: absolute; top: 5vw; left: 5vw; transform: translate(-50%,-50%);}
-    #cont04 .txt h3::after {content: ""; display: inline-block; width: 10vw; height: 1px; background: #999; position: absolute; top: 5vw; right: -5vw; transform: translate(-50%,-50%);}
-    
-    
-    #cont04 .co04_slider {width: auto; height: auto; float: none;}
-    #cont04 .c04_item {margin: 0 10px; text-align: center; overflow: hidden;}
+    #cont04 .co04_slider {width: 100%; height: 100%; float: none; padding: 1rem; margin: 0 auto;}
+    #cont04 .c04_item {width: auto; width: auto; margin: 0 5px; text-align: center; overflow: hidden;}
     #cont04 .c04_item img {width: 100%;}
   
 }
@@ -567,8 +564,8 @@ opacity: 1;}
 /* 반응형 #cont05  */
 
 @media (max-width:768px) {
-    #cont05 {padding: 150px 0; text-align: center;}
-    #cont05 h2 {font-family: 'Montserrat', sans-serif; font-size: 8vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
+    #cont05 {padding: 100px 0; text-align: center;}
+    #cont05 h2 {font-family: 'Montserrat', sans-serif; font-size: 7vw; margin-bottom: 10px; font-weight: 400; margin-bottom: 20px;}
     #cont05 p {font-family: 'Noto Sans KR'; font-size: 4.2vw; font-weight: 300; letter-spacing: -0.025em; line-height: 1.4; margin-bottom: 50px;}
     #cont05 .container {width: auto; margin: 0 auto;}
     #cont05 .case {}

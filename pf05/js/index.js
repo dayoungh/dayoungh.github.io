@@ -111,6 +111,33 @@ $('.pr_slider01').slick({
 
 
 
+// intro_slider
+
+$('.intro_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows:false,
+    asNavFor: '.c04_slider',
+    responsive: [
+    {
+        
+        autoplaySpeed: 2000,
+        breakpoint: 769,
+        settings: {
+        slidesToShow: 1,
+        }
+    },
+
+    ]
+});
+
+
+
+
  //   c04_slider //
 
   $('.c04_slider').slick({
@@ -134,6 +161,8 @@ $('.pr_slider01').slick({
       ]
   });
   
+ 
+
 
 
    //content-slider txt slide
