@@ -256,7 +256,7 @@ margin-bottom: 20px;}
     #cont01 .container {margin: 0 auto; width: auto;}
    
     #cont01 .case {position: relative; width: auto; padding: 0 15px;}
-
+    #cont01 .case .path {width: 100%;}
     #cont01 .case .img01 {position: absolute; top: 12%; left: 46%; transform: translateX(-50%); width: 250px; height: 200px; margin: 0 auto; z-index: 1;}
     #cont01 .case .img01::after {content: ""; width: 300px; height: 200px; border: 1px solid #999; position: absolute; top: -10px; left: 10px;
     z-index: -1;}
