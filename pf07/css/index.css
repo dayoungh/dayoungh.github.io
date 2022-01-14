@@ -605,6 +605,7 @@ position: relative; color: var(--wc); letter-spacing: 0; z-index: 2;}
 #con03 .ins_itm {display: flex;}
 /* #con03 .ins_itm>div {flex:1;} */
 #con03 .ins_itm .ins01 {margin: 0 2rem;}
+#con03 .ins_itm .ins02 {margin: 0 2rem;}
 #con03 .ins_itm>figure img {max-width: 100%;}
 
 #con03 .ins_itm .txt {display: flex; text-align: left; padding: 1.5rem 0; background: var(--wc);}
@@ -725,6 +726,7 @@ font-size: 1.6rem;}
     #con03 .ins_itm {display: flex; flex-direction: column; background: var(--wc); padding: 0 0 0 0;}
     #con03 .ins_itm>div {flex: 1;}
     #con03 .ins_itm .ins01 {margin: 0 0;}
+    #con03 .ins_itm .ins02 {margin: 0 0;}
     #con03 .ins_itm figure {}
     #con03 .ins_itm figure img {max-width: 100%; text-align: center;}
 
@@ -744,9 +746,9 @@ font-size: 1.6rem;}
     #con03 .ins_itm .ins_icon .xi-heart:hover {animation: heartBeat 1s infinite;}
 
     /* 텍스트 */
-    #con03 .ins_itm .ins_txt {display: flex; margin: 0.4rem 0 0 1.25rem;}
-    #con03 .ins_itm .ins_txt span {font-size: 4vw; margin: 0 1rem 0 0; font-weight: 500;}
-    #con03 .ins_itm .ins_txt .des {font-size: 3.6vw; font-weight: 300; color: var(--dc); width: 21rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    #con03 .ins_itm .ins_txt {display: flex; margin: 0.4rem 0 0 2rem;}
+    #con03 .ins_itm .ins_txt span {font-size: 3.7vw; margin: 0 1rem 0 0; font-weight: 500;}
+    #con03 .ins_itm .ins_txt .des {font-size: 3.4vw; font-weight: 300; color: var(--dc); width: 21rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 
     /* .tab_item03 블로그 */
