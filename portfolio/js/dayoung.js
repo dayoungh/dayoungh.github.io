@@ -13,10 +13,10 @@ $(function(){
     });
 
     // typed //
-    let dada=new Typed('.slogan_txt',{
-        strings: ['DAYOUNG : Portfolio'],
-        typeSpeed:100,
-    });
+    // let dada=new Typed('.slogan_txt',{
+    //     strings: ['DAYOUNG : Portfolio'],
+    //     typeSpeed:100,
+    // });
     
     // cover btn (메뉴)//
     $('.cover_btn').on('click',function(){
