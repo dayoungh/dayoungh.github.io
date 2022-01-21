@@ -5,6 +5,7 @@ $(function(){
     let sideBar=$('nav li');
     $('#main').fullpage({
         anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
+        css3:false,
         afterLoad:function(origin, destination, direction){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
@@ -18,6 +19,7 @@ $(function(){
     //     typeSpeed:100,
     // });
     
+
     // cover btn (메뉴)//
     $('.cover_btn').on('click',function(){
      $('#cover').slideToggle();
@@ -51,6 +53,21 @@ $(function(){
     });
 
 
+    // guide 페이지
+    $('.guide_link a').on('click',function(){
+        //console.log($(this).index());
+        var idx=$(this).data('num');
+        console.log(idx)
+        $('.guide'+idx).fadeToggle();
+       });
+
+    $('.guide i').on('click',function(){
+        $('.guide').slideUp();
+    });
+
+    $('.guide').on('scroll wheel', function(e){
+        e.stopPropagation();
+    })
 
 
     //-----------------------------------------------------
