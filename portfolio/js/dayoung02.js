@@ -21,7 +21,8 @@ $(function(){
     
 
     // cover btn (메뉴)//
-    $('.cover_btn').on('click',function(){
+    $('.mopen').on('click',function(){
+     $(this).toggleClass('is-active');
      $('#cover').slideToggle();
      $("#cover").addClass('on');   //fadeToggle
     });
