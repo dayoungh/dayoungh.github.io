@@ -33,10 +33,12 @@ body {color: var(--lc);}
 .container {position: relative; display: flex; margin: 0 auto; width: 1400px; z-index: 1;}
 #wrap {min-width: 1900px;}
 
+
+
 /* 반응형 전체 */
 @media (max-width:768px) {
     body {color: var(--lc);}
-    .container {position: relative; display: flex; flex-direction: column; margin: 0 auto; width: auto; z-index: 1;}
+    .container {display: flex; flex-direction: column; position: relative; margin: 0 auto; width: auto; z-index: 1;}
     #wrap {min-width: auto;}
 }
 
@@ -122,11 +124,11 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
 @media (max-width:768px) {
 
     /* 전체섹션 & 목업(이미지) */
-    .section {background: url(../img/bg0.jpg) no-repeat; background-attachment: fixed; overflow: hidden;}
-    .section img {max-width: 100%;}
-    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/85%; padding: 5% 15% 12% 14%;
+    .section {background: url(../img/bg0.jpg) no-repeat; background-attachment: fixed;}
+    .section img {width: 100%;}
+    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/85%; padding: 7% 15% 7% 14%;
     margin: 10px 0 0 0;}
-    .section .mockup figure {position: relative; padding-bottom: 55%; overflow: hidden; width: 100%;}
+    .section .mockup figure {position: relative; padding-bottom: 64%; overflow: hidden; width: 100%;}
     .section .mockup figure img {position: absolute; top: 0; left: 0; width: 100%; transition: 6s linear;}
     .section .mockup figure:hover img {transform: translateY(-100%); top: 100%; cursor: pointer;}
 
@@ -268,7 +270,7 @@ vertical-align: middle; margin-left: 20px;}
 @media (max-width:768px) {
     .intro {position: relative;}
     /* 휠 마우스 */
-    .intro .wheel {position: absolute; bottom: 25%; left: 50%; transform: translateX(-50%); width: 25px;
+    .intro .wheel {display: none; position: absolute; bottom: 35%; left: 50%; transform: translateX(-50%); width: 25px;
     height: 40px; border: 2px solid var(--lc); font-size: 0; border-radius: 14px; opacity: 0.5; z-index: 888;}
     .intro .wheel span {position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 4px;
     height: 8px; background: var(--lc); border-radius: 2px; animation: wheel 0.7s infinite;}
@@ -282,10 +284,10 @@ vertical-align: middle; margin-left: 20px;}
     .bg_star {position: relative; overflow: hidden; width: 100%; min-width: 100%;}
     .bg_star .inner {position: relative; width: 100%; margin: 0 auto;}
     .bg_star .top {position: relative; width: 100%;}
-    .bg_star .top .inner {height: 962px;}
+    .bg_star .top .inner {height: 100vh;}
     
     
-    .bg_star .top .c1_s img {position: absolute; animation: star 20s linear infinite; margin-left: 0; margin-top: 0; opacity: 0; }
+    .bg_star .top .c1_s img {position: absolute; width: 50%; animation: star 20s linear infinite; margin-left: 0; margin-top: 0; opacity: 0;}
     .bg_star .top .c1_s img:nth-child(1) {animation-delay: 0; animation-duration: 1.6s; top: 142px; left: 0;}
     .bg_star .top .c1_s img:nth-child(2) {animation-delay: -1.5s; animation-duration: 1.4s; top:252px; left:157px;}
     .bg_star .top .c1_s img:nth-child(3) {animation-delay: -0.7s; animation-duration: 1.2s; top:218px; left:320px;}
@@ -307,7 +309,7 @@ vertical-align: middle; margin-left: 20px;}
     
     
     /* 인트로 - 원 */
-    .intro .circle_wrap {position: absolute; top: 13%; left: 50%; transform: translateX(-50%); width: 300px; height: 300px; display: flex; justify-content: center; z-index: 1;}
+    .intro .circle_wrap {position: absolute; top: 15%; left: 50%; transform: translateX(-50%); width: 300px; height: 300px; display: flex; justify-content: center; z-index: 1;}
     .intro .circle {position: relative; width: 200px; height: 200px; overflow: hidden;
     border-radius: 100%; background: linear-gradient(#3c5aff, #75d8df); box-shadow: 0px 16px 14px -3px rgba(0,0,0,0.3); transform: translate3d(0, 0, 0);}
     .intro .wave01 {position: absolute; top: -110%; left: -65%; border-radius: 45%; width: 400px; height: 400px;
@@ -355,7 +357,7 @@ vertical-align: middle; margin-left: 20px;}
     }
     
     /* 인트로 슬로건 */
-    .intro .slogan {position: absolute; top: 40%; left: 50%; transform: translateX(-50%);}
+    .intro .slogan {position: absolute; top: 55%; left: 50%; transform: translateX(-50%);}
     .intro .slogan h2 {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; font-weight: 300; letter-spacing: -0.025em; margin-bottom: 10px;}
     .intro .slogan h3 {font-family: 'Rufina', serif; font-size: 34px; font-weight: 700; margin-bottom: 10px;}
     .intro .slogan h4 {font-family: 'Rufina', serif; font-size: 34px; font-weight: 700; margin-bottom: 10px;}
@@ -669,7 +671,7 @@ border-bottom: 1px solid rgba(255,255,255,0.5); padding: 0 0 10px 0; text-align:
 @media (max-width:768px) {
     /* profile */
     .profile {position: relative;}
-    .profile .con {display: flex; width: auto; margin: 0 auto; padding: 0 25px 0 35px; z-index: 2;}
+    .profile .con {display: flex; width: auto; margin: 0 auto; padding: 0 20px; z-index: 2;}
     .profile img {width: 100%;}
 
     /* profile - gooey */
@@ -688,10 +690,10 @@ border-bottom: 1px solid rgba(255,255,255,0.5); padding: 0 0 10px 0; text-align:
 
     /* profile 돌아가는원 */
     .profile figure {float: none; text-align: center; margin: 10% auto; z-index: 1;}
-    .profile .inner {position: relative; width: 200px; height: 200px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
+    .profile .inner {position: relative; width: 190px; height: 190px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
     border-radius: 50%;}
-    .profile .inner strong {display: block; width: 160px; height: 160px; border-radius: 50%; overflow: hidden;}
-    .profile .inner span {position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 100px; font-size: 0;
+    .profile .inner strong {display: block; width: 150px; height: 150px; border-radius: 50%; overflow: hidden;}
+    .profile .inner span {position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 95px; font-size: 0;
     animation: circle_photo 6s infinite linear; transform-origin: bottom;}
     .profile .inner span::after {content: ""; display: block; width: 10px; height: 10px; background: var(--sc); border-radius: 50%;
     margin-top: -5px;}
@@ -715,7 +717,7 @@ border-bottom: 1px solid rgba(255,255,255,0.5); padding: 0 0 10px 0; text-align:
 
 
     /* 프로필 내용 */
-    .profile .contents {display: inline-block; transform: translate(0,0); margin: 70px 0 0 10px;}
+    .profile .contents {display: inline-block; transform: translate(0,0); margin: 70px 0 0 0;}
     .profile .contents h2::before {display: none; content: "＊";}
     .profile .contents h2 {font-family: 'Rufina', serif; color: var(--sc); font-size: 3.5vw; margin-bottom: 5px; letter-spacing: 0.25em; font-style: italic;}
     
@@ -749,7 +751,7 @@ border-bottom: 1px solid rgba(255,255,255,0.5); padding: 0 0 10px 0; text-align:
     #footer .toTop {position: fixed; bottom: 20px; right: 20px; z-index: 999;}
     #footer .toTop i {font-size: 20px; padding: 10px; color: var(--lc); background: var(--mc); border-radius: 50%;}
 
-    #footer address {position: fixed; top: 50%; left: -13%; transform: translateX(-50%); font-size: 10px; transform: rotate(-90deg); z-index: 999;}
+    #footer address {display: none; position: fixed; top: 50%; left: -13%; transform: translateX(-50%); font-size: 10px; transform: rotate(-90deg); z-index: 999;}
 }
 
 
@@ -759,18 +761,39 @@ border-bottom: 1px solid rgba(255,255,255,0.5); padding: 0 0 10px 0; text-align:
 #cover {display: none; position: fixed; top: 0; left: 0; background: url(../img/bg02.jpg) no-repeat center center/cover; width: 100%; height: 100vh;
 z-index: 998;}
 #cover ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: var(--dc);
-font-size: 30px; line-height: 1.7; text-align: center; background: var(--lc); padding: 7% 10%;
-border-radius: 50%;}
-#cover ul li:nth-child(1) {opacity: 0; transition: 1s;}
-#cover ul li:nth-child(2) {opacity: 0; transition: 1s 0.5s;}
-#cover ul li:nth-child(3) {opacity: 0; transition: 1s 0.7s;}
-#cover ul li:nth-child(4) {opacity: 0; transition: 1s 1s;}
-#cover ul li:nth-child(5) {opacity: 0; transition: 1s 1.2s;}
-#cover ul li:nth-child(6) {opacity: 0; transition: 1s 1.5s;}
-#cover ul li:nth-child(7) {opacity: 0; transition: 1s 1.8s;}
-#cover.on ul li {opacity: 1;}
+font-size: 30px; line-height: 1.7; text-align: center; background: var(--lc); padding: 7% 10%; border-radius: 50%;}
+#cover ul li:nth-child(1) {opacity: 1; transition: 1s;}
+#cover ul li:nth-child(2) {opacity: 1; transition: 1s 0.5s;}
+#cover ul li:nth-child(3) {opacity: 1; transition: 1s 0.7s;}
+#cover ul li:nth-child(4) {opacity: 1; transition: 1s 1s;}
+#cover ul li:nth-child(5) {opacity: 1; transition: 1s 1.2s;}
+#cover ul li:nth-child(6) {opacity: 1; transition: 1s 1.5s;}
+#cover ul li:nth-child(7) {opacity: 1; transition: 1s 1.8s;}
+#cover.on ul li {}
 #cover ul li a {font-family: 'Open Sans', sans-serif; -webkit-text-stroke: 1px #000; color: #fff; font-weight: 700; transition: 0.3s;}
 #cover ul li a:hover {color: rgb(224, 197, 255);}
+
+
+
+/* 반응형 #cover */
+@media (max-width:768px) {
+    #cover {display: none; position: fixed; top: 0; left: 0; background: url(../img/bg02.jpg) no-repeat center center/cover; width: 100%; height: 100vh;
+    z-index: 998;}
+    #cover ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: var(--dc);
+    font-size: 5vw; line-height: 1.7; text-align: center; background: var(--lc); padding: 10% 15%;
+    border-radius: 50%;}
+    #cover ul li:nth-child(1) {opacity: 0; transition: 1s;}
+    #cover ul li:nth-child(2) {opacity: 0; transition: 1s 0.5s;}
+    #cover ul li:nth-child(3) {opacity: 0; transition: 1s 0.7s;}
+    #cover ul li:nth-child(4) {opacity: 0; transition: 1s 1s;}
+    #cover ul li:nth-child(5) {opacity: 0; transition: 1s 1.2s;}
+    #cover ul li:nth-child(6) {opacity: 0; transition: 1s 1.5s;}
+    #cover ul li:nth-child(7) {opacity: 0; transition: 1s 1.8s;}
+    #cover.on ul li {opacity: 1;}
+    #cover ul li a {font-family: 'Open Sans', sans-serif; -webkit-text-stroke: 1px #000; color: #fff; font-weight: 700; transition: 0.3s;}
+    #cover ul li a:hover {color: rgb(224, 197, 255);}
+        
+ }
 
 
 /* .description ul {position: relative;} */
@@ -782,3 +805,6 @@ border-radius: 50%;}
 .guide img {width: 100%; margin: 0 auto;}
 .guide figure::-webkit-scrollbar {background: #eee;}
 .guide figure::-webkit-scrollbar-thumb {background: #bbb;}
+
+
+/* * {outline: 1px solid #369;} */
