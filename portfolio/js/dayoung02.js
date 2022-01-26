@@ -6,6 +6,7 @@ $(function(){
     $('#main').fullpage({
         anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
         css3:false,
+        // responsiveWidth: 768,
         afterLoad:function(origin, destination, direction){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
@@ -19,6 +20,9 @@ $(function(){
     //     typeSpeed:100,
     // });
     
+    let cloneMenu = $('nav>ul').clone();
+    console.log(cloneMenu);
+    $('#cover').append(cloneMenu);
 
     // cover btn (메뉴)//
     $('.mopen').on('click',function(){
@@ -31,9 +35,6 @@ $(function(){
      $('#cover').slideUp();  
     });
 
-    let cloneMenu = $('nav>ul').clone();
-    console.log(cloneMenu);
-    $('#cover').append(cloneMenu);
 
 
     $('#cover').on('scoll wheel', function(){
