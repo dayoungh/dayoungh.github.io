@@ -19,6 +19,9 @@ $(function(){
     //     typeSpeed:100,
     // });
     
+    let cloneMenu = $('nav>ul').clone();
+    console.log(cloneMenu);
+    $('#cover').append(cloneMenu);
 
     // cover btn (메뉴)//
     $('.mopen').on('click',function(){
@@ -31,9 +34,6 @@ $(function(){
      $('#cover').slideUp();  
     });
 
-    let cloneMenu = $('nav>ul').clone();
-    console.log(cloneMenu);
-    $('#cover').append(cloneMenu);
 
 
     $('#cover').on('scoll wheel', function(){
