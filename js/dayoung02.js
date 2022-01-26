@@ -14,21 +14,16 @@ $(function(){
         },
     });
 
-    // typed //
-    // let dada=new Typed('.slogan_txt',{
-    //     strings: ['DAYOUNG : Portfolio'],
-    //     typeSpeed:100,
-    // });
     
     let cloneMenu = $('nav>ul').clone();
     console.log(cloneMenu);
     $('#cover').append(cloneMenu);
 
-    // cover btn (메뉴)//
+    // mopen (메뉴)//
     $('.mopen').on('click',function(){
      $(this).toggleClass('is-active');
      $('#cover').slideToggle();
-     $("#cover").addClass('on');   //fadeToggle
+     $("#cover").addClass('on');   
     });
 
     $('#cover li').on('click',function(){
@@ -69,7 +64,10 @@ $(function(){
 
     $('.guide').on('scroll wheel', function(e){
         e.stopPropagation();
-    })
+    });
+
+
+   
 
 
     //-----------------------------------------------------
