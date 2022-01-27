@@ -81,7 +81,7 @@
     .gnb .depth02>li>a {display: block; line-height: 35px; text-align: center; font-size: 14px; font-weight: 300; color: #444; letter-spacing: -0.025em;}
     
     .mopen {display: block; position: fixed; top: 30px; right: 30px; font-size: 30px; line-height: 1; transition: 0.5s;}
-    .mopen.on {transform: rotate(45deg);}
+    /* .mopen.on {transform: rotate(45deg);} */
 }
 
 
