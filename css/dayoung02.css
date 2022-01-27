@@ -46,8 +46,8 @@ body {color: var(--lc);}
 #header {}
 /* nav */
 #header nav {position: fixed; top: 50%; right: 60px; transform: translateY(-50%); z-index: 999;}
-#header nav li a {position: relative; display: block; width: 60px; height: 20px; text-indent: -99999px;}
-#header nav li a:after {content: ""; display: block; position: absolute; top: 7px; right: 0; width: 40%; height: 6px; background: var(--mc);
+#header nav li a {position: relative; display: block; width: 60px; height: 18px; text-indent: -99999px;}
+#header nav li a:after {content: ""; display: block; position: absolute; top: 7px; right: 0; width: 40%; height: 1px; background: var(--mc);
 border-radius: 3px; transition: 0.3s;}
 #header nav li.on a:after {width: 80%; background: var(--sc);}
 
@@ -177,8 +177,8 @@ height: 10px; background: var(--lc); border-radius: 2px; animation: wheel 0.7s i
 }
 
 
-/* 인트로 배경 */
-.bg_star {position: relative; overflow: hidden; width: 100%; min-width: 1200px}
+/* 인트로 배경(별) */
+.bg_star {position: absolute; top: 0; left: 50%; transform: translateX(-50%); overflow: hidden; width: 100%; min-width: 1200px}
 .bg_star .inner {position: relative; width: 1200px; margin: 0 auto;}
 .bg_star .top {position: relative; width: 100%;}
 .bg_star .top .inner {height: 962px;}
@@ -206,7 +206,7 @@ height: 10px; background: var(--lc); border-radius: 2px; animation: wheel 0.7s i
 
 
 /* 인트로 - 원 */
-.intro .circle_wrap {position: absolute; top: 25%; left: 30%; transform: translateX(-50%); width: 500px; height: 500px; display: flex; justify-content: center; z-index: 1;}
+.intro .circle_wrap {flex: 1; width: 500px; height: 500px; display: flex; justify-content: center; padding: 10px 0 0 170px; z-index: 1;}
 .intro .circle {position: relative; width: 400px; height: 400px; overflow: hidden;
 border-radius: 100%; background: linear-gradient(#3c5aff, #75d8df); box-shadow: 0px 16px 14px -3px rgba(0,0,0,0.3); transform: translate3d(0, 0, 0);}
 .intro .wave01 {position: absolute; top: -65%; left: -30%; border-radius: 45%; width: 600px; height: 600px;
@@ -254,7 +254,7 @@ animation: moon-rotation 4s infinite linear;}
 }
 
 /* 인트로 슬로건 */
-.intro .slogan {position: absolute; top: 27%; left: 70%; transform: translateX(-50%);}
+.intro .slogan {flex: 1; padding: 35px 30px 0 35px;}
 .intro .slogan h2 {font-family: 'Noto Sans KR', sans-serif; font-size: 23px; font-weight: 300; letter-spacing: -0.025em; margin-bottom: 20px;}
 .intro .slogan h3 {font-family: 'Rufina', serif; font-size: 70px; font-weight: 700; margin-bottom: 10px;}
 .intro .slogan h4 {font-family: 'Rufina', serif; font-size: 70px; font-weight: 700; margin-bottom: 10px;}
@@ -281,7 +281,7 @@ vertical-align: middle; margin-left: 20px;}
     
     
     /* 인트로 배경 */
-    .bg_star {position: relative; overflow: hidden; width: 100%; min-width: 100%;}
+    .bg_star {position: absolute; top: 0; left: 50%; transform: translateX(-50%); overflow: hidden; width: 100%; min-width: 100%;}
     .bg_star .inner {position: relative; width: 100%; margin: 0 auto;}
     .bg_star .top {position: relative; width: 100%;}
     .bg_star .top .inner {height: 100vh;}
@@ -291,7 +291,7 @@ vertical-align: middle; margin-left: 20px;}
     .bg_star .top .c1_s img:nth-child(1) {animation-delay: 0; animation-duration: 1.6s; top: 142px; left: 0;}
     .bg_star .top .c1_s img:nth-child(2) {animation-delay: -1.5s; animation-duration: 1.4s; top:252px; left:157px;}
     .bg_star .top .c1_s img:nth-child(3) {animation-delay: -0.7s; animation-duration: 1.2s; top:218px; left:320px;}
-    .bg_star .top .c1_s img:nth-child(4) {animation-delay: -1s; animation-duration: 1s; top:0; left:397px;}
+    .bg_star .top .c1_s img:nth-child(4) {animation-delay: -1s; animation-duration: 1s; top:0; left:207px;}
     .bg_star .top .c1_s img:nth-child(5) {animation-delay: 0.2s; animation-duration: 2s; top:110px; left:598px;}
     .bg_star .top .c1_s img:nth-child(6) {animation-delay: -2s; animation-duration: 1.8s; top:292px; left:713px;} 
     .bg_star .top .c1_s img:nth-child(7) {animation-delay: -0.5s; animation-duration: 1.2s; top:143px; left:805px;}
@@ -309,7 +309,7 @@ vertical-align: middle; margin-left: 20px;}
     
     
     /* 인트로 - 원 */
-    .intro .circle_wrap {position: absolute; top: 15%; left: 50%; transform: translateX(-50%); width: 300px; height: 300px; display: flex; justify-content: center; z-index: 1;}
+    .intro .circle_wrap {flex: 1; width: 300px; height: 300px; display: flex; justify-content: center; padding: 0 0 0 0; margin: 0 auto; z-index: 1;}
     .intro .circle {position: relative; width: 200px; height: 200px; overflow: hidden;
     border-radius: 100%; background: linear-gradient(#3c5aff, #75d8df); box-shadow: 0px 16px 14px -3px rgba(0,0,0,0.3); transform: translate3d(0, 0, 0);}
     .intro .wave01 {position: absolute; top: -110%; left: -65%; border-radius: 45%; width: 400px; height: 400px;
@@ -357,7 +357,7 @@ vertical-align: middle; margin-left: 20px;}
     }
     
     /* 인트로 슬로건 */
-    .intro .slogan {position: absolute; top: 55%; left: 50%; transform: translateX(-50%);}
+    .intro .slogan {flex: 1; padding: 0 0 0 0; margin: 35px auto 0 auto;}
     .intro .slogan h2 {font-family: 'Noto Sans KR', sans-serif; font-size: 15px; font-weight: 300; letter-spacing: -0.025em; margin-bottom: 10px;}
     .intro .slogan h3 {font-family: 'Rufina', serif; font-size: 34px; font-weight: 700; margin-bottom: 10px;}
     .intro .slogan h4 {font-family: 'Rufina', serif; font-size: 34px; font-weight: 700; margin-bottom: 10px;}
@@ -829,5 +829,5 @@ font-size: 30px; line-height: 1.7; text-align: center; background: var(--lc); pa
         
  }
 
-
-/* * {outline: 1px solid #369;} */
+/* 
+* {outline: 1px solid #369;} */
