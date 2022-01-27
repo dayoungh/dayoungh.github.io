@@ -484,7 +484,7 @@ margin-top: -10px;}
     .portfolio_03 .description dd span:nth-of-type(1) {background: #333333;}
     .portfolio_03 .description dd span:nth-of-type(2) {background: #F7F7F7; border: 1px solid #bbb;}
 
-    .portfolio_03 .inner {position: absolute; top: -15%; left: -10%; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
+    .portfolio_03 .inner {position: absolute; top: -7%; left: -10%; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
     border-radius: 50%;}
     .portfolio_03 .inner strong {display: block; width: 260px; height: 260px; border-radius: 50%; overflow: hidden;}
     .portfolio_03 .inner span {position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 150px; font-size: 0;
