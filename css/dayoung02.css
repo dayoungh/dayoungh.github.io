@@ -95,10 +95,10 @@ border-radius: 3px; transition: 0.3s;}
 
 /* 전체섹션 - 텍스트 */
 .section .description {flex: 1; color: var(--lc); margin: 100px 0 0 0;}
-.section .description h3 {display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 200; margin-bottom: 15px;
-background: var(--mc); padding: 5px 13px;}
+.section .description h3 {font-family: 'Rufina', serif; font-size: 53px; font-weight: 300; margin-bottom: 10px;}
 /* .section .description .txt {display: flex;} */
-.section .description h4 {font-family: 'Rufina', serif; font-size: 53px; font-weight: 300; margin-bottom: 10px;}
+.section .description h4 {display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 400; margin-bottom: 15px;
+background: var(--mc); padding: 5px 13px;}
 .section .description p {font-family: 'Noto Sans KR', sans-serif; font-size: 17px; font-weight: 300; margin-bottom: 50px;}
 
 .section .description dl {display: inline-flex; line-height: 2;}
@@ -135,10 +135,10 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
 
     /* 전체섹션 - 텍스트 */
     .section .description {flex: 1; color: var(--lc); margin: 50px 0 0 0; position: relative; top: 0; left: 12%; transform: translateX(-50%);}
-    .section .description h3 {display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 3vw; font-weight: 200; margin-bottom: 15px;
-    background: var(--mc); padding: 5px 13px;}
+    .section .description h3 {font-family: 'Rufina', serif; font-size: 5.7vw; font-weight: 300; margin-bottom: 10px;}
     /* .section .description .txt {display: flex;} */
-    .section .description h4 {font-family: 'Rufina', serif; font-size: 5.7vw; font-weight: 300; margin-bottom: 10px;}
+    .section .description h4 {display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 3vw; font-weight: 400; margin-bottom: 15px;
+    background: var(--mc); padding: 5px 10px; text-align: left;}
     .section .description p {font-family: 'Noto Sans KR', sans-serif; font-size: 3.2vw; font-weight: 300; margin-bottom: 25px;}
 
     .section .description dl {display: inline-flex; line-height: 2;}
