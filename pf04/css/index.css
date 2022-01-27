@@ -540,7 +540,7 @@ text-align: center;}
     
     
     #cont06 figure {flex: 1; padding: 0 1.5rem; margin: 1rem 0;}
-    #cont06 figure #mv01 {width: 100%;}
+    #cont06 figure #mv01 {width: 100% !important;}
 
 }
 
