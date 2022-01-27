@@ -16,7 +16,7 @@
 
 
 @media (max-width:768px) {
-    #wrap {min-width: auto;}
+    #wrap {min-width: auto; overflow-x: hidden;}
     #top_banner {display: none; background: #333;}
     #top_banner .container {position: relative; width: 1200px; margin: 0 auto; padding: 0 15px; text-align: center;  color: #fff;}
     #top_banner h2 {font-weight: 300; letter-spacing: -0.025em; line-height: 50px;}
