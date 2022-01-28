@@ -20,7 +20,8 @@ $(function(){
         containment:'#visual',
         autoPlay:true, 
         mute:true, 
-        startAt:0, 
+        startAt:0,
+        useOnMobile:true, 
         opacity:1,
         showControls:false,
     });
@@ -125,6 +126,7 @@ $(function(){
         showControls:false,
         playOnlyIfVisible:true,
         optimizeDisplay:false,
+        useOnMobile:true, 
     });
 
 
