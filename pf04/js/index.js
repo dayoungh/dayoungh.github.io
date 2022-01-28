@@ -43,7 +43,7 @@ $(function(){
 
 
 
-    // #cont02 li pr_slider ///
+    // #cont02 pr_slider ///
 
     $('.pr_slider').slick({
         arrows:false,
@@ -74,18 +74,17 @@ $(function(){
     });
 
 
-
-
-    // #cont02 li ///
+    // #cont02 리스트 ///
 
     $("#cont02 ul li").eq(1).addClass("on");
     $("#cont02 .pr_slider").on('afterChange', function(e,s,c){
-       $("#cont02 ul li").eq(c+1).addClass("on").siblings().removeClass("on");
+        $(window).width() < 768 ? $("#cont02 ul li").eq(c).addClass("on").siblings().removeClass("on")
+        : $("#cont02 ul li").eq(c+1).addClass("on").siblings().removeClass("on")
     });
   
     $("#cont02 ul li").on('click', function(){
         var idx=$(this).index();
-        $("#cont02 .pr_slider").slick('slickGoTo', idx-1);
+        $(window).width() < 768 ? $("#cont02 .pr_slider").slick('slickGoTo',  idx)  : $("#cont02 .pr_slider").slick('slickGoTo', idx-1);
         $(this).addClass("on").siblings().removeClass("on");
     });
 
@@ -118,7 +117,7 @@ $(function(){
 
     $('#mv01').YTPlayer({
         videoURL:'https://youtu.be/RKlbViql5i0',
-        containment:'#mv01',
+        containment:'self',
         autoPlay:true, 
         mute:true, 
         startAt:0, 
