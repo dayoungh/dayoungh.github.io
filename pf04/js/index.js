@@ -116,18 +116,18 @@ $(function(){
 
    // #cont06 video //
 
-    $('#mv01').YTPlayer({
-        videoURL:'https://youtu.be/RKlbViql5i0',
-        containment:'self',
-        autoPlay:true, 
-        mute:true, 
-        startAt:0, 
-        opacity:1,
-        showControls:false,
-        playOnlyIfVisible:false,
-        optimizeDisplay:false,
-        // useOnMobile:true, 
-    });
+    // $('#mv01').YTPlayer({
+    //     videoURL:'https://youtu.be/RKlbViql5i0',
+    //     containment:'self',
+    //     autoPlay:true, 
+    //     mute:true, 
+    //     startAt:0, 
+    //     opacity:1,
+    //     showControls:false,
+    //     playOnlyIfVisible:false,
+    //     optimizeDisplay:false,
+    //     // useOnMobile:true, 
+    // });
 
 
 
