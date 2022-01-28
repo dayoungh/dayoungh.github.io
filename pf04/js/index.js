@@ -21,7 +21,7 @@ $(function(){
         autoPlay:true, 
         mute:true, 
         startAt:0,
-        useOnMobile:true, 
+        // useOnMobile:true, 
         opacity:1,
         showControls:false,
     });
@@ -124,9 +124,9 @@ $(function(){
         startAt:0, 
         opacity:1,
         showControls:false,
-        playOnlyIfVisible:true,
+        playOnlyIfVisible:false,
         optimizeDisplay:false,
-        useOnMobile:true, 
+        // useOnMobile:true, 
     });
 
 
