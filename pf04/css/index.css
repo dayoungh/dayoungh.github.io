@@ -469,7 +469,7 @@ text-align: center;}
 #cont06 {padding: 15rem 0; text-align: center; background: #f7f7f7;}
 #cont06 h2 {font-size: 3rem; padding-bottom: 2rem;}
 #cont06 p {font-size: 1.8rem; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 5.5rem;}
-#cont06 .container {display: flex;}
+#cont06 .container {display: flex; padding: 0 1.5rem;}
 #cont06 .tab {flex: 1; display: block; width: 100%; height: 100%; background: #fff; box-shadow: 0 0 2px rgba(0,0,0,0.4);}
 #cont06 .tab_menu {}
 #cont06 .tab_menu ul {display: flex; line-height: 4rem;}
