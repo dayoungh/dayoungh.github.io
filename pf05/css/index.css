@@ -621,15 +621,15 @@ opacity: 1;}
     #footer {background: #333; color: #f4f4f4; line-height: 30px; text-align: center; padding: 0 0 20px 0;}
     #footer .container {width: auto; margin: 0 auto; display: flex; flex-direction: column; padding: 0 15px; justify-content: space-between;}
     #footer .f_top {border-bottom: 1px solid #555;}
-    #footer .f_top ul {display: block; padding: 20px 0; border-bottom: 1px solid #555;}
-    #footer .f_top ul>li {display: inline-block;}
-    #footer .f_top ul a {padding: 0 15px; position: relative; font-size: 3.2vw; font-weight: 300;}
+    #footer .f_top ul {display: block; padding: 15px 0; border-bottom: 1px solid #555;}
+    #footer .f_top ul>li {display: inline-block; line-height: 1;}
+    #footer .f_top ul a {padding: 0 10px; position: relative; font-size: 3vw; font-weight: 300;}
     #footer .f_top ul>li~li>a::after {content: ""; display: none; width: 1px; height: 12px; background: #999; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
     #footer .f_top ul>li:first-child a {padding: 0 20px 0 0;}
     #footer .sns {padding: 20px 0;}
     #footer i {font-size: 20px;}
     #footer .link select {padding: 3px; background: #333; outline: none; font-size: 3vw;}
-    #footer address {font-size: 3.2vw; font-weight: 300; line-height: 2;}
+    #footer address {font-size: 3vw; font-weight: 300; line-height: 1.7; padding: 10px 0;}
     #footer address>a {padding: 0 10px;}
     #footer .sns>a {padding: 0 10px;}
 
