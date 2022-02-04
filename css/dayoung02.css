@@ -555,7 +555,7 @@ border-radius: 50%; animation: circle_move 3.5s infinite;}
 
 .portfolio_05 .description {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
 .portfolio_05.on .description {transform: translate(0,0); opacity: 1;}
-.portfolio_05 .description dd span:nth-of-type(1) {background: #00325d;}
+.portfolio_05 .description dd span:nth-of-type(1) {background: #00325d; border: 1px solid #bbb;}
 .portfolio_05 .description dd span:nth-of-type(2) {background: #f4f4f4;}
 .portfolio_05 .description dd span:nth-of-type(3) {background: #004B8D;}
 
@@ -579,7 +579,7 @@ margin-top: -10px;}
 
     .portfolio_05 .description {transform: translate(-200px,0); transition: 0.6s; opacity: 0;}
     .portfolio_05.on .description {transform: translate(0,0); opacity: 1;}
-    .portfolio_05 .description dd span:nth-of-type(1) {background: #00325d;}
+    .portfolio_05 .description dd span:nth-of-type(1) {background: #00325d; border: 1px solid #bbb;}
     .portfolio_05 .description dd span:nth-of-type(2) {background: #f4f4f4;}
     .portfolio_05 .description dd span:nth-of-type(3) {background: #004B8D;}
 
@@ -592,6 +592,33 @@ margin-top: -10px;}
     animation: circle_photo 6s infinite linear; transform-origin: bottom;}
     .portfolio_05 .inner span::after {content: ""; display: block; width: 20px; height: 20px; background: var(--sc); border-radius: 50%;
     margin-top: -10px;}
+  }
+
+
+
+/* pf05 6번*/
+.portfolio_06 {}
+.portfolio_06 .itm {transform: translate(0,150px); transition: 0.4s; opacity: 0;}
+.portfolio_06.on .itm {transform: translate(0,0); opacity: 1;}
+
+.portfolio_06 .description {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
+.portfolio_06.on .description {transform: translate(0,0); opacity: 1;}
+.portfolio_06 .description dd span:nth-of-type(1) {background: #D71921;}
+.portfolio_06 .description dd span:nth-of-type(2) {background: #f4f4f4;}
+
+
+
+/* 반응형 pf05 6번 */
+@media (max-width:768px) {
+   /* pf05 6번*/
+    .portfolio_06 {}
+    .portfolio_06 .itm {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
+    .portfolio_06.on .itm {transform: translate(0,0); opacity: 1;}
+
+    .portfolio_06 .description {transform: translate(-200px,0); transition: 0.6s; opacity: 0;}
+    .portfolio_06.on .description {transform: translate(0,0); opacity: 1;}
+    .portfolio_06 .description dd span:nth-of-type(1) {background: #D71921;}
+    .portfolio_06 .description dd span:nth-of-type(2) {background: #f4f4f4;}
   }
 
 
