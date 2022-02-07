@@ -790,13 +790,13 @@ font-size: 30px; line-height: 1.7; text-align: center; background: var(--lc); pa
     #cover ul {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: var(--dc);
     font-size: 5vw; line-height: 1.7; text-align: center; background: var(--lc); padding: 10% 15%;
     border-radius: 50%;}
-    #cover ul li:nth-child(1) {opacity: 0; transition: 1s;}
-    #cover ul li:nth-child(2) {opacity: 0; transition: 1s 0.5s;}
-    #cover ul li:nth-child(3) {opacity: 0; transition: 1s 0.7s;}
-    #cover ul li:nth-child(4) {opacity: 0; transition: 1s 1s;}
-    #cover ul li:nth-child(5) {opacity: 0; transition: 1s 1.2s;}
-    #cover ul li:nth-child(6) {opacity: 0; transition: 1s 1.5s;}
-    #cover ul li:nth-child(7) {opacity: 0; transition: 1s 1.8s;}
+    #cover ul li:nth-child(1) {opacity: 0;}
+    #cover ul li:nth-child(2) {opacity: 0;}
+    #cover ul li:nth-child(3) {opacity: 0;}
+    #cover ul li:nth-child(4) {opacity: 0;}
+    #cover ul li:nth-child(5) {opacity: 0;}
+    #cover ul li:nth-child(6) {opacity: 0;}
+    #cover ul li:nth-child(7) {opacity: 0;}
     #cover.on ul li {opacity: 1;}
     #cover ul li a {font-family: 'Open Sans', sans-serif; -webkit-text-stroke: 1px #333; color: #fff; font-weight: 700; transition: 0.3s;}
     #cover ul li a:hover {color: rgb(224, 197, 255);}
