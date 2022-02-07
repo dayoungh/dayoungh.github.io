@@ -484,7 +484,7 @@ margin-top: -10px;}
     .portfolio_03 .description dd span:nth-of-type(1) {background: #333333;}
     .portfolio_03 .description dd span:nth-of-type(2) {background: #F7F7F7; border: 1px solid #bbb;}
 
-    .portfolio_03 .inner {position: absolute; top: -15%; left: -10%; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
+    .portfolio_03 .inner {position: absolute; top: -7%; left: -10%; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
     border-radius: 50%;}
     .portfolio_03 .inner strong {display: block; width: 260px; height: 260px; border-radius: 50%; overflow: hidden;}
     .portfolio_03 .inner span {position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 150px; font-size: 0;
@@ -555,13 +555,13 @@ border-radius: 50%; animation: circle_move 3.5s infinite;}
 
 .portfolio_05 .description {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
 .portfolio_05.on .description {transform: translate(0,0); opacity: 1;}
-.portfolio_05 .description dd span:nth-of-type(1) {background: #00325d;}
+.portfolio_05 .description dd span:nth-of-type(1) {background: #00325d; border: 1px solid #bbb;}
 .portfolio_05 .description dd span:nth-of-type(2) {background: #f4f4f4;}
 .portfolio_05 .description dd span:nth-of-type(3) {background: #004B8D;}
 
 /* pf05 돌아가는원 */
 .portfolio_05 {position: relative;}
-.portfolio_05 .inner {position: absolute; top: 15%; right: -10%; width: 500px; height: 500px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
+.portfolio_05 .inner {position: absolute; top: 35%; right: -12%; width: 500px; height: 500px; border: 1px solid rgba(255,255,255,0.5); padding: 20px;
 border-radius: 50%;}
 .portfolio_05 .inner strong {display: block; width: 460px; height: 460px; border-radius: 50%; overflow: hidden;}
 .portfolio_05 .inner span {position: absolute; top: 0; left: calc(50% - 10px); width: 20px; height: 250px; font-size: 0;
@@ -579,7 +579,7 @@ margin-top: -10px;}
 
     .portfolio_05 .description {transform: translate(-200px,0); transition: 0.6s; opacity: 0;}
     .portfolio_05.on .description {transform: translate(0,0); opacity: 1;}
-    .portfolio_05 .description dd span:nth-of-type(1) {background: #00325d;}
+    .portfolio_05 .description dd span:nth-of-type(1) {background: #00325d; border: 1px solid #bbb;}
     .portfolio_05 .description dd span:nth-of-type(2) {background: #f4f4f4;}
     .portfolio_05 .description dd span:nth-of-type(3) {background: #004B8D;}
 
@@ -592,6 +592,33 @@ margin-top: -10px;}
     animation: circle_photo 6s infinite linear; transform-origin: bottom;}
     .portfolio_05 .inner span::after {content: ""; display: block; width: 20px; height: 20px; background: var(--sc); border-radius: 50%;
     margin-top: -10px;}
+  }
+
+
+
+/* pf06 6번*/
+.portfolio_06 {}
+.portfolio_06 .itm {transform: translate(0,150px); transition: 0.4s; opacity: 0;}
+.portfolio_06.on .itm {transform: translate(0,0); opacity: 1;}
+
+.portfolio_06 .description {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
+.portfolio_06.on .description {transform: translate(0,0); opacity: 1;}
+.portfolio_06 .description dd span:nth-of-type(1) {background: #D71921;}
+.portfolio_06 .description dd span:nth-of-type(2) {background: #f4f4f4;}
+
+
+
+/* 반응형 pf06 6번 */
+@media (max-width:768px) {
+   /* pf05 6번*/
+    .portfolio_06 {}
+    .portfolio_06 .itm {transform: translate(-200px,0); transition: 0.5s; opacity: 0;}
+    .portfolio_06.on .itm {transform: translate(0,0); opacity: 1;}
+
+    .portfolio_06 .description {transform: translate(0,200px); transition: 0.6s; opacity: 0;}
+    .portfolio_06.on .description {transform: translate(0,0); opacity: 1;}
+    .portfolio_06 .description dd span:nth-of-type(1) {background: #D71921;}
+    .portfolio_06 .description dd span:nth-of-type(2) {background: #f4f4f4;}
   }
 
 
