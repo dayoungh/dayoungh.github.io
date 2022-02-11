@@ -27,10 +27,11 @@ $(function(){
     });
 
     $('#cover li').on('click',function(){
-     $('#cover').slideUp();  
+     $('#cover').slideUp();
+     $('.mopen').toggleClass('is-active');  
     });
 
-    // $('.mopen').toggleClass('is-active');
+   
 
 
 
