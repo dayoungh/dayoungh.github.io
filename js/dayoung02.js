@@ -4,7 +4,7 @@ $(function(){
     let sc=$('.section');
     let sideBar=$('nav li');
     $('#main').fullpage({
-        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
+        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'portfolio_06', 'profile'],
         css3:false,
         // responsiveWidth: 768,
         afterLoad:function(origin, destination, direction){
@@ -29,6 +29,8 @@ $(function(){
     $('#cover li').on('click',function(){
      $('#cover').slideUp();  
     });
+
+    // $('.mopen').toggleClass('is-active');
 
 
 
