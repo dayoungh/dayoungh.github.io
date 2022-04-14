@@ -124,7 +124,7 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
 @media (max-width:768px) {
 
     /* 전체섹션 & 목업(이미지) */
-    .section {background: url(../img/bg0.jpg) no-repeat; background-attachment: fixed;}
+    .section {background: url(../img/bg0.jpg) no-repeat center center/cover; background-attachment: fixed;}
     .section img {width: 100%;}
     .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/85%; padding: 7% 15% 7% 14%;
     margin: 10px 0 0 0;}
