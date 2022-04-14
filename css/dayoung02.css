@@ -85,7 +85,7 @@ border-radius: 3px; transition: 0.3s;}
 
 
 /* 전체섹션 & 목업(이미지) */
-.section {background:url(../img/bg0.jpg) no-repeat; background-attachment: fixed;}
+.section {background:url(../img/bg0.jpg) no-repeat center center/cover; background-attachment: fixed;}
 .section img {max-width: 100%;}
 .section .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/100%; padding: 6% 5% 7% 4.5%;}
 .section .mockup figure {position: relative; padding-bottom: 67%; overflow: hidden; width: 100%;}
