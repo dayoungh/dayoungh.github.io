@@ -33,9 +33,9 @@ $(function(){
 
    
 
-    // $('#cover').on('scoll wheel', function(){
-    //     return false;
-    // });
+    $('#cover').on('scoll wheel', function(){
+        return false;
+    });
 
 
     // $('#cover').on('scoll wheel touchMove', function(e){
@@ -80,7 +80,7 @@ $(function(){
         $('.guide').slideUp();
     });
 
-    $('.guide').on('scroll wheel', function(e){
+    $('.guide').on('scroll wheel touchMove', function(e){
         e.stopPropagation();
     });
 
