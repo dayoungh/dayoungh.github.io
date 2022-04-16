@@ -43,16 +43,6 @@ $(function(){
     // });
 
     
-    //전체메뉴 아이콘을 클릭했을때
-    $('.section .description ul li a').click(function(){
-    $.fn.fullpage.setAllowScrolling(false);
-    });
-    
-    //메뉴명을 클릭하거나,전체화면을 다시 끄거나
-    $('.guide i').click(function(){
-    $.fn.fullpage.setAllowScrolling(true);
-    });
-
     
     //scroll event //
     const SEC = document.querySelectorAll('.action');
