@@ -87,14 +87,14 @@ border-radius: 3px; transition: 0.3s;}
 /* 전체섹션 & 목업(이미지) */
 .section {background:url(../img/bg0.jpg) no-repeat center center/cover; background-attachment: fixed;}
 .section img {max-width: 100%;}
-.section .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/100%; padding: 6% 5% 7% 4.5%;}
+.section .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/100%; padding: 8% 6% 8.5% 5.8%;}
 .section .mockup figure {position: relative; padding-bottom: 67%; overflow: hidden; width: 100%;}
 .section .mockup figure img {position: absolute; top: 0; left: 0; width: 100%; transition: 6s linear;}
 .section .mockup figure:hover img {transform: translateY(-100%); top: 100%; cursor: pointer;}
 
 
 /* 전체섹션 - 텍스트 */
-.section .description {flex: 1; color: var(--lc); margin: 100px 0 0 0;}
+.section .description {flex: 1; color: var(--lc); margin: 130px 0 0 0;}
 .section .description h3 {font-family: 'Rufina', serif; font-size: 53px; font-weight: 300; margin-bottom: 10px;}
 /* .section .description .txt {display: flex;} */
 .section .description h4 {display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 400; margin-bottom: 15px;
@@ -109,14 +109,15 @@ background: var(--mc); padding: 5px 13px;}
 .section .description dd strong {vertical-align: middle; margin-right: 20px;}
 
 .section .description ul {display: flex; gap: 20px;}
-.section .description ul a {display: block; font-family: 'Montserrat', sans-serif; color: var(--lc); line-height: 40px; font-size: 15px; font-weight: 400;
-border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
+.section .description ul li {}
+.section .description ul a {display: block; font-family: 'Montserrat', sans-serif; color: var(--lc); line-height: 40px; font-size: 14px; font-weight: 400;
+border: 1px solid rgba(255,255,255,0.5); padding: 0 18px; transition: 0.3s;}
 .section .description ul a:hover {background: var(--mc);}
 
 
 
 /* 홀수섹션 - 텍스트 */
-.section .odd {margin-left: 120px;}
+.section .odd {position: relative; top: 0; left: 120px;}
 
 
 
@@ -126,7 +127,7 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
     /* 전체섹션 & 목업(이미지) */
     .section {background: url(../img/bg0.jpg) no-repeat center center/cover; background-attachment: fixed;}
     .section img {width: 100%;}
-    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/85%; padding: 7% 15% 7% 14%;
+    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/92%; padding: 6% 14% 7% 14%;
     margin: 10px 0 0 0;}
     .section .mockup figure {position: relative; padding-bottom: 64%; overflow: hidden; width: 100%;}
     .section .mockup figure img {position: absolute; top: 0; left: 0; width: 100%; transition: 6s linear;}
@@ -151,7 +152,7 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
 
     .section .description ul {display: flex; gap: 10px;}
     .section .description ul a {display: block; font-family: 'Montserrat', sans-serif; color: var(--lc); line-height: 40px; font-size: 2.5vw; font-weight: 400;
-    border: 1px solid rgba(255,255,255,0.5); padding: 0 5px; transition: 0.3s;}
+    border: 1px solid rgba(255,255,255,0.5); padding: 0 10px; transition: 0.3s;}
     .section .description ul a:hover {background: var(--mc);}
 
 
@@ -438,6 +439,8 @@ border-radius: 50%; animation: circle_move02 3.5s infinite;}
 .portfolio_02.on .description {transform: translate(0,0); opacity: 1;}
 .portfolio_02 .description dd span:nth-of-type(1) {background: #101B41; border: 1px solid rgba(255,255,255,0.3);}
 .portfolio_02 .description dd span:nth-of-type(2) {background: #253981; border: 1px solid rgba(255,255,255,0.3);}
+/* 
+.portfolio_02 .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/99%; padding: 9.5% 6.3% 10% 6.2%;} */
 
 /* 반응형 pf02 2번 */
 @media (max-width:768px) {
@@ -504,7 +507,7 @@ margin-top: -10px;}
 .portfolio_04 .description dd span:nth-of-type(1) {background: #25561f;}
 .portfolio_04 .description dd span:nth-of-type(2) {background: #f7f7f7; border: 1px solid #bbb;}
 .portfolio_04 .description dd span:nth-of-type(3) {background: #44b635;}
-
+/* .portfolio_04 .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/99%; padding: 9.5% 6.3% 10% 6.2%;} */
 
 /* pf04 - gooey */
 .portfolio_04 .gooey {position: absolute; top: 10%; left: 0; width: 100%; height: 100vh; font-size: 0; overflow: visible;}
@@ -605,7 +608,7 @@ margin-top: -10px;}
 .portfolio_06.on .description {transform: translate(0,0); opacity: 1;}
 .portfolio_06 .description dd span:nth-of-type(1) {background: #D71921;}
 .portfolio_06 .description dd span:nth-of-type(2) {background: #f4f4f4;}
-
+/* .portfolio_06 .mockup {flex: 1; background: url(../img/pc.png) no-repeat center center/99%; padding: 9.5% 6.3% 10% 6.2%;} */
 
 
 /* 반응형 pf06 6번 */
