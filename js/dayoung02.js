@@ -33,10 +33,13 @@ $(function(){
 
    
 
+    // $('#cover').on('scoll wheel', function(){
+    //     return false;
+    // });
 
 
-    $('#cover').on('scoll wheel', function(){
-        return false;
+    $('#cover').on('scoll wheel touchMove', function(e){
+        e.stopPropagation();
     });
     
     //scroll event //
