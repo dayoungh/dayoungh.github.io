@@ -68,9 +68,13 @@ $(function(){
 
 
     $('.guide').on('scroll wheel touchMove', function(e){
-        e.stopPropagation();
+        // e.stopPropagation();
         $.fn.fullpage.setAllowScrolling(false);
     });
+
+    // $('.guide_link').click(function(){
+    //     $.fn.fullpage.setAllowScrolling(false);
+    //     });
 
 
     $('.guide i').on('click',function(){
