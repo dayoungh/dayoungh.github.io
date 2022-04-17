@@ -72,6 +72,7 @@ $(function(){
 
     $('.guide').on('scroll wheel touchMove', function(e){
         e.stopPropagation();
+        $.fn.fullpage.setAllowScrolling(false);
     });
 
 
