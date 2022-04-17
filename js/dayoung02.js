@@ -68,7 +68,7 @@ $(function(){
 
 
     $('.guide').on('scroll wheel touchmove', function(e){
-        // e.stopPropagation();
+        e.stopPropagation();
         $.fn.fullpage.setAllowScrolling(false);
     });
 
