@@ -848,11 +848,11 @@ font-size: 30px; line-height: 1.7; text-align: center; background: var(--lc); pa
 
 /* 반응형 디자인가이드 */
 @media (max-width:768px) {
-    .guide {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.7); z-index: 1000;}
+    .guide {display: none; position: fixed; top: 3%; left: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.7); z-index: 1000;}
     .guide.on {display: block;}
-    .guide i {position: absolute; top: 3%; right: 0; transform: translateX(-50%); font-size: 15px; float: right; background: var(--mc);
+    .guide i {position: absolute; top: 1.5%; right: 0; transform: translateX(-50%); font-size: 15px; float: right; background: var(--mc);
      padding: 10px; border-radius: 50%; z-index: 1001;}
-    .guide figure {position: relative; top: 2%; width: 100%; height: 100%; margin: 0 auto; overflow: scroll;}
+    .guide figure {position: relative; top: 0; width: 100%; height: 100%; margin: 0 auto; overflow: scroll;}
     .guide img {width: 100%; margin: 0 auto;}
     .guide figure::-webkit-scrollbar {width: 5px; background: #eee;}
     .guide figure::-webkit-scrollbar-thumb {width: 5px; background: #bbb;}
