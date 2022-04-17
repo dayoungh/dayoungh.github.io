@@ -67,8 +67,8 @@ $(function(){
        });
 
 
-    $('.guide').on('scroll wheel', function(e){
-        e.stopPropagation();
+    $('.guide').on('scroll wheel touchmove', function(e){
+        // e.stopPropagation();
         $.fn.fullpage.setAllowScrolling(false);
     });
 
