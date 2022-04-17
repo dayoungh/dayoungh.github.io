@@ -67,14 +67,14 @@ $(function(){
        });
 
 
-    // $('.guide').on('scroll wheel touchMove', function(e){
-    //     e.stopPropagation();
-    //     $.fn.fullpage.setAllowScrolling(false);
-    // });
-
-    $('.guide_link').click(function(){
+    $('.guide').on('scroll wheel touchMove', function(e){
+        // e.stopPropagation();
         $.fn.fullpage.setAllowScrolling(false);
-        });
+    });
+
+    // $('.guide_link').click(function(){
+    //     $.fn.fullpage.setAllowScrolling(false);
+    //     });
 
 
     $('.guide i').on('click',function(){
