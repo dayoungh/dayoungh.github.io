@@ -127,7 +127,7 @@ border: 1px solid rgba(255,255,255,0.5); padding: 0 18px; transition: 0.3s;}
     /* 전체섹션 & 목업(이미지) */
     .section {background: url(../img/bg0.jpg) no-repeat center center/cover; background-attachment: fixed;}
     .section img {width: 100%;}
-    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/92%; padding: 6% 14% 7% 14%;
+    .section .mockup {order: -1; flex: 1; background: url(../img/pc.png) no-repeat center center/90%; padding: 6% 14% 7% 14%;
     margin: 10px 0 0 0;}
     .section .mockup figure {position: relative; padding-bottom: 64%; overflow: hidden; width: 100%;}
     .section .mockup figure img {position: absolute; top: 0; left: 0; width: 100%; transition: 6s linear;}
