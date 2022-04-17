@@ -66,9 +66,6 @@ $(function(){
         $('.guide'+idx).fadeToggle();
        });
 
-    $('.guide i').on('click',function(){
-        $('.guide').slideUp();
-    });
 
     $('.guide').on('scroll wheel touchMove', function(e){
         e.stopPropagation();
@@ -76,6 +73,10 @@ $(function(){
     });
 
 
+    $('.guide i').on('click',function(){
+        $('.guide').slideUp();
+        $.fn.fullpage.setAllowScrolling(true);
+    });
    
 
 
