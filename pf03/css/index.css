@@ -6,7 +6,7 @@
 
 
 
-* {outline: 1px solid #369;}
+/* * {outline: 1px solid #369;} */
 
 
 
@@ -876,7 +876,7 @@ line-height: 1.4; color: #f4f4f4;}
     
     /* footer */
     #footer {background: #ddd; overflow:auto;}
-    #footer dl {display: block; line-height:1.7;}
+    #footer dl {display: flex; justify-content: space-around; line-height:1.7;}
     #footer dl>* {display: inline-block;}
     #footer dl>dd {padding: 0 5px;}
     #footer dl>dd~dd::before {display: none;}
