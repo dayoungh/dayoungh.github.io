@@ -105,11 +105,14 @@ $(function(){
         var idx=$(this).index();
         $(this).addClass('on').siblings().removeClass('on');
         $('.tab_cont>div').eq(idx).addClass('on').siblings().removeClass('on');
-
+        if($(window).width() < 768) {
+          $('.tab_menu li').next().stop().slideToggle();
+      }
        });
 
 
 
+    
 
        
        // tab map//
