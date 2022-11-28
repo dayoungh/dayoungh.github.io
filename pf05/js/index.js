@@ -35,7 +35,7 @@ $('.main_slider').slick({
     pauseOnFocus:false,
 });
 
-// main_visual //
+// main_visual 화살표 //
 $('#main_visual span.left').on('click',function(){
     $('.main_slider').slick('slickPrev');
 });
@@ -46,9 +46,9 @@ $('#main_visual span.right').on('click',function(){
 
 
 $('.main_slider figure').eq(1).addClass('on');
-$('.main_slider').on('afterChange',function(e,s,c){
-// console.log(c);
-$('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
+    $('.main_slider').on('afterChange',function(e,s,c){
+    // console.log(c);
+    $('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
 });
 
 
@@ -64,7 +64,7 @@ AOS.init();
 $('.b_slider').slick({
     arrows:false,
     asNavFor:'.b_slider',
-    autoplay:true,
+    autoplay:false,
 
 });
 
@@ -100,11 +100,17 @@ $('.pr_slider01').slick({
     pauseOnHover:false,
     responsive: [
         {
-          breakpoint: 769,
+          breakpoint: 990,   // 태블릿
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 4,
           }
         },
+        {
+            breakpoint: 767,  // 모바일
+            settings: {
+              slidesToShow: 1,
+            }
+          },
    
       ]
 });
@@ -150,13 +156,18 @@ $('.intro_slider').slick({
       arrows:false,
       responsive: [
         {
-          
-          autoplaySpeed: 2000,
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 1,
-          }
-        },
+            breakpoint: 990,   // 태블릿
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+              breakpoint: 767,  // 모바일
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+     
    
       ]
   });
