@@ -64,7 +64,7 @@ AOS.init();
 $('.b_slider').slick({
     arrows:false,
     asNavFor:'.b_slider',
-    autoplay:false,
+    autoplay:true,
 
 });
 
