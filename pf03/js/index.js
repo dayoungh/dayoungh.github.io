@@ -60,17 +60,15 @@ $('.pr_slider01').slick({
     pauseOnHover:false,
     responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            autoplay:true,
           }
         },
         {
-          breakpoint: 970,
+          breakpoint: 990,
           settings: {
-            slidesToShow: 4,
-            autoplay:true,
+            slidesToShow: 3,
           }
         }
         // You can unslick at a given breakpoint now by adding:
