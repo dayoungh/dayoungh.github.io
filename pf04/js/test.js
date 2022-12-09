@@ -48,17 +48,23 @@ $(function(){
     $('.pr_slider').slick({
         arrows:false,
         slidesToShow:3,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:3000,
         pauseOnFocus:false,
         pauseOnHover:false,
         responsive: [
             {
-              breakpoint: 769,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 1,
               }
             },
+            {
+                breakpoint: 990,
+                settings: {
+                  slidesToShow: 3,
+                }
+              },
            
           ]
     });
