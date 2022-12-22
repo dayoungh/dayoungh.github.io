@@ -48,7 +48,7 @@ $(function(){
     $('.pr_slider').slick({
         arrows:false,
         slidesToShow:3,
-        autoplay:false,
+        autoplay:true,
         autoplaySpeed:3000,
         pauseOnFocus:false,
         pauseOnHover:false,

@@ -32,26 +32,14 @@ transform: translateX(-50%); transition: 0.3s;}
 .gnb .depth02>li>a:hover::after {width: 50%;}
 #header.on .gnb .depth02>li>a:hover {text-shadow: none; transform: scale(1.1); transition: 0.3s;}
 .mopen {display: none; width: 3rem; height: 1rem;}
+/* .gnb .m_logo {display: none;} */
 
 
-
-
-/* 반응형 모바일 */
-@media (max-width:767px) {
+@media (max-width:768px) {
     html {font-size: 10px;}
     body {font-size: 1.6rem;}
     .container {width: auto; margin: 0 auto;}
 }
-
-
-
-/* 반응형 태블릿 */
-@media (min-width:768px) and (max-width:1023px) {
-    html {font-size: 10px;}
-    body {font-size: 1.6rem;}
-    .container {width: auto; margin: 0 auto;}
-}
-
 
 
 /* 반응형 모바일 header */
@@ -59,14 +47,15 @@ transform: translateX(-50%); transition: 0.3s;}
 
     
     #header {position: relative; line-height: 10rem;}
-    #header h1 {z-index: 1000;}
+    #header h1 {z-index: 1;}
     #header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo_color.png);}
   
     #header .container {display: flex; width: auto; margin: 0 auto; padding: 0 1.5rem;}
     #header i {padding: 0 0.5rem; font-size: 1.8rem;}
     
-    .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 90px); height: 100vh; background: #fff; padding: 10rem 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
+    .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 90px); height: 100vh; background: #fff; padding: 0 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
     .gnb.on {left: 0;}
+   
     .gnb .depth01 {display: flex; flex-direction: column; line-height: 5rem;}
     .gnb .depth01>li~li {position: relative; border-top: 1px solid #ddd;}
     .gnb .depth01>li>a {display: block; width: 13rem; width: 100%; text-align: center; margin: 0 auto; line-height: 5rem; text-shadow: none;
@@ -100,20 +89,20 @@ transform: translateX(-50%); transition: 0.3s;}
 }
 
 
-
 /* 반응형 태블릿 header */
 @media screen and (min-width:768px) and (max-width: 1023px) {
 
     
     #header {position: relative; line-height: 10rem;}
-    #header h1 {z-index: 1000;}
+    #header h1 {z-index: 1;}
     #header h1 a {display: block; width: 20rem; height: 10rem; background: url(../img/logo_color.png);}
   
     #header .container {display: flex; width: auto; margin: 0 auto; padding: 0 1.5rem;}
     #header i {padding: 0 0.5rem; font-size: 1.8rem;}
     
-    .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 90px); height: 100vh; background: #fff; padding: 10rem 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
+    .gnb {position: fixed; text-align: center; margin: 0 auto; top: 0; left: -100%; width: calc(100% - 200px); height: 100vh; background: #fff; padding: 0 0 0 0; border-right: 1px solid #ddd; transition: 0.5s; z-index: 999;}
     .gnb.on {left: 0;}
+   
     .gnb .depth01 {display: flex; flex-direction: column; line-height: 5rem;}
     .gnb .depth01>li~li {position: relative; border-top: 1px solid #ddd;}
     .gnb .depth01>li>a {display: block; width: 13rem; width: 100%; text-align: center; margin: 0 auto; line-height: 5rem; text-shadow: none;
@@ -131,8 +120,8 @@ transform: translateX(-50%); transition: 0.3s;}
     .gnb .depth02>li>a:hover {color: #004b8d; transform: scale(1.1); transition: 0.3s;}
     .gnb .depth02>li>a::after {display: none;}
     
-    .mopen {display: block; position: fixed; top: 3rem; right: 0rem; cursor: pointer; z-index: 999;}
-    .mopen::after {position: relative; content: ""; display: block; width: 100%; height: 2.5rem; background: #ff0; border-radius: 10%; transform: scale(1.8);}
+    .mopen {display: block; position: fixed; top: 3rem; right: 3rem; cursor: pointer; z-index: 999;}
+    .mopen::after {position: relative; content: ""; display: block; width: 100%; height: 2.5rem; background: #ddd; border-radius: 10%; transform: scale(1.8);}
     .mopen span {display: block; width: 100%; height: 0.2rem; background: #333; position: absolute; left: 0; transition: 0.3s; z-index: 1;}
     .mopen span:nth-child(1) {top: 0;}
     .mopen span:nth-child(2) {top: 1rem;}
@@ -150,7 +139,7 @@ transform: translateX(-50%); transition: 0.3s;}
 #visual {height: 100vh;}
 
 /* 반응형 visual */
-@media (max-width:767px) {
+@media (max-width:768px) {
     #visual {height: 100vh; width: auto !important;}
 }
 
@@ -171,7 +160,7 @@ transform: translateX(-50%); transition: 0.3s;}
 
 
 /* 반응형 #cont01 */
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont01 {padding: 10rem 0;}
     #cont01 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
     #cont01 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; margin-bottom: 5rem;}
@@ -215,7 +204,7 @@ line-height: 3.5rem; text-shadow: 0 0 2px #222;}
 
 
 /* 반응형 #cont02 */
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont02 {padding: 10rem 0; background: #f4f4f4; text-align: center;}
     #cont02 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
     #cont02 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300; padding: 0 1rem;}
@@ -274,7 +263,7 @@ padding: 1rem; font-size: 1.1rem; font-weight: 100;}
 
 
 /* 반응형 #cont03 */
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont03 {padding: 10rem 0 0 0; text-align: center;}
     #cont03 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
     #cont03 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;
@@ -348,7 +337,7 @@ text-shadow: 0 0 3px rgba(0,0,0,0.7);}
 
 /* 반응형 #cont04 */
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont04 {padding: 0;}
     #cont04 .case {position: relative; background: url(../img/banner02.png) no-repeat center center/cover; width: 100%; height: 100vh;}
     #cont04 .des {position: absolute; top: 22%; left: 0; transform: translate(0,-50%); text-align: center; color: #fff; letter-spacing: -0.025em; text-shadow: 0 0 2px rgba(0,0,0,0.5);
@@ -455,7 +444,7 @@ text-align: center;}
 
 /* 반응형 #cont05 */
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont05 {padding: 10rem 0; text-align: center;}
     #cont05 h2::before {content: ""; display: block; width: 1px; height: 8.5rem; background: #004b8d; position: absolute; top: 0; left: 50%;}
     #cont05 h2 {font-size: 5.5vw; padding-bottom: 1rem;}
@@ -561,7 +550,7 @@ text-align: center;}
 
 /* 반응형 #cont06 */
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     #cont06 {padding: 10rem 0; text-align: center; background: #f7f7f7;}
     #cont06 h2 {font-size: 5.5vw; margin-bottom: 1rem;}
     #cont06 p {font-size: 4.3vw; line-height: 2.5rem; letter-spacing: -0.025em; font-weight: 300;}
@@ -647,7 +636,7 @@ text-align: center;}
 
 /* 반응형 #footer */
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     #footer {position: relative; background: #333; color: #ccc;}
     #footer .container {padding: 0 1.5rem;}
     
