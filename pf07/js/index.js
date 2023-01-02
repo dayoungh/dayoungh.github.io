@@ -143,6 +143,7 @@ $(function(){
             // vertical:false,
             }
         },
+       
     
         ]
     });
@@ -151,24 +152,32 @@ $(function(){
      $(".tab_slider02").slick({
         autoplay:true,
         arrows:false,
-        slidesToShow: 2,
+        // slidesToShow: 1,
         autoplaySpeed:3000,
         pauseOnHover:false,
         pauseOnFocus:false,
         dots:false,
-        
-        // vertical:true,
-        responsive: [
-        {
-            breakpoint: 769,
-            settings: {
+        responsive: [ // 반응형옵션
+        // {  
+        //   breakpoint: 960,
+        //   settings: {
+        //     slidesToShow: 2,
+        //     slidesToScroll: 2,
+        //   } 
+        // },
+        { 
+          breakpoint: 768, 
+          settings: {    
             slidesToShow: 1,
-            // vertical:false,
-            }
-        },
-    
-        ]
+            slidesToScroll: 1,
+          } 
+        }
+      ]
     });
+
+
+
+
 
 
 
