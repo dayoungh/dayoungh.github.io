@@ -15,12 +15,12 @@
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "print("Today-I-learned﻿")"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dayoung"
+name                     : "Dayoung  Hwang"
 description              : ""
 url                      : "https://dayoungh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -32,7 +32,7 @@ breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                :  "Dayoung Hwang, print("Today-I-learned﻿")"
-copyright_url            : # "https://dayoungh.github.io"
+copyright_url            :  "https://dayoungh.github.io"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dayoung Hwang"
+  name             : "Dayoung  Hwang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "˚*·❥⭒•"
-  location         : "Somewhere Korea"
+  location         : "Somewhere  Korea"
   email            :
   links:
     - label: "Email"
