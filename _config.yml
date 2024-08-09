@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast"
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "print('archiving﻿˚*·❥⭒•')"
+title                    : "print("Today-I-learned﻿")"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayoung"
@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Dayoung Hwang"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Today I Learned 🙄💭"
+  bio              : "˚*·❥⭒•"
   location         : "Somewhere Korea"
   email            :
   links:
