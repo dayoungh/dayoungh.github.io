@@ -18,10 +18,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "print("Today-I-learned﻿")"
-title_separator          : "-"
+# title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayoung  Hwang"
-description              : "-"
+# description              : "-"
 url                      : "https://dayoungh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "dayoungh/dayoungh.github.io"
