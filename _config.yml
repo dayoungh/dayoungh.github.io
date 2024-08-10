@@ -21,7 +21,7 @@ title                    : "print("Today-I-Learned")"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayoung 다영"
-description              : ".·͙☽"
+description              : "💭"
 url                      : "https://dayoungh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Dayoung"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "archiving ⡱"
+  bio              : "archiving !"
   location         : "Somewhere Korea"
   email            :
   links:
