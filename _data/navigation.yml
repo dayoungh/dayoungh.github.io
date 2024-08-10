@@ -13,6 +13,6 @@ main:
     - title: "Categories"
     url: /categories/
         - title: "Years"
-    url: /years/
-        - title: "Posts"
-    url: /posts/
+    url: /year-archive/
+        - title: "Tags"
+    url: /tags/
