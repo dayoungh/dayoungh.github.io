@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Github pages 테스트 게시물"
 --- 
 
