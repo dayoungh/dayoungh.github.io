@@ -35,15 +35,16 @@ html {
   }
 }
 
+
 // top-nav-title
 // .greedy-nav a.site-title {
 //   font-size: $type-size-4;
 // }
 
-// top-nav-categories
-.greedy-nav .visible-links a {
-  font-size: $type-size-6;
-}
+// // top-nav-categories
+// .greedy-nav .visible-links a {
+//   font-size: $type-size-6;
+// }
 .greedy-nav .visible-links a:hover:before {
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
