@@ -51,3 +51,8 @@ html {
   -ms-transform: scaleX(0);
   transform: scaleX(0); // reveal
 }
+
+
+.archive__subtitle {
+  $muted-text-color: mix(#fff, $text-color, 10%);
+}
