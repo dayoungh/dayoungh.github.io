@@ -7,3 +7,29 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+// font 변경
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+$serif              : "Inconsolata",  sans-serif;
+$sans-serif-narrow  : "Inconsolata",  sans-serif;
+$serif-KR  : "Noto Sans KR",  sans-serif;
+
+$global-font-family : $serif;
+$header-font-family : $sans-serif-narrow;
+$caption-font-family: $serif !default;
+
+html {
+  font-size: 14px; // originally 16px
+  @include breakpoint($medium) {
+      font-size: 16px; // originally 18px
+  }
+
+  @include breakpoint($large) {
+      font-size: 18px; // originally 20px
+  }
+
+  @include breakpoint($x-large) {
+      font-size: 20px; // originally 22px
+  }
+}
