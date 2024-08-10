@@ -1,5 +1,11 @@
 # main links
 main:
+   - title: "Categories"
+    url: /categories/
+        - title: "Years"
+    url: /year-archive/
+        - title: "Tags"
+    url: /tags/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -10,9 +16,3 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-    - title: "Categories"
-    url: /categories/
-        - title: "Years"
-    url: /year-archive/
-        - title: "Tags"
-    url: /tags/
