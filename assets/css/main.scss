@@ -60,6 +60,11 @@ html {
   margin-top:0;
 }
 
+//recent posts h1 여백
+.mainpg-archive {
+  display:none;
+}
+
 // recent posts h3
 .archive__subtitle {
   @include breakpoint($large, $x-large) {
