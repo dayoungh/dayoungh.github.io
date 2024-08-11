@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Dayoung"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/profilepic2.png
   bio              : "˖⁺‧₊˚ 💭˚₊‧⁺˖"
   location         : "Somewhere Korea"
   email            :
