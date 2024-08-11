@@ -56,16 +56,15 @@ html {
 }
 
 
+.archive {
+  margin-top:0;
+}
+
 // recent posts h3
 .archive__subtitle {
   @include breakpoint($large, $x-large) {
     border-bottom: none;
   }
-}
-
-//recent posts h1 여백
-.mainpg-archive {
-  margin-top: 0;
 }
 
 
