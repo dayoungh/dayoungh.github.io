@@ -71,15 +71,24 @@ h1.mainpg-archive {
 
 
 // sidebar sticky
-&.sticky {
-  overflow-y: auto;
-  /* calculate height of nav list
-     viewport height - nav height - masthead x-padding
-  */
-  height: 100vh;
-  max-height: 100vh;
-  border-right: 1px solid #bfbfbf;
+@include breakpoint($large) {
+  float: inline-start;
+  width: calc(#{$right-sidebar-width-narrow} - 1em);
+  opacity: 0.75;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.sticky {
+    max-height: 100vh;
+    border-right: 1px solid #bfbfbf;
+    height: 100vh;
+  }
 }
+
 
 // side bar profile img
 .author__avatar {
