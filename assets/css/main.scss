@@ -37,6 +37,8 @@ html {
 
 
 
+
+
 // 블로그제목
 .greedy-nav a.site-title {
   font-size: $type-size-4;
@@ -64,22 +66,60 @@ html {
 }
 
 // 최근포스트 h3 위의 여백 h1
-h1.mainpg-archive {
-  margin: 0;
-}
+// h1.mainpg-archive {
+//   margin: 0;
+// }
 
 
-
-// sidebar sticky
 .sidebar {
-  width: calc(300px - 3.7em);
+  @include clearfix();
+  // @include breakpoint(max-width $large) {
+  //   /* fix z-index order of follow links */
+  //   position: relative;
+  //   z-index: 10;
+  //   -webkit-transform: translate3d(0, 0, 0);
+  //   transform: translate3d(0, 0, 0);
+  // }
+  @include breakpoint($small) {
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
+
+    &.sticky {
+      max-height: calc(100vh - #{$nav-height} - 2em);
+      height: calc(100vh - #{$nav-height} - 2em);
+      border-right: 1px solid #bfbfbf;
+    }
+  }
+
+  @include breakpoint($large) {
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
+
+    &.sticky {
+      max-height: 100vh;
+      height: 100vh;
+      border-right: 1px solid #bfbfbf;
+    }
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(#{$right-sidebar-width} - 1em);
+  }
+
+  > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+
+  // p,
+  // li {
+  //   font-family: $sans-serif;
+  //   font-size: $type-size-6;
+  //   line-height: 1.5;
+  // }
 }
 
-.sidebar.sticky {
-  max-height: 100vh;
-  height: 100vh;
-  border-right: 1px solid #bfbfbf;
-}
+
 
 
 // side bar profile img
@@ -104,6 +144,8 @@ h1.mainpg-archive {
     }
   }
 }
+
+
 
 
 // footer
