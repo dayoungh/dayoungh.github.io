@@ -1,6 +1,7 @@
 ---
-title: "About"
+title: "Helloooooooo👋🏻"
 permalink: /about/
-layout: posts
-author_profile: true
+layout: single
+comments: false
 ---
+

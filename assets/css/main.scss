@@ -55,3 +55,26 @@ html {
 .archive__subtitle {
   color: #424242;
 }
+
+
+// side bar avatar img
+.author__avatar {
+  width: 36px;
+  height: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    max-width: 250px;
+    border-radius: 20%;
+
+    @include breakpoint($large) {
+      padding: 0;
+      border: none;
+    }
+  }
+}
