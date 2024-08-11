@@ -63,6 +63,11 @@ html {
   }
 }
 
+.page__title {
+  margin-top: 0;
+}
+
+
 //사이드바
 .sidebar {
   @include clearfix();
