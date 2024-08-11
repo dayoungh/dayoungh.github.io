@@ -73,31 +73,20 @@ html {
 
 .sidebar {
   @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
-
-  .sticky {
-    max-height: calc(100vh - #{$nav-height} - 2em);
-    height: calc(100vh - #{$nav-height} - 2em);
-    border-right: 1px solid #bfbfbf;
-  }
-
+  
   @include breakpoint($x-large) {
      .sticky {
-      max-height: calc(100vh - #{$nav-height} - 2em);
+      max-height: 100vh;
      height: 100vh;
+     border-right: 1px solid #bfbfbf;
      }
   }
 
     @include breakpoint($large) {
       .sticky {
-        max-height: calc(100vh - #{$nav-height} - 2em);
-       height: 100vh;
+        max-height: 100vh;
+        height: 100vh;
+        border-right: 1px solid #bfbfbf;
        }
   }
 
