@@ -71,7 +71,7 @@ html {
 
  @include breakpoint($large) {
       &.sticky {
-      width: calc(#{$right-sidebar-width-narrow} - 1em);
+      width: calc(#{$right-sidebar-width-narrow} - 3.7em);
       max-height: 100vh;
       height: 100vh;
       border-right: 1px solid #bfbfbf;
