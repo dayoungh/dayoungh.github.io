@@ -76,9 +76,6 @@ html {
       border-right: 1px solid #bfbfbf;
       }
 
-      > * {
-        text-align: center;
-      }
  }
 }
 
@@ -89,7 +86,7 @@ html {
   width: 36px;
   height: 36px;
 
-  @include breakpoint($large, $x-large) {
+  @include breakpoint($large) {
     display: block;
     width: auto;
     height: auto;
@@ -105,13 +102,7 @@ html {
  }
 
 
-//author__content
-.author__content, .author__urls-wrapper {
-  @include breakpoint($large, $x-large) {
-    padding-inline: 15px 25px;
-  }
-}
-
+//author__bio
 .author__bio p {
   margin: 0;
 }
