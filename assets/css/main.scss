@@ -9,6 +9,7 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
+
 // font 변경
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 $serif              : "Inconsolata",  sans-serif;
@@ -32,4 +33,18 @@ html {
   @include breakpoint($x-large) {
       font-size: 20px; // originally 22px
   }
+}
+
+.greedy-nav a.site-title {
+  font-size: $type-size-4;
+}
+
+.greedy-nav .visible-links a:hover:before {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0); // reveal
+}
+
+.archive__subtitle {
+  color: #424242;
 }
