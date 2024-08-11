@@ -69,6 +69,18 @@ h1.mainpg-archive {
 }
 
 
+
+// sidebar sticky
+&.sticky {
+  overflow-y: auto;
+  /* calculate height of nav list
+     viewport height - nav height - masthead x-padding
+  */
+  height: 100vh;
+  max-height: 100vh;
+  border-right: 1px solid #bfbfbf;
+}
+
 // side bar profile img
 .author__avatar {
   display: table-cell;
