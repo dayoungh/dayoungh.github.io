@@ -1,7 +1,15 @@
 # main links
 main:
-  - title: "Categories"
+  - title: "Home"
+    url: https://dayoungh.github.io/
+      - title: "About"
+    url: /about/
+  - title: "Categories"  
     url: /categories/
+  - title: "Tags"  
+    url: /tags/
+  - title: "Year"  
+    url: /year-archive/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
