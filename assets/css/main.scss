@@ -62,7 +62,7 @@ html {
   }
 }
 
-
+//사이드바
 .sidebar {
   @include clearfix();
 
@@ -81,8 +81,14 @@ html {
  }
 }
 
+//author__content
+.p-note>p {
+  @include breakpoint($small) {
+    margin:0
+  }
+}
 
-//side bar profile img
+//author__avatar
 .author__avatar {
   display: table-cell;
   vertical-align: top;
