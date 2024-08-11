@@ -69,8 +69,18 @@ html {
 
   border-right: none;
 
-  @include breakpoint($large, $x-large) {
+ @include breakpoint($large) {
       &.sticky {
+      width: calc(#{$right-sidebar-width-narrow} - 1em);
+      max-height: 100vh;
+      height: 100vh;
+      border-right: 1px solid #bfbfbf;
+      }
+
+ }
+  @include breakpoint($x-large) {
+      &.sticky {
+      width: calc(#{$right-sidebar-width} - 3.7em);
       max-height: 100vh;
       height: 100vh;
       border-right: 1px solid #bfbfbf;
