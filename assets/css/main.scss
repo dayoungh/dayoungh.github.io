@@ -82,9 +82,10 @@ html {
 }
 
 //author__content
-.p-note>p {
-  @include breakpoint($small) {
-    margin:0
+.sidebar p {
+  @include breakpoint($small, $medium) {
+    margin:0;
+    line-height:0;
   }
 }
 
