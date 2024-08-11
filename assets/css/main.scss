@@ -106,22 +106,26 @@ html {
 
 // side bar profile img
 .author__avatar {
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  
   img {
-    max-width: 110px;
-    border-radius: 50%;
-
     @include breakpoint($large) {
+      max-width: 200px;
+      padding: 0px;
+      border: none;
+    }
+  
+    @include breakpoint($x-large) {
       max-width: 200px;
       padding: 0px;
       border: none;
     }
   }
 
-  @include breakpoint($x-large) {
-    max-width: 200px;
-    padding: 0px;
-    border: none;
-  }
  }
 
 
