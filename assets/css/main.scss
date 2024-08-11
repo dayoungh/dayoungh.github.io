@@ -83,6 +83,10 @@ html {
     height: 100vh;
     border-right: 1px solid #bfbfbf;
      }
+     > * {
+
+      text-align: center;
+    }
 }
   
 @include breakpoint($x-large) {
@@ -91,13 +95,14 @@ html {
      height: 100vh;
      border-right: 1px solid #bfbfbf;
      }
+     > * {
+
+      text-align: center;
+    }
   }
 
 
-  > * {
 
-    text-align: center;
-  }
 
 }
 
@@ -106,12 +111,11 @@ html {
 
 // side bar profile img
 .author__avatar {
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-  
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+
   img {
     @include breakpoint($large) {
       max-width: 200px;
@@ -127,8 +131,6 @@ html {
   }
 
  }
-
-
 
 
 
