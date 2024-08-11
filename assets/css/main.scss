@@ -59,6 +59,8 @@ html {
 
 // side bar avatar img
 .author__avatar {
+  display: table-cell;
+  vertical-align: top;
   width: 36px;
   height: 36px;
 
