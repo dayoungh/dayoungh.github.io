@@ -89,7 +89,7 @@ html {
   width: 36px;
   height: 36px;
 
-  @include breakpoint($large) {
+  @include breakpoint($large, $x-large) {
     display: block;
     width: auto;
     height: auto;
@@ -107,7 +107,7 @@ html {
 
 //author__content
 .author__content, .author__urls-wrapper {
-  @include breakpoint($large) {
+  @include breakpoint($large, $x-large) {
     padding-inline: 15px 25px;
   }
 }
