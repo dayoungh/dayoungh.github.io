@@ -80,28 +80,25 @@ html {
   //   -webkit-transform: translate3d(0, 0, 0);
   //   transform: translate3d(0, 0, 0);
   // }
-  @include breakpoint($small) {
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
 
-    &.sticky {
-      max-height: calc(100vh - #{$nav-height} - 2em);
-      height: calc(100vh - #{$nav-height} - 2em);
-      border-right: 1px solid #bfbfbf;
-    }
-  }
-
-  @include breakpoint($large) {
-    width: calc(#{$right-sidebar-width-narrow} - 1em);
-
-    &.sticky {
-      max-height: 100vh;
-      height: 100vh;
-      border-right: 1px solid #bfbfbf;
-    }
+  .sticky {
+    max-height: calc(100vh - #{$nav-height} - 2em);
+    height: calc(100vh - #{$nav-height} - 2em);
+    border-right: 1px solid #bfbfbf;
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+     .sticky {
+      max-height: calc(100vh - #{$nav-height} - 2em);
+     height: 100vh;
+     }
+  }
+
+    @include breakpoint($large) {
+      .sticky {
+        max-height: calc(100vh - #{$nav-height} - 2em);
+       height: 100vh;
+       }
   }
 
   > * {
@@ -110,13 +107,6 @@ html {
     text-align: center;
   }
 
-
-  // p,
-  // li {
-  //   font-family: $sans-serif;
-  //   font-size: $type-size-6;
-  //   line-height: 1.5;
-  // }
 }
 
 
