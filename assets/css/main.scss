@@ -37,12 +37,12 @@ html {
 
 
 
-// top-nav-title
+// 블로그제목
 .greedy-nav a.site-title {
   font-size: $type-size-4;
 }
 
-// top-nav-categories
+// 상단 카테고리 home about..
 .greedy-nav .visible-links a {
   font-size: $type-size-6;
 }
@@ -52,12 +52,17 @@ html {
   transform: scaleX(0); // reveal
 }
 
+// 최근포스트
 .archive__subtitle {
-  color: #424242;
+  color: #fff;
+  background-color: #424242;
+  display: inline;
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 
-// side bar avatar img
+// side bar profile img
 .author__avatar {
   display: table-cell;
   vertical-align: top;
@@ -71,8 +76,8 @@ html {
   }
 
   img {
-    max-width: 250px;
-    border-radius: 20%;
+    max-width: 200px;
+    border-radius: 10px;
 
     @include breakpoint($large) {
       padding: 0;
@@ -80,3 +85,4 @@ html {
     }
   }
 }
+
