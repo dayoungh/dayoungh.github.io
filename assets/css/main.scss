@@ -14,6 +14,7 @@ search: false
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 $serif              : "Inconsolata",  sans-serif;
 $sans-serif-narrow  : "Inconsolata",  sans-serif;
+$sans-serif              : "Inconsolata",  sans-serif;
 $serif-KR  : "Noto Sans KR",  sans-serif;
 
 $global-font-family : $serif;
@@ -81,10 +82,6 @@ html {
  }
 }
 
-//author__content
-.author__bio p {
-  margin: 0;
-}
 //author__avatar
 .author__avatar {
   display: table-cell;
@@ -106,6 +103,18 @@ html {
     }
   }
  }
+
+
+//author__content
+.author__content, .author__urls-wrapper {
+  @include breakpoint($large) {
+    padding-inline: 15px 25px;
+  }
+}
+
+.author__bio p {
+  margin: 0;
+}
 
 
 // footer
