@@ -55,67 +55,54 @@ html {
 }
 
 
+// 최근포스트 h3
+.archive__subtitle {
+  @include breakpoint($large, $x-large) {
+    border-bottom: none;
+  }
+}
+
 
 .sidebar {
   @include clearfix();
 
   border-right: none;
 
-  @include breakpoint($large) {
-    &.sticky {
-    max-height: 100vh;
-    height: 100vh;
-    border-right: 1px solid #bfbfbf;
-     }
-     > * {
+  @include breakpoint($large, $x-large) {
+      &.sticky {
+      max-height: 100vh;
+      height: 100vh;
+      border-right: 1px solid #bfbfbf;
+      }
 
-      text-align: center;
-    }
-}
-  
-@include breakpoint($x-large) {
-   &.sticky {
-    max-height: 100vh;
-     height: 100vh;
-     border-right: 1px solid #bfbfbf;
-     }
-     > * {
-
-      text-align: center;
-    }
-  }
-
-
-
-
+      > * {
+        text-align: center;
+      }
+ }
 }
 
 
-
-
-// side bar profile img
+//side bar profile img
 .author__avatar {
   display: table-cell;
   vertical-align: top;
   width: 36px;
   height: 36px;
 
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
   img {
-    @include breakpoint($large) {
-      max-width: 200px;
-      padding: 0px;
-      border: none;
-    }
-  
-    @include breakpoint($x-large) {
+    @include breakpoint($large, $x-large) {
       max-width: 200px;
       padding: 0px;
       border: none;
     }
   }
-
  }
-
 
 
 // footer
