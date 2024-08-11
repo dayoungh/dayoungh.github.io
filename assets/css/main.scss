@@ -83,10 +83,7 @@ html {
 
 //author__content
 .sidebar p {
-  @include breakpoint($small, $medium) {
-    margin:0;
-    line-height:0;
-  }
+  margin: 0;
 }
 
 //author__avatar
