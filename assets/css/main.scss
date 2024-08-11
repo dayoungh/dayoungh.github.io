@@ -71,6 +71,10 @@ h1.mainpg-archive {
 
 
 // sidebar sticky
+.sidebar {
+  width: calc(300px - 3.7em);
+}
+
 .sidebar.sticky {
   max-height: 100vh;
   height: 100vh;
@@ -101,3 +105,8 @@ h1.mainpg-archive {
   }
 }
 
+
+// footer
+.page__footer {
+  margin-top:0;
+}
