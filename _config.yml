@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "𝙏𝙤𝙙𝙖𝙮 𝙄 𝙇𝙚𝙖𝙧𝙣𝙚𝙙 ✔"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dayoung"
+name                     : "Dayoung Hwang"
 # description              : ""
 url                      : "https://dayoungh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
