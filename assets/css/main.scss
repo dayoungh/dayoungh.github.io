@@ -56,14 +56,15 @@ html {
 }
 
 
-// 최근포스트 h3
+// recent posts h3
 .archive__subtitle {
   @include breakpoint($large, $x-large) {
     border-bottom: none;
   }
 }
 
-.page__title {
+//recent posts h1 여백
+.mainpg-archive {
   margin-top: 0;
 }
 
